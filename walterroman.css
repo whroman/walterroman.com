@@ -1,0 +1,12 @@
+#body { 
+	margin: 0px;
+	margin-left: 8%;
+	width: auto;
+	height: auto;
+
+/*	Prevents header border to create additional webspace
+*/	overflow: auto;
+	font-family: Helvetica, Arial, sans-serif;
+
+}
+
