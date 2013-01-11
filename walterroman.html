@@ -7,15 +7,63 @@
 			Walter Roman
 		</title>
 		<body>
-			<h1>Walter H. Roman</h1>
-			<h2>Some call me "Walt". About three people call me "Wally".  My family calls me "Waltercito". Most people, though, just call me "Walter".</h2>
-			<h2>I'm an aspiring musician, aspiring front-end developer and aspiring human. I love coffee. I love music. I love designing. I love hiking. I love meeting people. No, seriously. Do you remember that guy at the coffee shop earlier today that struck up a conversation with you about nothing? Yes, that was me. Well, probably not... but you get my point.</h2>
-			<div id="navbar">
-				<div>About</div>
-				<div>Resume</div>
-				<div>Contact</div>
-				<div></div>
+			<div id="topBorder"></div>
+
+			<div id="rightBorder">
+				<div id="emptySpace1"></div>
+				<div id="emptySpace2"></div>
+				<div id="realRightBorder"></div>
 			</div>
+			
+			<h1>
+				<div id="h1div"></div>
+				<div id="head">Walter H. Roman</div></h1> 
+			
+			<div id="navBar">
+				<div id="About" class="navCircle" 
+				onMouseOver="navMouseOver('About','navText1')"
+				onMouseOut="navMouseOut('About','navText1')">
+				</div>
+				<div id="navTextAbout"
+					onMouseOver="navMouseOver('About','navText1')"
+					onMouseOut="navMouseOut('About','navText1')">
+					<div class="firstLetter">A</div>
+					<div id="navText1" class="navText">bout</div>
+				</div>
+				
+				<div id="Resume" class="navCircle"
+					onMouseOver="navMouseOver('Resume','navText2')"
+					onMouseOut="navMouseOut('Resume','navText2')">
+				</div>
+				<div id="navTextResume"
+					onMouseOver="navMouseOver('Resume','navText2')"
+					onMouseOut="navMouseOut('Resume','navText2')">
+					<div class="firstLetter">R</div>
+					<div id="navText2" class="navText">esume</div>
+				</div>
+				
+				<div id="Contact" class="navCircle"
+					onMouseOver="navMouseOver('Contact','navText3')"
+					onMouseOut="navMouseOut('Contact','navText3')">
+				</div>
+				<div id="navTextContact"
+					onMouseOver="navMouseOver('Contact','navText3')"
+					onMouseOut="navMouseOut('Contact','navText3')">
+					<div class="firstLetter">C</div>
+					<div id="navText3" class="navText">ontact</div>
+				</div>
+			</div>
+			
+			<h2>Some call me "Wally"</br>  
+			Few call me "Walt"</br>
+			My family calls me "Pipo"</br>
+			But most people just call me "Walter"</h2>
+			
+			<h3>I'm an aspiring musician</br>
+			An aspiring front-end developer</br>
+			And an aspiring human</h3>
+			
+			
 		</body>
 	</head>
 </html>
