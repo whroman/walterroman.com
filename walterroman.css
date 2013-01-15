@@ -8,7 +8,7 @@ body {
 
 	font-family: Helvetica, Arial, sans-serif;
 
-	background-color: #transparent;
+	background-color: transparent;
 
 }
 
@@ -136,7 +136,7 @@ h1 {
 h2 {
 	position: relative;
 	background-color: transparent;
-	width: 65%;
+	width: 67%;
 	min-width: 580px;
 	color: #333;
 
@@ -147,7 +147,7 @@ h2 {
 
 	text-align: right;
 
-	margin: 65px auto 0px 15%;
+	margin: 95px auto 0px 15%;
 	padding: 15px 0px;
 
 	opacity: 0.9;
@@ -156,7 +156,7 @@ h2 {
 h3 {
 	position: relative;
 	background-color: transparent;
-	width: 65%;
+	width: 67%;
 	min-width: 580px;
 
 		font-weight: 500;
@@ -168,13 +168,44 @@ h3 {
 
 	margin: 35px auto 20px 15%;
 
-	opacity: 0.8;
+	color: #444;
+	opacity: 1;
 }
+
+#musician {
+	color: #FFD300;
+	text-shadow: 1px 1px 5px #ccc;
+	opacity: 0.8;	
+}
+
+#developer {
+	color: #FFAA00;
+	text-shadow: 1px 1px 5px #ccc;
+	opacity: 0.8;	
+}
+
+#human {
+	color: #FF7400;
+	text-shadow: 1px 1px 5px #ccc;
+	opacity: 0.8;	
+}
+
+
+a {
+	font-style: normal;
+	text-decoration: none;
+	color: black;
+}
+
+#musician:hover , #developer:hover , #human:hover {
+	opacity: 0.6;	
+/*	text-shadow: 1px 1px 5px #aaa;
+*/}
 
 #navBar {
 	position: absolute;
 	font-size: 32px;
-	margin-top: 32px;
+	margin-top: 50px;
 	margin-left: 15%;
 
 }
@@ -183,9 +214,77 @@ h3 {
 
 }
 
-.navCircle {
+#About {
 	position: absolute;
 	margin-top: 0px;
+	z-index: 99;
+
+	background-color: #FFD300;
+}
+
+#Resume {
+	position: absolute;
+	margin-top: 130px;
+	z-index: 99;
+
+	background-color: #FFAA00;
+
+}
+
+#Contact {
+	position: absolute;
+	margin-top: 260px;
+	z-index: 99;
+
+	background-color: #FF7400;
+
+}
+
+#About:hover, #Resume:hover, #Contact:hover {
+	cursor: pointer;
+	opacity: 0.8;
+	background-color: #bbb;
+
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s; 
+	transition: all 0.5s;
+}
+
+#About:active {
+	background-color: #FFd300;
+
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s; 
+	transition: all 0.2s;
+}
+
+#Resume:active {
+	background-color: #FFaa00;
+
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s; 
+	transition: all 0.2s;
+}
+
+#Contact:active {
+	background-color: #FF7400;
+
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s; 
+	transition: all 0.2s;
+}
+
+.navCircle {
+	position: absolute;
+	margin-top: -10px;
 	width: 100px;
 	height: 100px;
 	border-radius: 100px;
@@ -194,35 +293,59 @@ h3 {
 
 	z-index: 0;
 
-		-o-transition: opacity 0.5s, height 0.5s, width 0.5s, border-radius 0.5s, margin-top 0.5s;
-		-ms-transition: opacity 0.5s, height 0.5s, width 0.5s, border-radius 0.5s, margin-top 0.5s;
-		-moz-transition: opacity 0.5s, height 0.5s, width 0.5s, border-radius 0.5s, margin-top 0.5s;
-		-webkit-transition: opacity 0.5s, height 0.5s, width 0.5s, border-radius 0.5s, margin-top 0.5s; 
-		transition: opacity 0.5s, height 0.5s, width 0.5s, border-radius 0.5s, margin-top 0.5s;
-
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s; 
+	transition: all 0.5s;
 }
 
-#About {
-	position: absolute;
-	margin-top: 0px;
-
+.aboutClick {
+	margin-top: -60px;
+	width: 216px;
+	height: 216px;
+	border-radius: 216px;
 	background-color: #FFD300;
+	opacity: 0.8;
+	z-index: 10;
+
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s; 
+	transition: all 0.5s;
 }
 
-#Resume {
-	position: absolute;
-	margin-top: 120px;
-
+.resumeClick {
+	margin-top: 50px;
+	width: 253px;
+	height: 253px;
+	border-radius: 253px;
 	background-color: #FFAA00;
+	opacity: 0.8;
+	z-index: 10;
 
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s; 
+	transition: all 0.5s;
 }
 
-#Contact {
-	position: absolute;
-	margin-top: 240px;
-
+.contactClick {
+	margin-top: 160px;
+	width: 260px;
+	height: 260px;
+	border-radius: 260px;
 	background-color: #FF7400;
+	opacity: 0.8;
+	z-index: 10;
 
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s; 
+	transition: all 0.5s;
 }
 
 #navTextAbout {
@@ -234,7 +357,7 @@ h3 {
 
 #navTextResume {
 	position: absolute;
-	margin-top: 120px;
+	margin-top: 0px;
 
 	margin-left: 8px;
 
@@ -242,55 +365,67 @@ h3 {
 
 #navTextContact {
 	position: absolute;
-	margin-top: 240px;
+	margin-top: 0px;
 
 	margin-left: 6px;
 }
 
 
-.navCircle:hover, .firstLetter:hover, .navText:hover {
+.navCircle:hover, .firstLetter:hover, .firstLetterSelected:hover, .navText:hover, .navTextSelected:hover {
 	cursor: pointer;
 }
 
 .firstLetter {
 	position: absolute;
-	margin-left: 33px;
+	margin-left: 38px;
+	margin-top: 3px;
 
 	background-color: transparent;
-	z-index: 11;
+	z-index: 101;
 	opacity: 1;
 
 	color: #FFF;
 	font-size: 86px;
+
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s; 
+	transition: all 0.5s;
 }
 
 .navText {
 	position: absolute;
-	margin-top: 49px;
+	margin-top: 52px;
 	margin-left: 87px;
-	color: #777;
-		z-index: 11;
+	z-index: 11;
+	font-size: 32px;
 
 
-	-o-transition: color 0.5s;
-		-ms-transition: color 0.5s;
-		-moz-transition: color 0.5s;
-		-webkit-transition: color 0.5s; 
-		transition: color 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s; 
+	transition: all 0.5s;
+
+	color: #000;
 }
-/*
-#navText1 {
+
+.navTextSelected {
+	position: absolute;
 	margin-left: 87px;
+	z-index: 11;
+	font-size: 40px;
+
+
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s; 
+	transition: all 0.5s;
+
+	color: black;
 }
-
-#navText2 {
-	margin-left: 68px;
-}
-
-#navText3 {
-	margin-left: 80px;
-}*/
-
 
 #navText1 {
 	margin-left: 92px;

@@ -20,48 +20,49 @@
 				<div id="head">Walter H. Roman</div></h1> 
 			
 			<div id="navBar">
+			
 				<div id="About" class="navCircle" 
-				onMouseOver="navMouseOver('About','navText1')"
-				onMouseOut="navMouseOut('About','navText1')">
+					onClick="navOnClick('About')">
+					<div id="firstLetterA" class="firstLetter">A</div>
+					<div id="navTextAbout"
+					onClick="navOnClick('About')">
+						<div id="navText1" class="navText">bout</div>
+					</div>
 				</div>
-				<div id="navTextAbout"
-					onMouseOver="navMouseOver('About','navText1')"
-					onMouseOut="navMouseOut('About','navText1')">
-					<div class="firstLetter">A</div>
-					<div id="navText1" class="navText">bout</div>
-				</div>
+				
 				
 				<div id="Resume" class="navCircle"
-					onMouseOver="navMouseOver('Resume','navText2')"
-					onMouseOut="navMouseOut('Resume','navText2')">
-				</div>
-				<div id="navTextResume"
-					onMouseOver="navMouseOver('Resume','navText2')"
-					onMouseOut="navMouseOut('Resume','navText2')">
-					<div class="firstLetter">R</div>
-					<div id="navText2" class="navText">esume</div>
+					onClick="navOnClick('Resume')">
+					<div id="firstLetterR" class="firstLetter">R</div>
+					<div id="navTextResume"
+					onClick="navOnClick('Resume')">
+						<div id="navText2" class="navText">esume</div>
+					</div>
 				</div>
 				
+				
 				<div id="Contact" class="navCircle"
-					onMouseOver="navMouseOver('Contact','navText3')"
-					onMouseOut="navMouseOut('Contact','navText3')">
+					onClick="navOnClick('Contact')">
+					<div id="firstLetterC" class="firstLetter">C</div>
+					<div id="navTextContact"
+					onClick="navOnClick('Contact')">
+						<div id="navText3" class="navText">ontact</div>
+					</div>
 				</div>
-				<div id="navTextContact"
-					onMouseOver="navMouseOver('Contact','navText3')"
-					onMouseOut="navMouseOut('Contact','navText3')">
-					<div class="firstLetter">C</div>
-					<div id="navText3" class="navText">ontact</div>
-				</div>
+				
 			</div>
 			
-			<h2>Some call me <em>Wally</em></br>  
-			Few call me <em>Walt</em></br>
-			My family calls me <em>Pipo</em></br>
-			But most just call me <em>Walter</em></h2>
-			
-			<h3>I'm an aspiring musician</br>
-			An aspiring front-end developer</br>
-			And an aspiring human</h3>
+			<h2>
+<!-- 				<div id="aboutContent" class="navCircle"></div>
+ -->
+				Some call me <em>Walt</em></br>  
+				Few call me <em>Wally</em></br>
+				My family calls me <em>Waltercito</em></br>
+				But most just call me <em>Walter</em></h2>		
+			<h3>
+					I'm an aspiring <a id="musician" href="maddoxtheband.com">musician</a></br>
+					An aspiring <a id="developer" href="https://github.com/whroman3">front-end developer</a></br>
+					And an aspiring <a id="human" href="http://lavozdeunbuitre.tumblr.com/">human</h3>
 			
 			
 		</body>

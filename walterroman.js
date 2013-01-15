@@ -1,59 +1,95 @@
 var navArray = ["About","Resume","Contact"];
 
-var navMouseOver = function(circle, text) {
-	nav1 = document.getElementById(circle);
-	nav1.style.opacity="0.8";
+var navMouseOver = function(hover, text) {
+	navHover = document.getElementById(hover);
+	navText = document.getElementById(text);
 
-	if (circle == 'About') {
-		nav1.style.marginTop="-60px"
-		nav1.style.width="205px";
-		nav1.style.height="205px";
-		nav1.style.borderRadius="205px";
-		nav1.style.backgroundColor="#FFD300"
-	}
-
-	if (circle == 'Resume') {
-		nav1.style.marginTop="40px"
-		nav1.style.width="240px";
-		nav1.style.height="240px";
-		nav1.style.borderRadius="240px";
-		nav1.style.backgroundColor="#FFAA00"
-	}
-
-	if (circle == 'Contact') {
-		nav1.style.marginTop="160px"
-		nav1.style.width="245px";
-		nav1.style.height="245px";
-		nav1.style.borderRadius="245px";
-		nav1.style.backgroundColor="#FF7400"
-	}
-
-console.log(circle)
-
-	nav2 = document.getElementById(text);
-	nav2.style.color = "#000"
+	navText.className = "navTextHovered";
 }
 
-var navMouseOut = function(circle, text) {
-	nav1 = document.getElementById(circle);
-	nav1.style.width="100px";
-	nav1.style.height="100px";
-	nav1.style.borderRadius="100px";
-	nav1.style.opacity="0.6";
+var navOnClick = function(exception) {
+	navAbout = document.getElementById("About");
+	navResume = document.getElementById("Resume");
+	navContact = document.getElementById("Contact");
 
-	if (circle == 'About') {
-		nav1.style.marginTop="0px"
+	navTabArray = [navAbout, navResume, navContact];
+	
+	if (exception == "About") {
+		navAbout.className = "aboutClick";
+		navAbout.style.marginTop = "-60px";
+		navAbout.style.zIndex = "99"
+		document.getElementById("navText1").className = "navTextSelected";
+		document.getElementById("navText1").style.marginTop = "104px";
+		document.getElementById("firstLetterA").style.marginTop = "63px";
+
+
+		for (i=0;i<navTabArray.length;i++) {
+			if (navTabArray[i].id != exception) {
+				navResume.className = "navCircle";
+				navResume.style.marginTop = "130px";
+				navResume.style.zIndex = "100";
+				document.getElementById("navText2").className = "navText";
+				document.getElementById("navText2").style.marginTop = "52px";
+				document.getElementById("firstLetterR").style.marginTop = "3px";
+				navContact.className = "navCircle";	
+				navContact.style.marginTop = "260px";
+				navContact.style.zIndex = "100";
+				document.getElementById("navText3").className = "navText";
+				document.getElementById("navText3").style.marginTop = "52px";
+				document.getElementById("firstLetterC").style.marginTop = "3px";
+			}
+		}
 	}
 
-	if (circle == 'Resume') {
-		nav1.style.marginTop="120px"
+	if (exception == "Resume") {
+		navResume.className = "resumeClick"
+		navResume.style.marginTop = "50px";
+		navResume.style.zIndex = "99"
+		document.getElementById("navText2").className = "navTextSelected";
+		document.getElementById("navText2").style.marginTop = "125px";
+		document.getElementById("firstLetterR").style.marginTop = "83px";
+
+		for (i=0;i<navTabArray.length;i++) {
+			if (navTabArray[i].id != exception) {
+				navAbout.className = "navCircle";
+				navAbout.style.marginTop = "0px";
+				navAbout.style.zIndex = "100";
+				document.getElementById("navText1").className = "navText"
+				document.getElementById("navText1").style.marginTop = "52px";
+				document.getElementById("firstLetterA").style.marginTop = "3px";
+				navContact.className = "navCircle"	;
+				navContact.style.marginTop = "260px";
+				navContact.style.zIndex = "100";
+				document.getElementById("navText3").className = "navText";
+				document.getElementById("navText3").style.marginTop = "52px";
+				document.getElementById("firstLetterC").style.marginTop = "3px";
+			}
+		}
 	}
 
-	if (circle == 'Contact') {
-		nav1.style.marginTop="240px"
+	if (exception == "Contact") {
+		navContact.className = "contactClick";
+		navContact.style.marginTop = "170px";
+		navContact.style.zIndex = "99"
+		document.getElementById("navText3").className = "navTextSelected";
+		document.getElementById("navText3").style.marginTop = "136px";
+		document.getElementById("firstLetterC").style.marginTop = "93px";
+
+		for (i=0;i<navTabArray.length;i++) {
+			if (navTabArray[i].id != exception) {
+				navAbout.className = "navCircle";
+				navAbout.style.marginTop = "0px";
+				navAbout.style.zIndex = "100";
+				document.getElementById("navText1").className = "navText";
+				document.getElementById("navText1").style.marginTop = "52px";
+				document.getElementById("firstLetterA").style.marginTop = "3px";
+				navResume.className = "navCircle";	
+				navResume.style.marginTop = "130px";
+				navResume.style.zIndex = "100";
+				document.getElementById("navText2").className = "navText";
+				document.getElementById("navText2").style.marginTop = "52px";
+				document.getElementById("firstLetterR").style.marginTop = "3px";
+			}
+		}
 	}
-
-
-	nav2 = document.getElementById(text);
-	nav2.style.color = "#777"
 }
