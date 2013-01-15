@@ -13,8 +13,9 @@ body {
 }
 
 em {
-	font-weight: 500;
+	font-weight: 800;
 	font-style: normal;
+	color: #444;
 }
 
 #topBorder {
@@ -133,11 +134,11 @@ h1 {
 	opacity: 1;
 }
 
-h2 {
+#intro {
 	position: relative;
 	background-color: transparent;
-	width: 67%;
-	min-width: 580px;
+	width: 50%;
+	min-width: 380px;
 	color: #333;
 
 		font-weight: 100;
@@ -147,29 +148,42 @@ h2 {
 
 	text-align: right;
 
-	margin: 95px auto 0px 15%;
-	padding: 15px 0px;
+	margin: 85px auto 0px 300px;
+	padding: 15px 0px 0px 10%;
 
 	opacity: 0.9;
+
+	-o-transition: all 1s;
+	-ms-transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s; 
+	transition: all 1s;	
 }
 
-h3 {
+#aspire {
 	position: relative;
 	background-color: transparent;
-	width: 67%;
-	min-width: 580px;
+	width: 50%;
+	min-width: 380px;
 
 		font-weight: 500;
 
-	font-size: 24px;
+	font-size: 26px;
 	line-height: 1.4;
 
 	text-align: right;
 
-	margin: 35px auto 20px 15%;
+	margin: 50px auto 20px 300px;
 
+	padding-left: 10%;
 	color: #444;
 	opacity: 1;
+
+	-o-transition: all 1s;
+	-ms-transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s; 
+	transition: all 1s;
 }
 
 #musician {
@@ -188,6 +202,66 @@ h3 {
 	color: #FF7400;
 	text-shadow: 1px 1px 5px #ccc;
 	opacity: 0.8;	
+}
+
+#aboutPage {
+	position: absolute;
+	background-color: transparent;
+	width: auto;
+	height: auto;
+	min-width: 520px;
+
+		font-weight: 300;
+
+	font-size: 22px;
+	line-height: 1.5;
+
+	text-align: left;
+
+	margin: -220px 10% 20px 300px;
+
+	padding-left: 10%;
+	padding-bottom: 30px;
+
+	color: #666;
+
+	visibility: hidden;
+	opacity: 0;
+
+	-o-transition: all 1s;
+	-ms-transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s; 
+	transition: all 1s;
+}
+
+#contactPage {
+	position: absolute;
+	background-color: transparent;
+	width: auto;
+	min-width: 580px;
+
+		font-weight: 300;
+
+	font-size: 22px;
+	line-height: 1.5;
+
+	text-align: left;
+
+	margin: 0px auto 20px 300px;
+
+	padding-left: 10%;
+
+	color: #666;
+
+	visibility: hidden;
+	opacity: 0;
+
+	-o-transition: all 1s;
+	-ms-transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s; 
+	transition: all 1s;
 }
 
 
@@ -243,7 +317,7 @@ a {
 #About:hover, #Resume:hover, #Contact:hover {
 	cursor: pointer;
 	opacity: 0.8;
-	background-color: #bbb;
+	background-color: #aaa;
 
 	-o-transition: all 0.5s;
 	-ms-transition: all 0.5s;

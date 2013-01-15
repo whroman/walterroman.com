@@ -93,3 +93,33 @@ var navOnClick = function(exception) {
 		}
 	}
 }
+
+var aboutClick = function() {
+	document.getElementById("intro").style.opacity = "0"
+	document.getElementById("intro").style.visibility = "hidden"
+
+
+	document.getElementById("aspire").style.marginTop = "-140px";
+	
+	document.getElementById("aboutPage").style.visibility = "visible";
+	document.getElementById("aboutPage").style.opacity = "1";
+	document.getElementById("aboutPage").style.marginTop = "-20px";
+
+	document.getElementById("contactPage").style.visibility = "hidden";
+	document.getElementById("contactPage").style.opacity = "0";
+
+}
+
+var contactClick = function() {
+	document.getElementById("intro").style.opacity = "0"
+	document.getElementById("intro").style.visibility = "hidden"
+
+
+	document.getElementById("aspire").style.marginTop = "-150px";
+	
+	document.getElementById("contactPage").style.visibility = "visible";
+	document.getElementById("contactPage").style.opacity = "1";
+
+	document.getElementById("aboutPage").style.visibility = "hidden";
+	document.getElementById("aboutPage").style.opacity = "0";
+}
