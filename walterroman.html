@@ -9,12 +9,6 @@
 		<body>
 			<div id="topBorder"></div>
 
-<!-- 			<div id="rightBorder">
-				<div id="emptySpace1"></div>
-				<div id="emptySpace2"></div>
-				<div id="realRightBorder"></div>
-			</div>
- -->			
 			<h1>
 				<div id="h1div"></div>
 				<div id="head">Walter H. Roman</div></h1> 
@@ -25,8 +19,9 @@
 					onClick="navOnClick('About'); aboutClick(); ">
 					<div id="firstLetterA" class="firstLetter">A</div>
 					<div id="navTextAbout"
-					onClick="navOnClick('About')">
-						<div id="navText1" class="navText">bout</div>
+						onClick="navOnClick('About')">
+						<div id="navText1" class="navText">bout
+						</div>
 					</div>
 				</div>
 				
@@ -35,18 +30,20 @@
 					onClick="navOnClick('Resume')">
 					<div id="firstLetterR" class="firstLetter">R</div>
 					<div id="navTextResume"
-					onClick="navOnClick('Resume')">
-						<div id="navText2" class="navText">esume</div>
+						onClick="navOnClick('Resume')">
+						<div id="navText2"class="navText">esume</div>
 					</div>
 				</div>
 				
 				
 				<div id="Contact" class="navCircle"
 					onClick="navOnClick('Contact'); contactClick();">
-					<div id="firstLetterC" class="firstLetter">C</div>
+					<div id="firstLetterC" class="firstLetter">C
+					</div>
 					<div id="navTextContact"
-					onClick="navOnClick('Contact')">
-						<div id="navText3" class="navText">ontact</div>
+						onClick="navOnClick('Contact')">
+						<div id="navText3" class="navText">ontact
+						</div>
 					</div>
 				</div>
 				
@@ -58,9 +55,35 @@
 				My family calls me <em>Waltercito</em></br>
 				But most just call me <em>Walter</em></h2>		
 			<h3 id="aspire">
-				I'm an aspiring <a id="musician" href="maddoxtheband.com">musician</a></br>
-				An aspiring <a id="developer" href="https://github.com/whroman3">front-end developer</a></br>
-				And an aspiring <a id="human" href="http://lavozdeunbuitre.tumblr.com/">human</a></h3>
+				I'm an aspiring 
+				<a id="musician" href="https://facebook.com"
+					onMouseOver="toolTip('toolTip1');"
+					onMouseOut="toolTipMouseOut('toolTip1');">musician
+				</a>
+				<div  id="toolTip1" class = "toolTip">My Band's Website</div>
+				<div id="triangle1" class="triangle-isosceles"></div>
+					</br>
+						
+				An aspiring 
+				<a id="developer" href="https://github.com/whroman3" 
+					onMouseOver="toolTip('toolTip2');"
+					onMouseOut="toolTipMouseOut('toolTip2')">front-end developer
+				</a>
+				<div  id="toolTip2" class = "toolTip">My GitHub Page
+				</div>
+				<div id="triangle2" class="triangle-isosceles">
+				</div>
+					</br>
+					
+				And an aspiring 
+				<a id="human" href="http://lavozdeunbuitre.tumblr.com/"
+				onMouseOver="toolTip('toolTip3');"
+				onMouseOut="toolTipMouseOut('toolTip3');">human</a>
+					<div  id="toolTip3" class = "toolTip">Personal Writings</div>
+						<div id="triangle3" class="triangle-isosceles"></div>
+						</br>
+			</h3>
+					
 			<h3 id="aboutPage">
 				Age &nbsp<em>22</em>  
 				</br>
@@ -75,13 +98,13 @@
 				
 				</br>
 				</br>
-				Primary Instrument &nbsp<em>Bass Guitar</em>
+				Instrument &nbsp<em>Bass Guitar</em>
 				</br>
 				Song &nbsp<em>Echoes // Pink Floyd</em>
 				</br>
 				Literature &nbsp<em>Paradise Lost // John Milton</em>
 				</br>
-				Painting &nbsp<em>The Starry Night // Vincent Van Gogh</em>
+				Painting &nbsp<em>Guernica // Pablo Picasso</em>
 				</br>
 				Film &nbsp<em>Children of Men // Alfonso Cuaron</em>
 				</br>

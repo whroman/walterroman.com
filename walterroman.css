@@ -29,69 +29,6 @@ em {
 	z-index: 20;
 }
 
-#rightBorder {
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	overflow: hidden;
-
-	opacity: 0.9;
-
-	margin-top: -40px;
-	display: inline;
-
-	overflow: hidden;
-
-	z-index: 0;
-
-}
-
-#emptySpace1 {
-	width: 22%;
-	height: 100%;
-	position: relative;
-	float: left;
-	background-color: transparent;
-
-
-	margin: 0px;
-
-	display: block;
-}
-
-#emptySpace2 {
-	width: 67%;
-	min-width: 580px;
-	height: 100%;
-	position: relative;
-	float: left;
-	background-color: transparent;
-	opacity: 0.5;
-
-	overflow: visible;
-
-	margin: 0px;
-	display: block;
-
-}
-
-#realRightBorder {
-	background-color: #FFAA00 ;
-	opacity: 0.8;
-	width: 17px;
-	height: 100%;
-	position: relative;
-	float: left;
-
-	margin: 0px;
-	margin-right: -17px;
-
-	overflow: hidden;
-	z-index: 5;
-	display: block;
-
-}
-
 h1 {
 	position: relative;
 	width: 100%;
@@ -113,7 +50,102 @@ h1 {
 	margin-top: 0px;
 }
 
+.toolTip {
+	position: absolute;
+	font-size: 16px;
+	font-weight: 100;
+	background-color: #c7c5fa;
+	border-radius: 5px;
+	padding: 4px 7px 1px 0px;
+	margin: -73px 0px 0px 56%;
+	text-align: center;
+	color: #333;
+	opacity: 0.95;
+	width: auto;
+	height: 22px;
+	box-shadow: 2px 2px 3px #aaa;
 
+	z-index: 0;
+
+	visibility: hidden;
+	opacity: 0;
+
+	-o-transition: all 0.5s 0s;
+	-ms-transition: all 0.5s 0s;
+	-moz-transition: all 0.5s 0s;
+	-webkit-transition: all 0.5s 0s; 
+	transition: all 0.5s 0s;
+}
+
+
+.toolTipHover {
+	position: absolute;
+	font-size: 16px;
+	font-weight: 100;
+	background-color: #c7c5fa;
+	border-radius: 5px;
+	padding: 4px 7px 1px 9px;
+	margin: -73px 0px 0px 56%;
+	text-align: center;
+	color: #333;
+	opacity: 0.95;
+	width: auto;
+	height: 22px;
+	box-shadow: 2px 2px 3px #aaa;
+
+	z-index: 0;
+
+	visibility: visible;
+	opacity: 1;
+
+	-o-transition: all 0.5s 0.3s;
+	-ms-transition: all 0.5s 0.3s;
+	-moz-transition: all 0.5s 0.3s;
+	-webkit-transition: all 0.5s 0.3s; 
+	transition: all 0.5s 0.3s;
+}
+
+.triangle-isosceles {
+	position:absolute;
+	
+	border-width:13px 3px 0px 8px;
+	border-style:solid;
+	border-color:#c7c5fa transparent;
+	margin: -47px 0px 0px 71%;
+    display:block; 
+
+    z-index: 1;
+
+    visibility: hidden;
+	opacity: 0;
+    
+    -o-transition: all 0.5s 0s;
+	-ms-transition: all 0.5s 0s;
+	-moz-transition: all 0.5s 0s;
+	-webkit-transition: all 0.5s 0s; 
+	transition: all 0.5s 0s;
+}
+
+.triangleHover {
+	position:absolute;
+	
+	border-width:13px 3px 0px 8px;
+	border-style:solid;
+	border-color:#c7c5fa transparent;
+	margin: -47px 0px 0px 71%;
+    display:block; 
+
+    z-index: 1;
+
+    visibility: visible;
+	opacity: 1;
+    
+    -o-transition: all 0.5s 0.3s;
+	-ms-transition: all 0.5s 0.3s;
+	-moz-transition: all 0.5s 0.3s;
+	-webkit-transition: all 0.5s 0.3s; 
+	transition: all 0.5s 0.3s;
+}
 
 #head {
 	position: relative;
@@ -153,6 +185,8 @@ h1 {
 
 	opacity: 0.9;
 
+	z-index: 0;
+
 	-o-transition: all 1s;
 	-ms-transition: all 1s;
 	-moz-transition: all 1s;
@@ -164,11 +198,12 @@ h1 {
 	position: relative;
 	background-color: transparent;
 	width: 50%;
+	height: auto;
 	min-width: 380px;
 
 		font-weight: 500;
 
-	font-size: 26px;
+	font-size: 28px;
 	line-height: 1.4;
 
 	text-align: right;
@@ -179,6 +214,8 @@ h1 {
 	color: #444;
 	opacity: 1;
 
+	z-index: 10;
+
 	-o-transition: all 1s;
 	-ms-transition: all 1s;
 	-moz-transition: all 1s;
@@ -187,29 +224,31 @@ h1 {
 }
 
 #musician {
-	color: #FFD300;
-	text-shadow: 1px 1px 5px #ccc;
-	opacity: 0.8;	
+	color: #FFDD00;
+	text-shadow: 1px 1px 1px #555;
+	opacity: 1;	
 }
 
 #developer {
 	color: #FFAA00;
-	text-shadow: 1px 1px 5px #ccc;
-	opacity: 0.8;	
+	text-shadow: 1px 1px 2px #555;
+	opacity: 1;	
 }
 
 #human {
 	color: #FF7400;
-	text-shadow: 1px 1px 5px #ccc;
-	opacity: 0.8;	
+	text-shadow: 1px 1px 2px #555;
+	opacity: 1;	
 }
 
 #aboutPage {
 	position: absolute;
 	background-color: transparent;
 	width: auto;
-	height: auto;
+	height: 260px;
 	min-width: 520px;
+
+	overflow: hidden;
 
 		font-weight: 300;
 
@@ -218,7 +257,7 @@ h1 {
 
 	text-align: left;
 
-	margin: -220px 10% 20px 300px;
+	margin: -170px 10% 20px 320px;
 
 	padding-left: 10%;
 	padding-bottom: 30px;
@@ -248,7 +287,7 @@ h1 {
 
 	text-align: left;
 
-	margin: 0px auto 20px 300px;
+	margin: 0px auto 20px 320px;
 
 	padding-left: 10%;
 
@@ -272,15 +311,22 @@ a {
 }
 
 #musician:hover , #developer:hover , #human:hover {
-	opacity: 0.6;	
-/*	text-shadow: 1px 1px 5px #aaa;
-*/}
+	color: #222;
+
+	-o-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s; 
+	transition: all 0.3s;
+}
 
 #navBar {
 	position: absolute;
 	font-size: 32px;
 	margin-top: 50px;
 	margin-left: 15%;
+
+	z-index: 100;
 
 }
 
@@ -294,6 +340,9 @@ a {
 	z-index: 99;
 
 	background-color: #FFD300;
+
+	text-shadow: 1px 1px 1px #666;
+
 }
 
 #Resume {
@@ -302,6 +351,8 @@ a {
 	z-index: 99;
 
 	background-color: #FFAA00;
+
+	text-shadow: 1px 1px 1px #666;
 
 }
 
@@ -312,6 +363,8 @@ a {
 
 	background-color: #FF7400;
 
+	text-shadow: 1px 1px 1px #666;
+
 }
 
 #About:hover, #Resume:hover, #Contact:hover {
@@ -319,11 +372,13 @@ a {
 	opacity: 0.8;
 	background-color: #aaa;
 
-	-o-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-webkit-transition: all 0.5s; 
-	transition: all 0.5s;
+	text-shadow: 1px 1px 4px #555;
+
+	-o-transition: all 0.5s, text-shadow 0s;
+	-ms-transition: all 0.5s, text-shadow 0s;
+	-moz-transition: all 0.5s, text-shadow 0s;
+	-webkit-transition: all 0.5s, text-shadow 0s; 
+	transition: all 0.5s, text-shadow 0s;
 }
 
 #About:active {
