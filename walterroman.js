@@ -18,7 +18,6 @@ var navOnClick = function(exception) {
 		navAbout.className = "aboutClick";
 		navAbout.style.marginTop = "-60px";
 		navAbout.style.zIndex = "99";
-		document.getElementById("navText1").className = "navTextSelected";
 		document.getElementById("navText1").style.marginTop = "104px";
 		document.getElementById("firstLetterA").style.marginTop = "63px";
 
