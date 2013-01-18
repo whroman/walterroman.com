@@ -16,6 +16,7 @@ em {
 	font-weight: 800;
 	font-style: normal;
 	color: #444;
+	z-index: 10;
 }
 
 #topBorder {
@@ -26,7 +27,7 @@ em {
 	opacity: 0.7;
 	margin-top: 129px;
 
-	z-index: 20;
+	z-index: 0;
 }
 
 h1 {
@@ -40,6 +41,10 @@ h1 {
 	background-color: #e6e4fa;
 }
 
+h3 {
+
+}
+
 #h1div {
 	background-color: transparent;
 
@@ -50,31 +55,34 @@ h1 {
 	margin-top: 0px;
 }
 
-.toolTip {
+/*.toolTip {
 	position: absolute;
 	font-size: 16px;
 	font-weight: 100;
-	background-color: #c7c5fa;
+	background-color: #000;
 	border-radius: 5px;
-	padding: 4px 7px 1px 0px;
-	margin: -73px 0px 0px 56%;
+	padding: 4px 7px 1px 9px;
+	margin: -80px 0px 0px 77%;
 	text-align: center;
 	color: #333;
-	opacity: 0.95;
+	opacity: 1;
 	width: auto;
-	height: 22px;
-	box-shadow: 2px 2px 3px #aaa;
+	height: auto;
+	box-shadow: 2px 2px 5px #333;
 
-	z-index: 0;
+	overflow: hidden;
+clear: both;
+
+	z-index: 1;
 
 	visibility: hidden;
 	opacity: 0;
 
-	-o-transition: all 0.5s 0s;
-	-ms-transition: all 0.5s 0s;
-	-moz-transition: all 0.5s 0s;
-	-webkit-transition: all 0.5s 0s; 
-	transition: all 0.5s 0s;
+	-o-transition: all 0.3s 0s;
+	-ms-transition: all 0.3s 0s;
+	-moz-transition: all 0.3s 0s;
+	-webkit-transition: all 0.3s 0s; 
+	transition: all 0.3s 0s;
 }
 
 
@@ -82,69 +90,276 @@ h1 {
 	position: absolute;
 	font-size: 16px;
 	font-weight: 100;
-	background-color: #c7c5fa;
+	background-color: #444;
 	border-radius: 5px;
-	padding: 4px 7px 1px 9px;
-	margin: -73px 0px 0px 56%;
+	padding: 6px 8px 4px 10px;
+	margin: -60px 0px 0px 86%;
 	text-align: center;
-	color: #333;
-	opacity: 0.95;
+	color: #fff;
+	opacity: 1;
 	width: auto;
-	height: 22px;
-	box-shadow: 2px 2px 3px #aaa;
+	height: auto;
+	box-shadow: 2px 2px 5px #333;
+clear: both;
 
-	z-index: 0;
+	overflow: hidden;
+
+	z-index: 1;
 
 	visibility: visible;
 	opacity: 1;
 
-	-o-transition: all 0.5s 0.3s;
-	-ms-transition: all 0.5s 0.3s;
-	-moz-transition: all 0.5s 0.3s;
-	-webkit-transition: all 0.5s 0.3s; 
-	transition: all 0.5s 0.3s;
+	-o-transition: all 0.3s ease-out 0.4s;
+	-ms-transition: all 0.3s ease-out 0.4s;
+	-moz-transition: all 0.3s ease-out 0.4s;
+	-webkit-transition: all 0.3s ease-out 0.4s; 
+	transition: all 0.3s ease-out 0.4s;
+}*/
+
+.toolTip {
+	position: absolute;
+	font-size: 16px;
+	font-weight: 200;
+	background-color: #FF7400;
+	border-radius: 15px;
+
+	margin: -80px 0px 0px 77%;
+	text-align: center;
+	color: #222;
+	opacity: 1;
+	width: 15px;
+	height: 15px;
+	box-shadow: 2px 2px 5px #333;
+
+	overflow: hidden;
+clear: both;
+
+	z-index: 1;
+
+	visibility: hidden;
+	opacity: 0;
+
+	-o-transition: all 0.3s 0s;
+	-ms-transition: all 0.3s 0s;
+	-moz-transition: all 0.3s 0s;
+	-webkit-transition: all 0.3s 0s; 
+	transition: all 0.3s 0s;
 }
 
-.triangle-isosceles {
+
+.toolTipHover {
+	position: absolute;
+	font-size: 16px;
+	font-weight: 400;
+	background-color: #FFAA00;
+	margin: -30px 0px 0px 86.5%;
+	text-align: center;
+	color: #fff;
+
+	text-shadow:1px 1px 2px #000;
+
+	width: 128px;
+	height: 128px;
+	border-radius: 128px;
+
+
+	box-shadow: 2px 2px 5px #000;
+
+	overflow: hidden;
+
+	z-index: 1;
+
+	visibility: visible;
+	opacity: 0.7;
+
+	-o-transition: all 0.3s ease-out 0.4s;
+	-ms-transition: all 0.3s ease-out 0.4s;
+	-moz-transition: all 0.3s ease-out 0.4s;
+	-webkit-transition: all 0.3s ease-out 0.4s; 
+	transition: all 0.3s ease-out 0.4s;
+}
+
+/*.triangle-isosceles {
 	position:absolute;
 	
-	border-width:13px 3px 0px 8px;
+	border-width:0px 0px 13px 24px;
 	border-style:solid;
-	border-color:#c7c5fa transparent;
-	margin: -47px 0px 0px 71%;
+	border-color:#000 transparent;
+	margin: -55px 0px 0px 74%;
     display:block; 
 
-    z-index: 1;
+	box-shadow: 2px 2px 5px #333;
+
+    z-index: 0;
 
     visibility: hidden;
 	opacity: 0;
+
+	cursor: pointer;
     
-    -o-transition: all 0.5s 0s;
-	-ms-transition: all 0.5s 0s;
-	-moz-transition: all 0.5s 0s;
-	-webkit-transition: all 0.5s 0s; 
-	transition: all 0.5s 0s;
+clear: both;
+
+    -o-transition: all 0.3s 0s;
+	-ms-transition: all 0.3s 0s;
+	-moz-transition: all 0.3s 0s;
+	-webkit-transition: all 0.3s 0s; 
+	transition: all 0.3s 0s;
 }
 
 .triangleHover {
 	position:absolute;
 	
-	border-width:13px 3px 0px 8px;
+	border-width:0px 0px 13px 24px;
 	border-style:solid;
-	border-color:#c7c5fa transparent;
-	margin: -47px 0px 0px 71%;
+	border-color:#444 transparent;
+	margin: -39px 0px 0px 83.5%;
     display:block; 
 
-    z-index: 1;
+	box-shadow: 2px 2px 5px #333;
+
+    cursor: pointer;
+
+    z-index: 0;
+clear: both;
 
     visibility: visible;
 	opacity: 1;
     
-    -o-transition: all 0.5s 0.3s;
-	-ms-transition: all 0.5s 0.3s;
-	-moz-transition: all 0.5s 0.3s;
-	-webkit-transition: all 0.5s 0.3s; 
-	transition: all 0.5s 0.3s;
+    -o-transition: all 0.3s ease-out 0.4s;
+	-ms-transition: all 0.3s ease-out 0.4s;
+	-moz-transition: all 0.3s ease-out 0.4s;
+	-webkit-transition: all 0.3s ease-out 0.4s; 
+	transition: all 0.3s ease-out 0.4s;
+}*/
+
+.triangle-isosceles {
+	position:absolute;
+	
+	background-color: transparent;
+
+	margin: -55px 0px 0px 74%;
+    display:block; 
+
+	box-shadow: 2px 2px 5px #333;
+
+    z-index: 0;
+
+    visibility: hidden;
+	opacity: 0;
+
+	cursor: pointer;
+    
+clear: both;
+
+    -o-transition: all 0.3s 0s;
+	-ms-transition: all 0.3s 0s;
+	-moz-transition: all 0.3s 0s;
+	-webkit-transition: all 0.3s 0s; 
+	transition: all 0.3s 0s;
+}
+
+.triangleHover {
+	position:absolute;
+	
+	background-color: #FF7400;
+	height: 25px;
+	width: 25px;
+	border-radius: 25px;
+
+
+
+	margin: -20px 0px 0px 83%;
+
+
+	box-shadow: 1px 1px 5px #000;
+
+    cursor: pointer;
+
+    z-index: 0;
+	clear: both;
+
+    visibility: visible;
+	opacity: 0.7;
+    
+    -o-transition: all 0.3s ease-out 0.4s;
+	-ms-transition: all 0.3s ease-out 0.4s;
+	-moz-transition: all 0.3s ease-out 0.4s;
+	-webkit-transition: all 0.3s ease-out 0.4s; 
+	transition: all 0.3s ease-out 0.4s;
+}
+
+#triangle1 {
+	background-color: #a6a4ff;
+}
+
+#toolTip1 {
+	background-color: #FFD300;
+
+}
+
+#triangle2 {
+	background-color: #a6a4ff;
+}
+
+#toolTip2 {
+	background-color: #FFAA00;
+
+}
+
+#triangle3 {
+	background-color: #a6a4ff;
+
+}
+
+#toolTip3 {
+	background-color: #FF7400;
+
+}
+
+#trianglePhone {
+	background-color: #FFD300;
+	position: absolute;
+	opacity: 0.8;
+	height: 30px;
+	width: 30px;
+	border-radius: 30px;
+
+	margin: 0px 0px 0px -12px;
+}
+
+#triangleEmail {
+	position: absolute;
+	background-color: #FFAA00;
+	opacity: 0.8;
+	height: 30px;
+	width: 30px;
+	border-radius: 30px;
+	z-index: 0;
+
+	margin: 0px 0px 0px -12px;
+}
+
+#phone {
+	text-align: left;
+	position: absolute;
+	z-index: 10;
+	color: #fff;
+	font-weight: 400;
+	text-shadow: 1px 1px 2px #000;
+	background-color: transparent;
+}
+
+#email {
+	position: absolute;
+	z-index: 10;
+}
+
+.contactText {
+	color: #444;
+	font-size: 22px;
+	line-height: 1.5;
+	text-shadow: 0px 0px 0px transparent;
+	font-weight: 800;
 }
 
 #head {
@@ -225,20 +440,30 @@ h1 {
 
 #musician {
 	color: #FFDD00;
-	text-shadow: 1px 1px 1px #555;
+	text-shadow: 1px 1px 2px #555;
 	opacity: 1;	
+	padding: 4px;
+	background-color: transparent;
+	z-index: 5;
 }
 
 #developer {
 	color: #FFAA00;
 	text-shadow: 1px 1px 2px #555;
 	opacity: 1;	
+	padding: 4px;
+	background-color: transparent;
+	z-index: 5;
+
 }
 
 #human {
 	color: #FF7400;
 	text-shadow: 1px 1px 2px #555;
 	opacity: 1;	
+	padding: 4px;
+	background-color: transparent;
+	z-index: 5;
 }
 
 #aboutPage {
@@ -274,6 +499,75 @@ h1 {
 	transition: all 1s;
 }
 
+#resumePage {
+	position: absolute;
+	background-color: transparent;
+	width: 50%;
+	min-width: 580px;
+
+		font-weight: 300;
+
+	font-size: 22px;
+	line-height: 1.5;
+
+	text-align: left;
+
+	margin: 0px auto 20px 320px;
+
+	padding-left: 10%;
+
+	color: #333;
+
+	visibility: hidden;
+	opacity: 0;
+
+	-o-transition: all 1s;
+	-ms-transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s; 
+	transition: all 1s;
+}
+
+#pdfMain {
+	position: absolute;
+	width: auto;
+	text-align: left;
+
+	margin: 0px 0px 0px 10%;
+}
+
+#pdfCircle {
+	position: absolute;
+	font-weight: 200;
+	text-align: center;
+	background-color: #FF7400;
+	clear: both;
+
+	margin-top: -15px;
+	margin-left: -63px;
+
+	border-radius: 60px;
+	height: 60px;
+	width: 60px;
+
+	opacity: 0.6;
+
+	text-shadow:1px 1px 4px #333;
+
+		-o-transition: all 0.5s, text-shadow 0s;
+	-ms-transition: all 0.5s, text-shadow 0s;
+	-moz-transition: all 0.5s, text-shadow 0s;
+	-webkit-transition: all 0.5s, text-shadow 0s; 
+	transition: all 0.5s, text-shadow 0s;
+}
+
+#DLpdf {
+	color: #fff;
+		margin-top: 15px;
+		font-weight: 400;
+
+}
+
 #contactPage {
 	position: absolute;
 	background-color: transparent;
@@ -290,6 +584,8 @@ h1 {
 	margin: 0px auto 20px 320px;
 
 	padding-left: 10%;
+
+	z-index: 10px;
 
 	color: #666;
 
@@ -341,7 +637,7 @@ a {
 
 	background-color: #FFD300;
 
-	text-shadow: 1px 1px 1px #666;
+	text-shadow: 1px 1px 2px #000;
 
 }
 
@@ -352,7 +648,7 @@ a {
 
 	background-color: #FFAA00;
 
-	text-shadow: 1px 1px 1px #666;
+	text-shadow: 1px 1px 2px #000;
 
 }
 
@@ -363,18 +659,20 @@ a {
 
 	background-color: #FF7400;
 
-	text-shadow: 1px 1px 1px #666;
+	text-shadow: 1px 1px 2px #000;
 
 }
 
-#About:hover, #Resume:hover, #Contact:hover {
+#About:hover, #Resume:hover, #Contact:hover, #pdfCircle:hover {
 	cursor: pointer;
-	opacity: 0.8;
+	opacity: 0.9;
 	background-color: #aaa;
 
 	text-shadow: 1px 1px 4px #555;
 
-	-o-transition: all 0.5s, text-shadow 0s;
+
+/*Text shadow at 0s keeps the text from jumping
+*/	-o-transition: all 0.5s, text-shadow 0s;
 	-ms-transition: all 0.5s, text-shadow 0s;
 	-moz-transition: all 0.5s, text-shadow 0s;
 	-webkit-transition: all 0.5s, text-shadow 0s; 
@@ -384,31 +682,41 @@ a {
 #About:active {
 	background-color: #FFd300;
 
-	-o-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-webkit-transition: all 0.2s; 
-	transition: all 0.2s;
+	-o-transition: all 0.2s, text-shadow 0s;
+	-ms-transition: all 0.2s, text-shadow 0s;
+	-moz-transition: all 0.2s, text-shadow 0s;
+	-webkit-transition: all 0.2s, text-shadow 0s; 
+	transition: all 0.2s, text-shadow 0s;
 }
 
 #Resume:active {
 	background-color: #FFaa00;
 
-	-o-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-webkit-transition: all 0.2s; 
-	transition: all 0.2s;
+	-o-transition: all 0.2s, text-shadow 0s;
+	-ms-transition: all 0.2s, text-shadow 0s;
+	-moz-transition: all 0.2s, text-shadow 0s;
+	-webkit-transition: all 0.2s, text-shadow 0s; 
+	transition: all 0.2s, text-shadow 0s;
 }
 
 #Contact:active {
 	background-color: #FF7400;
 
-	-o-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-webkit-transition: all 0.2s; 
-	transition: all 0.2s;
+	-o-transition: all 0.2s, text-shadow 0s;
+	-ms-transition: all 0.2s, text-shadow 0s;
+	-moz-transition: all 0.2s, text-shadow 0s;
+	-webkit-transition: all 0.2s, text-shadow 0s; 
+	transition: all 0.2s, text-shadow 0s;
+}
+
+#pdfCircle:active {
+	background-color: #FFaa00;
+
+	-o-transition: all 0.2s, text-shadow 0s;
+	-ms-transition: all 0.2s, text-shadow 0s;
+	-moz-transition: all 0.2s, text-shadow 0s;
+	-webkit-transition: all 0.2s, text-shadow 0s; 
+	transition: all 0.2s, text-shadow 0s;
 }
 
 .navCircle {
@@ -542,26 +850,28 @@ a {
 
 .navTextSelected {
 	position: absolute;
+	margin-top: 52px;
+
 	margin-left: 87px;
 	z-index: 11;
 	font-size: 40px;
 
 
-	-o-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-webkit-transition: all 0.5s; 
-	transition: all 0.5s;
+	-o-transition: all 0.5s, margin-top 0.3s;
+	-ms-transition: all 0.5s, margin-top 0.3s;
+	-moz-transition: all 0.5s, margin-top 0.3s;
+	-webkit-transition: all 0.5s, margin-top 0.3s; 
+	transition: all 0.5s, margin-top 0.3s;
 
 	color: black;
 }
 
 #navText1 {
-	margin-left: 92px;
+	margin-left: 90px;
 }
 
 #navText2 {
-	margin-left: 90px;
+	margin-left: 88px;
 }
 
 #navText3 {
