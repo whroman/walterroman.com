@@ -21,13 +21,13 @@ em {
 
 #topBorder {
 	position: absolute;
-	background-color: #FFD300;
+	background-color: #FFaa00;
 	height: 14px;
 	width: 100%;
-	opacity: 0.7;
+	opacity: 0.5;
 	margin-top: 129px;
 
-	z-index: 0;
+	z-index: 105;
 }
 
 h1 {
@@ -410,11 +410,11 @@ clear: both;
 }
 
 #aspire {
-	position: relative;
+	position: absolute;
 	background-color: transparent;
 	width: 50%;
 	height: auto;
-	min-width: 380px;
+	min-width: 413px;
 
 		font-weight: 500;
 
