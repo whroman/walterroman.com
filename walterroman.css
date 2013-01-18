@@ -21,13 +21,13 @@ em {
 
 #topBorder {
 	position: absolute;
-	background-color: #FFaa00;
+	background-color: #FFD300;
 	height: 14px;
 	width: 100%;
-	opacity: 0.5;
+	opacity: 0.6;
 	margin-top: 129px;
 
-	z-index: 105;
+	z-index: 0;
 }
 
 h1 {
@@ -122,6 +122,7 @@ clear: both;
 	font-weight: 200;
 	background-color: #000;
 	border-radius: 15px;
+	font-family: "Courier New", Courier, monospace;
 
 	margin: -80px 0px 0px 77%;
 	text-align: center;
@@ -129,8 +130,8 @@ clear: both;
 	opacity: 1;
 	width: 15px;
 	height: 15px;
-	box-shadow: 2px 2px 5px #333;
-
+/*	box-shadow: 2px 2px 5px #333;
+*/
 	overflow: hidden;
 clear: both;
 
@@ -151,28 +152,28 @@ clear: both;
 	position: absolute;
 	font-size: 16px;
 	font-weight: 500;
-	background-color: #000;
-	margin: -125px 0px 0px 86.5%;
+	background-color: transparent;
+	margin: -63px 0px 0px 83%;
 	text-align: center;
 	color: #000;
-
+	font-family: "Courier New", Courier, monospace;
 	cursor: default;
 
-	text-shadow:1px 1px 3px #555;
-
+/*	text-shadow:1px 1px 3px #555;
+*/
 	width: 88px;
 	height: 88px;
 	border-radius: 128px;
 
 
-	box-shadow: 2px 2px 8px #222;
-
+/*	box-shadow: 2px 2px 8px #222;
+*/
 	overflow: hidden;
 
 	z-index: 1;
 
 	visibility: visible;
-	opacity: 0.8;
+	opacity: 0.7;
 
 	-o-transition: all 0.3s ease-out 0.4s;
 	-ms-transition: all 0.3s ease-out 0.4s;
@@ -242,8 +243,8 @@ clear: both;
 	margin: -75px 0px 0px 74%;
     display:block; 
 
-	box-shadow: 2px 2px 5px #333;
-
+/*	box-shadow: 2px 2px 5px #333;
+*/
     z-index: 0;
 
     visibility: hidden;
@@ -264,24 +265,24 @@ clear: both;
 	position:absolute;
 	
 	background-color: transparent;
-	height: 20px;
-	width: 20px;
-	border-radius: 20px;
+	height: 200px;
+	width: 200px;
+	border-radius: 200px;
 
 
 
-	margin: -45px 0px 0px 83.5%;
+	margin: -143px 0px 0px 71.5%;
 
 
-	box-shadow: 2px 2px 5px #000;
-
+/*	box-shadow: 2px 2px 5px #000;
+*/
     cursor: default;
 
     z-index: 0;
 	clear: both;
 
     visibility: visible;
-	opacity: 0.6;
+	opacity: 0.15;
     
     -o-transition: all 0.3s ease-out 0.4s;
 	-ms-transition: all 0.3s ease-out 0.4s;
@@ -291,7 +292,7 @@ clear: both;
 }
 
 #triangle1 {
-	background-color: #39E639;
+	background-color: #000;
 }
 
 #toolTip1 {
@@ -300,7 +301,7 @@ clear: both;
 }
 
 #triangle2 {
-	background-color: #33CCCC;
+	background-color: #000;
 }
 
 #toolTip2 {
@@ -309,11 +310,11 @@ clear: both;
 }
 
 #triangle3 {
-	background-color: #4671D5;
+	background-color: #000;
 }
 
 #toolTip3 {
-	background-color: #FF8400;
+	background-color: #FF8300;
 
 }
 
@@ -370,7 +371,7 @@ clear: both;
 	line-height: 1;
 	text-shadow: 0px 0px 0px transparent;
 	font-weight: 800;
-	margin: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 1px;
 }
 
 .contactTextLight {
@@ -379,7 +380,7 @@ clear: both;
 	line-height: 1;
 	text-shadow: 0px 0px 0px transparent;
 	font-weight: 300;
-	margin: 0px 0px 0px 0px;
+	margin: 1px 0px 0px 1px;
 }
 
 #head {
@@ -449,7 +450,7 @@ clear: both;
 	color: #444;
 	opacity: 1;
 
-	z-index: 10;
+	z-index: 100;
 
 	-o-transition: all 1s;
 	-ms-transition: all 1s;
@@ -459,31 +460,38 @@ clear: both;
 }
 
 #musician {
+	position: static;
 	color: #FFDD00;
 	text-shadow: 1px 1px 2px #555;
 	opacity: 1;	
 	padding: 4px;
 	background-color: transparent;
-	z-index: 5;
+	z-index: 102;
 }
 
 #developer {
+	position: static;
 	color: #FFAA00;
 	text-shadow: 1px 1px 2px #555;
 	opacity: 1;	
 	padding: 4px;
 	background-color: transparent;
-	z-index: 5;
+	z-index: 102;
 
 }
 
 #human {
+	position: static;
 	color: #FF8400;
 	text-shadow: 1px 1px 2px #555;
 	opacity: 1;	
 	padding: 4px;
 	background-color: transparent;
-	z-index: 5;
+	z-index: 102;
+}
+
+#musician:hover, #developer:hover, #human:hover {
+	position: relative;
 }
 
 #aboutPage {
@@ -570,6 +578,8 @@ clear: both;
 	height: 60px;
 	width: 60px;
 
+	z-index: 102;
+
 	opacity: 0.6;
 
 	text-shadow:1px 1px 4px #333;
@@ -579,6 +589,13 @@ clear: both;
 	-moz-transition: all 0.5s, text-shadow 0s;
 	-webkit-transition: all 0.5s, text-shadow 0s; 
 	transition: all 0.5s, text-shadow 0s;
+}
+
+#pdfCircle:hover {
+	height: 85px;
+	width: 85px;
+	border-radius: 100px;
+	margin-left: -90px;
 }
 
 #DLpdf {
@@ -750,11 +767,23 @@ a {
 
 	z-index: 0;
 
-	-o-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-webkit-transition: all 0.5s; 
-	transition: all 0.5s;
+	-o-transition: all 0.7s;
+	-ms-transition: all 0.7s;
+	-moz-transition: all 0.7s;
+	-webkit-transition: all 0.7s; 
+	transition: all 0.7s;
+}
+
+.navCircle:hover {
+	width: 110px;
+	height: 110px;
+	border-radius: 110px;
+
+		-o-transition: all 0.1s;
+	-ms-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	-webkit-transition: all 0.1s; 
+	transition: all 0.1s;
 }
 
 .aboutClick {
