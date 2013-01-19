@@ -7,6 +7,8 @@ var navMouseOver = function(hover, text) {
 	navText.className = "navTextHovered";
 }
 
+// Nav Tab Selector
+
 var navOnClick = function(exception) {
 	navAbout = document.getElementById("About");
 	navResume = document.getElementById("Resume");
