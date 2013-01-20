@@ -396,19 +396,23 @@ FF8300 - Dark Orange
 #resumePage {
 	position: absolute;
 	background-color: transparent;
-	width: 50%;
+	width: 100%;
 	min-width: 580px;
+	height: 300px;
 
-		font-weight: 300;
+	overflow-y: hidden;
+	overflow-x: visible;
 
-	font-size: 22px;
+	font-weight: 300;
+
+	font-size: 24px;
 	line-height: 1.5;
 
-	text-align: left;
 
-	margin: 0px auto 20px 320px;
+	margin: -40px 0px 20px 0px;
 
-	padding-left: 10%;
+	padding-top: 0px;
+	padding-left:0px;
 
 	color: #333;
 
@@ -424,10 +428,10 @@ FF8300 - Dark Orange
 
 #pdfMain {
 	position: absolute;
-	width: auto;
-	text-align: left;
+	width: 18%;
+	text-align: right;
 
-	margin: 0px 0px 0px 10%;
+	margin: 30px 0px 0px 450px;
 }
 
 #pdfCircle {
@@ -438,11 +442,11 @@ FF8300 - Dark Orange
 	clear: both;
 
 	margin-top: -15px;
-	margin-left: -63px;
+	margin-left: -67px;
 
-	border-radius: 60px;
-	height: 60px;
-	width: 60px;
+	border-radius: 64px;
+	height: 64px;
+	width: 64px;
 
 	z-index: 102;
 
@@ -457,18 +461,192 @@ FF8300 - Dark Orange
 	transition: all 0.5s, text-shadow 0s;
 }
 
-#pdfCircle:hover {
-	height: 85px;
-	width: 85px;
-	border-radius: 100px;
-	margin-left: -90px;
-}
-
 #DLpdf {
 	color: #fff;
 		margin-top: 15px;
 		font-weight: 400;
+}
 
+#resumeBody {
+	width: 100%;	
+	margin: 110px 0px 0px 0%;
+	line-height: 1.3;
+	height: 200px;
+}
+
+#resumeProfile {
+	width: 45%;
+	min-width: 400px;
+	margin: 70px 0px -100px 290px;
+	padding-left: 15%;
+	line-height: 1.3;
+	text-align: right;
+}
+
+.resumeHeaders {
+	font-size: 60px;
+	color: #888;
+	font-weight: 100;
+
+	min-width: 342px;
+
+	margin-top: 15px;
+	margin-bottom: -10px;
+	margin-right: 70%;
+	text-align: right;
+
+	z-index: 155;
+}
+
+.resumeSubHeadDark {
+	font-size: 28px;
+	min-width: 342px;
+	font-weight: 400;
+	color: #333;
+	margin-top: 2px;
+	margin-right: 70%;
+	text-align: right;
+	line-height: 1.3
+}
+
+.resumeSubHeadLight {
+	min-width: 342px;
+	font-size: 20px;
+	font-weight: 100;
+	color: #333;
+	line-height: 1.4;
+	margin-top: 2px;
+	margin-right: 70%;
+	text-align: right;
+}
+
+.resumeTextDark {
+	font-size: 18px;
+	font-weight: 800;
+	color: #222;
+	margin-top: 8px;
+	line-height: 1.4;
+	margin-left: 31%;
+	text-align: left;
+
+}
+
+.resumeTextLight {
+	font-size: 16px;
+	font-weight: 100;
+	color: #333;
+	margin: 1px 10% 0px 31%;
+	line-height: 1.5;
+	text-align: left;
+}
+
+.resumeRight {
+	text-align: right;
+	margin: 0px;
+}
+
+#triangleBorderTarget {
+	position: absolute;
+margin: -5px 10% 0px 0px;
+padding-left: 31%;
+	
+	border-color: #FFD300 transparent;
+	border-style: solid;
+	border-width: 0px 750px 143px 0px ; 
+	opacity: 0.6;
+	z-index: -10;
+}
+
+#triangleBorderTeach {
+	position: absolute;
+margin: 27px 10% 0px 0px;
+padding-left: 31%;
+	
+	border-color: #FFAA00 transparent;
+	border-style: solid;
+	border-width: 0px 650px 141px 0px ; 
+	opacity: 0.6;
+	z-index: -10;
+}
+
+#triangleBorderEducation {
+	position: absolute;
+margin: -5px 10% 0px 0px;
+padding-left: 31%;
+	
+	border-color: #FF8300 transparent;
+	border-style: solid;
+	border-width: 0px 550px 105px 0px ; 
+	opacity: 0.6;
+	z-index: -10;
+}
+
+#triangleBorderSkills1 {
+	position: absolute;
+margin: -5px 10% 0px 0px;
+padding-left: 31%;
+	
+	border-color: #FFD300 transparent;
+	border-style: solid;
+	border-width: 0px 650px 80px 0px ; 
+	opacity: 0.6;
+	z-index: -10;
+}
+
+#triangleBorderSkills2 {
+	position: absolute;
+margin: 27px 10% 0px 0px;
+padding-left: 31%;
+	
+	border-color: #FFAA00 transparent;
+	border-style: solid;
+	border-width: 0px 550px 43px 0px ; 
+	opacity: 0.6;
+	z-index: -10;
+}
+
+#triangleBorderReferences1 {
+	position: absolute;
+margin: -5px 10% 0px 0px;
+padding-left: 31%;
+	
+	border-color: #FF8300 transparent;
+	border-style: solid;
+	border-width: 0px 450px 43px 0px ; 
+	opacity: 0.6;
+	z-index: -10;
+}
+
+#triangleBorderReferences2 {
+	position: absolute;
+margin: -1px 10% 0px 0px;
+padding-left: 31%;
+	
+	border-color: #FFD300 transparent;
+	border-style: solid;
+	border-width: 0px 550px 43px 0px ; 
+	opacity: 0.6;
+	z-index: -10;
+}
+
+#triangleBorderReferences3 {
+	position: absolute;
+margin: -1px 10% 0px 0px;
+padding-left: 31%;
+	
+	border-color: #FFAA00 transparent;
+	border-style: solid;
+	border-width: 0px 450px 43px 0px ; 
+	opacity: 0.6;
+	z-index: -10;
+}
+
+.resumeSpace {
+	margin-top: 35px;
+}
+
+.resumeSpace8 {
+	margin-top: 8px;
 }
 
 #contactPage {

@@ -113,6 +113,8 @@ var aboutClick = function() {
 	document.getElementById("resumePage").style.visibility = "hidden";
 	document.getElementById("resumePage").style.opacity = "0";
 	document.getElementById("resumePage").style.marginTop = "30px";
+	document.getElementById("resumePage").style.height = "260px";
+	document.getElementById("resumePage").style.overflowY = "hidden";
 }
 
 var resumeClick = function() {
@@ -123,6 +125,8 @@ var resumeClick = function() {
 	document.getElementById("resumePage").style.visibility = "visible";
 	document.getElementById("resumePage").style.opacity = "1";
 	document.getElementById("resumePage").style.marginTop = "10px";
+	document.getElementById("resumePage").style.height = "2480px";
+	document.getElementById("resumePage").style.overflowY = "visible";
 
 	document.getElementById("contactPage").style.visibility = "hidden";
 	document.getElementById("contactPage").style.opacity = "0";
@@ -152,6 +156,8 @@ var contactClick = function() {
 	document.getElementById("resumePage").style.visibility = "hidden";
 	document.getElementById("resumePage").style.opacity = "0";
 	document.getElementById("resumePage").style.marginTop = "30px";
+	document.getElementById("resumePage").style.height = "260px";
+	document.getElementById("resumePage").style.overflowY = "hidden";
 }
 
 var toolTip = function(exception) {
@@ -165,17 +171,14 @@ var toolTip = function(exception) {
 
 	if (exception == "toolTip1") {
 		toolTip1.className = "toolTipHover";
-		triangle1.className = "triangleHover";
 	}
 
 	if (exception == "toolTip2") {
 		toolTip2.className = "toolTipHover";
-		triangle2.className = "triangleHover";
 	}
 
 	if (exception == "toolTip3") {
 		toolTip3.className = "toolTipHover";
-		triangle3.className = "triangleHover";
 	}
 }
 
@@ -184,22 +187,15 @@ var toolTipMouseOut = function(exception) {
 	toolTip2 = document.getElementById("toolTip2");
 	toolTip3 = document.getElementById("toolTip3");
 
-	triangle1 = document.getElementById("triangle1");
-	triangle2 = document.getElementById("triangle2");
-	triangle3 = document.getElementById("triangle3");
-
 	if (exception == "toolTip1") {
 		toolTip1.className = "toolTip";
-		triangle1.className = "triangle-isosceles";
 	}
 
 	if (exception == "toolTip2") {
 		toolTip2.className = "toolTip";
-		triangle2.className = "triangle-isosceles";
 	}
 
 	if (exception == "toolTip3") {
 		toolTip3.className = "toolTip";
-		triangle3.className = "triangle-isosceles";
 	}
 }
