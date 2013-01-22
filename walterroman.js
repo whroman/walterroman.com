@@ -125,7 +125,7 @@ var resumeClick = function() {
 	document.getElementById("resumePage").style.visibility = "visible";
 	document.getElementById("resumePage").style.opacity = "1";
 	document.getElementById("resumePage").style.marginTop = "10px";
-	document.getElementById("resumePage").style.height = "2470px";
+	document.getElementById("resumePage").style.height = "2410px";
 	document.getElementById("resumePage").style.overflowY = "visible";
 
 	document.getElementById("contactPage").style.visibility = "hidden";
