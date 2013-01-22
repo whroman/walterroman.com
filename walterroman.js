@@ -97,67 +97,34 @@ var navOnClick = function(exception) {
 }
 
 var aboutClick = function() {
-	document.getElementById("intro").style.opacity = "0"
-	document.getElementById("intro").style.visibility = "hidden"
+	document.getElementById("intro").className = "introInvis"
 	document.getElementById("aspire").style.marginTop = "-140px";
 	
-	document.getElementById("aboutPage").style.visibility = "visible";
-	document.getElementById("aboutPage").style.opacity = "1";
-	document.getElementById("aboutPage").style.marginTop = "10px";
-	document.getElementById("aboutPage").style.height = "550px";
+	document.getElementById("aboutPage").className = "pageVis";
 
-	document.getElementById("contactPage").style.visibility = "hidden";
-	document.getElementById("contactPage").style.opacity = "0";
-	document.getElementById("contactPage").style.marginTop = "30px";
-
-	document.getElementById("resumePage").style.visibility = "hidden";
-	document.getElementById("resumePage").style.opacity = "0";
-	document.getElementById("resumePage").style.marginTop = "30px";
-	document.getElementById("resumePage").style.height = "260px";
-	document.getElementById("resumePage").style.overflowY = "hidden";
+	document.getElementById("contactPage").className = "pageInvis";
+	document.getElementById("resumePage").className = "pageInvis";
 }
 
 var resumeClick = function() {
-	document.getElementById("intro").style.opacity = "0"
-	document.getElementById("intro").style.visibility = "hidden"
+	document.getElementById("intro").className = "introInvis"
 	document.getElementById("aspire").style.marginTop = "-140px";
 	
-	document.getElementById("resumePage").style.visibility = "visible";
-	document.getElementById("resumePage").style.opacity = "1";
-	document.getElementById("resumePage").style.marginTop = "10px";
-	document.getElementById("resumePage").style.height = "2410px";
-	document.getElementById("resumePage").style.overflowY = "visible";
+	document.getElementById("resumePage").className = "pageVis";
 
-	document.getElementById("contactPage").style.visibility = "hidden";
-	document.getElementById("contactPage").style.opacity = "0";
-	document.getElementById("contactPage").style.marginTop = "30px";
-
-	document.getElementById("aboutPage").style.visibility = "hidden";
-	document.getElementById("aboutPage").style.opacity = "0";
-	document.getElementById("aboutPage").style.marginTop = "30px";
-	document.getElementById("aboutPage").style.height = "260px";
+	document.getElementById("contactPage").className = "pageInvis";
+	document.getElementById("aboutPage").className = "pageInvis";
 
 }
 
 var contactClick = function() {
-	document.getElementById("intro").style.opacity = "0"
-	document.getElementById("intro").style.visibility = "hidden"
+	document.getElementById("intro").className = "introInvis";
 	document.getElementById("aspire").style.marginTop = "-140px";
 	
-	document.getElementById("contactPage").style.visibility = "visible";
-	document.getElementById("contactPage").style.opacity = "1";
-	document.getElementById("contactPage").style.marginTop = "10px";
+	document.getElementById("contactPage").className = "pageVis";
 
-	document.getElementById("aboutPage").style.visibility = "hidden";
-	document.getElementById("aboutPage").style.opacity = "0";
-	document.getElementById("aboutPage").style.marginTop = "30px";
-	document.getElementById("aboutPage").style.height = "260px";
-
-	document.getElementById("resumePage").style.visibility = "hidden";
-	document.getElementById("resumePage").style.opacity = "0";
-	document.getElementById("resumePage").style.marginTop = "30px";
-	document.getElementById("resumePage").style.height = "260px";
-	document.getElementById("resumePage").style.overflowY = "hidden";
+	document.getElementById("aboutPage").className = "pageInvis";
+	document.getElementById("resumePage").className = "pageInvis";
 }
 
 var toolTip = function(exception) {

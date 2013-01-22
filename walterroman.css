@@ -1,15 +1,38 @@
 body { 
 	margin: 0px;
-	margin-left: 0px;
-	font-weight: 100;
-
-	overflow: auto;
 
 	font-family: Helvetica, Arial, sans-serif;
-
+	font-weight: 100;
 	background-color: transparent;
 
+	overflow: auto;
 }
+
+#topBorder {
+	position: absolute;
+	margin-top: 129px;
+
+	background-color: #FFAA00;
+	height: 14px;
+	width: 100%;
+
+	opacity: 0.6;
+
+	z-index: 105;
+}
+
+h1 {
+	position: relative;
+	margin-top: 0px;
+
+	background-color: #e6e4fa;
+	width: 100%;
+	height: 120px;
+	color: #333;
+
+	opacity: 1;
+}
+
 
 em {
 	font-weight: 800;
@@ -19,236 +42,20 @@ em {
 	z-index: 10;
 }
 
-#topBorder {
-	position: absolute;
-	background-color: #FFAA00;
-	height: 14px;
-	width: 100%;
-	opacity: 0.6;
-	margin-top: 129px;
-
-	z-index: 105;
-}
-
-h1 {
-	position: relative;
-	width: 100%;
-	height: 120px;
-	margin-top: 00px;
-	color: #333;
-	opacity: 1;
-
-
-	background-color: #e6e4fa;
-}
-
-h3 {
-
+a {
+	font-style: normal;
+	text-decoration: none;
+	color: black;
 }
 
 #h1div {
-	background-color: transparent;
-
-	width: 12.5%;
-	height: 100%;
 	position: relative;
 	float: left;
 	margin-top: 0px;
-}
-
-.toolTip {
-	position: absolute;
-	margin: -80px 0px 0px 77%;
-
-	font-size: 16px;
-	font-weight: 200;
-	text-align: center;
-	color: #222;
-
-	background-color: #000;
-	border-radius: 15px;
-	width: 15px;
-	height: 15px;
-
-	overflow: hidden;
-
-	z-index: 1;
-
-	visibility: hidden;
-	opacity: 0;
-
-	-o-transition: all 0.3s 0s;
-	-ms-transition: all 0.3s 0s;
-	-moz-transition: all 0.3s 0s;
-	-webkit-transition: all 0.3s 0s; 
-	transition: all 0.3s 0s;
-}
-
-
-.toolTipHover {
-	position: absolute;
-	margin: -83px 0px 0px 84.3%;
-
-	font-size: 16px;
-	font-weight: 100;
-	text-align: center;
-	color: #000;
 
 	background-color: transparent;
-	border-radius: 128px;
-	width: 88px;
-	height: 88px;
-
-	overflow: hidden;
-	cursor: default;
-	z-index: 1;
-
-	visibility: visible;
-	opacity: 0.7;
-
-	-o-transition: all 0.3s ease-out 0.4s;
-	-ms-transition: all 0.3s ease-out 0.4s;
-	-moz-transition: all 0.3s ease-out 0.4s;
-	-webkit-transition: all 0.3s ease-out 0.4s; 
-	transition: all 0.3s ease-out 0.4s;
-}
-
-.triangle-isosceles {
-	position:absolute;
-	margin: -75px 0px 0px 74%;
-    display:block; 
-    z-index: 0;
-
-	visibility: hidden;
-	opacity: 0;
-
-	background-color: transparent;
-
-	cursor: default;
-    
-	clear: both;
-
-    -o-transition: all 0.3s 0s;
-	-ms-transition: all 0.3s 0s;
-	-moz-transition: all 0.3s 0s;
-	-webkit-transition: all 0.3s 0s; 
-	transition: all 0.3s 0s;
-}
-
-.triangleHover {
-	position:absolute;
-	margin: -130px 0px 0px 82%;
-    z-index: 0;
-
-	background-color: transparent;
-	border-radius: 200px;
-	height: 150px;
-	width: 150px;
-
-    cursor: default;
- 
-    visibility: visible;
-	opacity: 0.7;
-    
-    -o-transition: all 0.3s ease-out 0.4s;
-	-ms-transition: all 0.3s ease-out 0.4s;
-	-moz-transition: all 0.3s ease-out 0.4s;
-	-webkit-transition: all 0.3s ease-out 0.4s; 
-	transition: all 0.3s ease-out 0.4s;
-}
-
-/*FFD300 - Yellow
-FFAA00 - Orange
-FF8300 - Dark Orange
-*/
-
-
-#toolTip1 {
-	background-color: #FFD300;
-
-}
-
-#toolTip2 {
-	background-color: #FFbb00;
-
-}
-
-#toolTip3 {
-	background-color: #FF9400;
-
-}
-
-#trianglePhone {
-	position: absolute;
-	margin: 0px 0px 0px -8px;
-
-	background-color: #FFD300;
-	border-radius: 30px;
-	height: 30px;
-	width: 30px;
-
-	opacity: 0.6;
-}
-
-#triangleEmail {
-	position: absolute;
-	margin: 10px 0px 0px 37px;
-	
-	background-color: #FFAA00;
-	border-radius: 30px;
-	height: 30px;
-	width: 30px;
-
-	opacity: 0.6;	
-}
-
-#phone {
-	position: absolute;
-	z-index: 10;
-
-	background-color: transparent;
-
-	color: #fff;
-	font-weight: 400;
-	text-shadow: 1px 1px 2px #000;
-	text-align: left;
-
-	cursor: default;
-}
-
-#email {
-	position: absolute;
-	margin: 10px 0px 0px 45px;
-	z-index: 10;
-
-	background-color: transparent;
-
-	color: #fff;
-	font-weight: 400;
-	text-shadow: 1px 1px 2px #000;
-	text-align: left;
-
-	cursor: default;
-}
-
-.contactTextDark {
-	margin: 0px 0px 0px 1px;
-
-	color: #444;
-	font-size: 22px;
-	line-height: 1;
-	text-shadow: 0px 0px 0px transparent;
-	font-weight: 800;
-}
-
-.contactTextLight {
-	margin: 1px 0px 0px 1px;
-
-	color: #666;
-	font-size: 22px;
-	line-height: 1;
-	text-shadow: 0px 0px 0px transparent;
-	font-weight: 300;
+	width: 12.5%;
+	height: 100%;
 }
 
 #head {
@@ -275,7 +82,7 @@ FF8300 - Dark Orange
 	min-width: 380px;
 	color: #333;
 
-		font-weight: 100;
+	font-weight: 100;
 
 	font-size: 20px;
 	line-height: 1.3;
@@ -285,8 +92,6 @@ FF8300 - Dark Orange
 	margin: 85px auto 0px 300px;
 	padding: 15px 0px 0px 10%;
 
-	opacity: 0.9;
-
 	z-index: 0;
 
 	-o-transition: all 1s;
@@ -294,6 +99,16 @@ FF8300 - Dark Orange
 	-moz-transition: all 1s;
 	-webkit-transition: all 1s; 
 	transition: all 1s;	
+}
+
+.introVis {
+	opacity: 0.9;
+	visibility: visible;
+}
+
+.introInvis {
+	opacity: 0;
+	visibility: visible;
 }
 
 #aspire {
@@ -360,6 +175,202 @@ FF8300 - Dark Orange
 	position: relative;
 }
 
+	.toolTip {
+		position: absolute;
+		margin: -80px 0px 0px 77%;
+		overflow: hidden;
+
+		font-size: 16px;
+		font-weight: 200;
+		text-align: center;
+		color: #222;
+
+		background-color: #000;
+		border-radius: 15px;
+		width: 15px;
+		height: 15px;
+
+		z-index: 1;
+
+		visibility: hidden;
+		opacity: 0;
+
+		-o-transition: all 0.3s 0s;
+		-ms-transition: all 0.3s 0s;
+		-moz-transition: all 0.3s 0s;
+		-webkit-transition: all 0.3s 0s; 
+		transition: all 0.3s 0s;
+	}
+
+
+	.toolTipHover {
+		position: absolute;
+		margin: -83px 0px 0px 84.3%;
+		overflow: hidden;
+
+		font-size: 16px;
+		font-weight: 100;
+		text-align: center;
+		color: #000;
+
+		background-color: transparent;
+		border-radius: 128px;
+		width: 88px;
+		height: 88px;
+
+		cursor: default;
+		z-index: 1;
+
+		visibility: visible;
+		opacity: 0.7;
+
+		-o-transition: all 0.3s ease-out 0.4s;
+		-ms-transition: all 0.3s ease-out 0.4s;
+		-moz-transition: all 0.3s ease-out 0.4s;
+		-webkit-transition: all 0.3s ease-out 0.4s; 
+		transition: all 0.3s ease-out 0.4s;
+	}
+
+	.triangle-isosceles {
+		position:absolute;
+		margin: -75px 0px 0px 74%;
+	    display:block; 
+		clear: both;
+
+		visibility: hidden;
+		opacity: 0;
+
+		background-color: transparent;
+
+		cursor: default;
+	    
+	    z-index: 0;
+
+	    -o-transition: all 0.3s 0s;
+		-ms-transition: all 0.3s 0s;
+		-moz-transition: all 0.3s 0s;
+		-webkit-transition: all 0.3s 0s; 
+		transition: all 0.3s 0s;
+	}
+
+	.triangleHover {
+		position:absolute;
+		margin: -130px 0px 0px 82%;
+	    z-index: 0;
+
+		background-color: transparent;
+		border-radius: 200px;
+		height: 150px;
+		width: 150px;
+
+	    cursor: default;
+	 
+	    visibility: visible;
+		opacity: 0.7;
+	    
+	    -o-transition: all 0.3s ease-out 0.4s;
+		-ms-transition: all 0.3s ease-out 0.4s;
+		-moz-transition: all 0.3s ease-out 0.4s;
+		-webkit-transition: all 0.3s ease-out 0.4s; 
+		transition: all 0.3s ease-out 0.4s;
+	}
+
+	/*FFD300 - Yellow
+	FFBB00 - Orange
+	FF9400 - Dark Orange
+	*/
+
+
+	#toolTip1 {
+		background-color: #FFD300;
+
+	}
+
+	#toolTip2 {
+		background-color: #FFBB00;
+
+	}
+
+	#toolTip3 {
+		background-color: #FF9400;
+
+	}
+
+/* Contact */
+
+	#trianglePhone {
+		position: absolute;
+		margin: 0px 0px 0px -8px;
+
+		background-color: #FFD300;
+		border-radius: 30px;
+		height: 30px;
+		width: 30px;
+
+		opacity: 0.6;
+	}
+
+	#triangleEmail {
+		position: absolute;
+		margin: 10px 0px 0px 37px;
+		
+		background-color: #FFAA00;
+		border-radius: 30px;
+		height: 30px;
+		width: 30px;
+
+		opacity: 0.6;	
+	}
+
+	#phone {
+		position: absolute;
+		z-index: 10;
+
+		background-color: transparent;
+
+		color: #fff;
+		font-weight: 400;
+		text-shadow: 1px 1px 2px #000;
+		text-align: left;
+
+		cursor: default;
+	}
+
+	#email {
+		position: absolute;
+		margin: 10px 0px 0px 45px;
+		z-index: 10;
+
+		background-color: transparent;
+
+		color: #fff;
+		font-weight: 400;
+		text-shadow: 1px 1px 2px #000;
+		text-align: left;
+
+		cursor: default;
+	}
+
+	.contactTextDark {
+		margin: 0px 0px 0px 1px;
+
+		color: #444;
+		font-size: 22px;
+		line-height: 1;
+		text-shadow: 0px 0px 0px transparent;
+		font-weight: 800;
+	}
+
+	.contactTextLight {
+		margin: 1px 0px 0px 1px;
+
+		color: #666;
+		font-size: 22px;
+		line-height: 1;
+		text-shadow: 0px 0px 0px transparent;
+		font-weight: 300;
+	}
+
 #aboutPage {
 	position: absolute;
 	background-color: transparent;
@@ -376,15 +387,12 @@ FF8300 - Dark Orange
 
 	text-align: left;
 
-	margin: -170px 10% 20px 320px;
+	margin: -40px 10% 20px 320px;
 
 	padding-left: 10%;
 	padding-bottom: 30px;
 
 	color: #666;
-
-	visibility: hidden;
-	opacity: 0;
 
 	-o-transition: all 1s;
 	-ms-transition: all 1s;
@@ -416,239 +424,11 @@ FF8300 - Dark Orange
 
 	color: #333;
 
-	visibility: hidden;
-	opacity: 0;
-
 	-o-transition: all 1s;
 	-ms-transition: all 1s;
 	-moz-transition: all 1s;
 	-webkit-transition: all 1s; 
 	transition: all 1s;
-}
-
-#pdfMain {
-	position: absolute;
-	width: 18%;
-	text-align: right;
-
-	margin: 30px 0px 0px 450px;
-}
-
-#pdfCircle {
-	position: absolute;
-	font-weight: 200;
-	text-align: center;
-	background-color: #FF8400;
-	clear: both;
-
-	margin-top: -15px;
-	margin-left: -67px;
-
-	border-radius: 64px;
-	height: 64px;
-	width: 64px;
-
-	z-index: 102;
-
-	opacity: 0.6;
-
-	text-shadow:1px 1px 4px #333;
-
-		-o-transition: all 0.5s, text-shadow 0s;
-	-ms-transition: all 0.5s, text-shadow 0s;
-	-moz-transition: all 0.5s, text-shadow 0s;
-	-webkit-transition: all 0.5s, text-shadow 0s; 
-	transition: all 0.5s, text-shadow 0s;
-}
-
-#DLpdf {
-	color: #fff;
-		margin-top: 15px;
-		font-weight: 400;
-}
-
-#resumeBody {
-	width: 100%;	
-	margin: 110px 0px 0px 0%;
-	line-height: 1.3;
-	height: 200px;
-}
-
-#resumeProfile {
-	width: 45%;
-	min-width: 400px;
-	margin: 70px 0px -100px 290px;
-	padding-left: 15%;
-	line-height: 1.3;
-	text-align: right;
-}
-
-.resumeHeaders {
-	font-size: 60px;
-	color: #000;
-	font-weight: 100;
-
-	min-width: 342px;
-
-	margin-top: 15px;
-	margin-bottom: -10px;
-	margin-right: 70%;
-	text-align: right;
-
-	opacity: 0.6;
-
-	z-index: 155;
-}
-
-.resumeSubHeadDark {
-	font-size: 28px;
-	min-width: 342px;
-	font-weight: 400;
-	color: #222;
-	margin-top: 0px;
-	margin-right: 70%;
-	text-align: right;
-	line-height: 1.3
-}
-
-.resumeSubHeadLight {
-	min-width: 342px;
-	font-size: 20px;
-	font-weight: 100;
-	color: #333;
-	line-height: 1.4;
-	margin-top: 0px;
-	margin-right: 70%;
-	text-align: right;
-}
-
-.resumeTextDark {
-	font-size: 18px;
-	font-weight: 800;
-	color: #222;
-	margin-top: 8px;
-	line-height: 1.4;
-	margin-left: 31%;
-	text-align: left;
-
-}
-
-.resumeTextLight {
-	font-size: 16px;
-	font-weight: 100;
-	color: #333;
-	margin: 1px 10% 0px 31%;
-	line-height: 1.5;
-	text-align: left;
-}
-
-.resumeRight {
-	text-align: right;
-	margin: 0px;
-}
-
-#triangleBorderTarget {
-	position: absolute;
-margin: -3px 10% 0px 0px;
-padding-left: 31%;
-	
-	border-color: #FFD300 transparent;
-	border-style: solid;
-	border-width: 0px 750px 129px 0px ; 
-	opacity: 0.6;
-	z-index: -10;
-}
-
-#triangleBorderTeach {
-	position: absolute;
-margin: 32px 10% 0px 0px;
-padding-left: 31%;
-	
-	border-color: #FFAA00 transparent;
-	border-style: solid;
-	border-width: 0px 675px 129px 0px ; 
-	opacity: 0.6;
-	z-index: -10;
-}
-
-#triangleBorderEducation {
-	position: absolute;
-margin: -3px 10% 0px 0px;
-padding-left: 31%;
-	
-	border-color: #FF8300 transparent;
-	border-style: solid;
-	border-width: 0px 600px 93px 0px ; 
-	opacity: 0.6;
-	z-index: -10;
-}
-
-#triangleBorderSkills1 {
-	position: absolute;
-margin: -3px 10% 0px 0px;
-padding-left: 31%;
-	
-	border-color: #FFD300 transparent;
-	border-style: solid;
-	border-width: 0px 525px 77px 0px ; 
-	opacity: 0.6;
-	z-index: -10;
-}
-
-#triangleBorderSkills2 {
-	position: absolute;
-margin: 32px 10% 0px 0px;
-padding-left: 31%;
-	
-	border-color: #FFAA00 transparent;
-	border-style: solid;
-	border-width: 0px 425px 37px 0px ; 
-	opacity: 0.6;
-	z-index: -10;
-}
-
-#triangleBorderReferences1 {
-	position: absolute;
-margin: -3px 10% 0px 0px;
-padding-left: 31%;
-	
-	border-color: #FF8300 transparent;
-	border-style: solid;
-	border-width: 0px 350px 37px 0px ; 
-	opacity: 0.6;
-	z-index: -10;
-}
-
-#triangleBorderReferences2 {
-	position: absolute;
-margin: 5px 10% 0px 0px;
-padding-left: 31%;
-	
-	border-color: #FFD300 transparent;
-	border-style: solid;
-	border-width: 0px 275px 37px 0px ; 
-	opacity: 0.6;
-	z-index: -10;
-}
-
-#triangleBorderReferences3 {
-	position: absolute;
-margin: 5px 10% 0px 0px;
-padding-left: 31%;
-	
-	border-color: #FFAA00 transparent;
-	border-style: solid;
-	border-width: 0px 200px 37px 0px ; 
-	opacity: 0.6;
-	z-index: -10;
-}
-
-.resumeSpace {
-	margin-top: 35px;
-}
-
-.resumeSpace8 {
-	margin-top: 8px;
 }
 
 #contactPage {
@@ -664,16 +444,11 @@ padding-left: 31%;
 
 	text-align: left;
 
-	margin: 0px auto 20px 320px;
+	margin: -40px auto 20px 320px;
 
 	padding-left: 10%;
 
-	z-index: 10px;
-
 	color: #666;
-
-	visibility: hidden;
-	opacity: 0;
 
 	-o-transition: all 1s;
 	-ms-transition: all 1s;
@@ -682,22 +457,273 @@ padding-left: 31%;
 	transition: all 1s;
 }
 
-
-a {
-	font-style: normal;
-	text-decoration: none;
-	color: black;
+#aboutPage.pageVis {
+	opacity: 1;
+	visibility: visible;
+	margin-top: 10px;
+	height: 550px;
 }
 
-#musician:hover , #developer:hover , #human:hover {
-	color: #222;
+	#aboutPage.pageInvis {
+		opacity: 0;
+		visibility: hidden;
+		margin-top: 30px;
+		height: 260px
+	}
 
-	-o-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-webkit-transition: all 0.3s; 
-	transition: all 0.3s;
+#resumePage.pageVis {
+	opacity: 1;
+	visibility: visible;
+	margin-top: 10px;
+	overflow-y: visible;
+	height: 2410px;
 }
+
+	#resumePage.pageInvis {
+		opacity: 0;
+		visibility: hidden;
+		margin-top: 30px;
+		overflow-y: hidden;
+		height: 260px;
+	}
+
+#contactPage.pageVis {
+	opacity: 1;
+	visibility: visible;
+	margin-top: 10px;
+}
+
+	#contactPage.pageInvis {
+		opacity: 0;
+		visibility: hidden;
+		margin-top: 30px;
+	}
+
+		#pdfMain {
+			position: absolute;
+			width: 18%;
+			text-align: right;
+
+			margin: 30px 0px 0px 450px;
+		}
+
+/* Resume */		#pdfCircle {
+			position: absolute;
+			font-weight: 200;
+			text-align: center;
+			background-color: #FF8400;
+			clear: both;
+
+			margin-top: -15px;
+			margin-left: -67px;
+
+			border-radius: 64px;
+			height: 64px;
+			width: 64px;
+
+			z-index: 102;
+
+			opacity: 0.6;
+
+			text-shadow:1px 1px 4px #333;
+
+				-o-transition: all 0.5s, text-shadow 0s;
+			-ms-transition: all 0.5s, text-shadow 0s;
+			-moz-transition: all 0.5s, text-shadow 0s;
+			-webkit-transition: all 0.5s, text-shadow 0s; 
+			transition: all 0.5s, text-shadow 0s;
+		}
+
+		#DLpdf {
+			color: #fff;
+				margin-top: 15px;
+				font-weight: 400;
+		}
+
+/* HTML Resume Styling */
+		#resumeBody {
+			width: 100%;	
+			margin: 110px 0px 0px 0%;
+			line-height: 1.3;
+			height: 200px;
+		}
+
+		#resumeProfile {
+			width: 45%;
+			min-width: 400px;
+			margin: 70px 0px -100px 290px;
+			padding-left: 15%;
+			line-height: 1.3;
+			text-align: right;
+		}
+
+		.resumeHeaders {
+			font-size: 60px;
+			color: #000;
+			font-weight: 100;
+
+			min-width: 342px;
+
+			margin-top: 15px;
+			margin-bottom: -10px;
+			margin-right: 70%;
+			text-align: right;
+
+			opacity: 0.6;
+
+			z-index: 155;
+		}
+
+		.resumeSubHeadDark {
+			font-size: 28px;
+			min-width: 342px;
+			font-weight: 400;
+			color: #222;
+			margin-top: 0px;
+			margin-right: 70%;
+			text-align: right;
+			line-height: 1.3
+		}
+
+		.resumeSubHeadLight {
+			min-width: 342px;
+			font-size: 20px;
+			font-weight: 100;
+			color: #333;
+			line-height: 1.4;
+			margin-top: 0px;
+			margin-right: 70%;
+			text-align: right;
+		}
+
+		.resumeTextDark {
+			font-size: 18px;
+			font-weight: 800;
+			color: #222;
+			margin-top: 8px;
+			line-height: 1.4;
+			margin-left: 31%;
+			text-align: left;
+
+		}
+
+		.resumeTextLight {
+			font-size: 16px;
+			font-weight: 100;
+			color: #333;
+			margin: 1px 10% 0px 31%;
+			line-height: 1.5;
+			text-align: left;
+		}
+
+		.resumeRight {
+			text-align: right;
+			margin: 0px;
+		}
+
+		#triangleBorderTarget {
+			position: absolute;
+		margin: -3px 10% 0px 0px;
+		padding-left: 31%;
+			
+			border-color: #FFD300 transparent;
+			border-style: solid;
+			border-width: 0px 750px 129px 0px ; 
+			opacity: 0.6;
+			z-index: -10;
+		}
+
+		#triangleBorderTeach {
+			position: absolute;
+		margin: 32px 10% 0px 0px;
+		padding-left: 31%;
+			
+			border-color: #FFAA00 transparent;
+			border-style: solid;
+			border-width: 0px 675px 129px 0px ; 
+			opacity: 0.6;
+			z-index: -10;
+		}
+
+		#triangleBorderEducation {
+			position: absolute;
+		margin: -3px 10% 0px 0px;
+		padding-left: 31%;
+			
+			border-color: #FF8300 transparent;
+			border-style: solid;
+			border-width: 0px 600px 93px 0px ; 
+			opacity: 0.6;
+			z-index: -10;
+		}
+
+		#triangleBorderSkills1 {
+			position: absolute;
+		margin: -3px 10% 0px 0px;
+		padding-left: 31%;
+			
+			border-color: #FFD300 transparent;
+			border-style: solid;
+			border-width: 0px 525px 77px 0px ; 
+			opacity: 0.6;
+			z-index: -10;
+		}
+
+		#triangleBorderSkills2 {
+			position: absolute;
+		margin: 32px 10% 0px 0px;
+		padding-left: 31%;
+			
+			border-color: #FFAA00 transparent;
+			border-style: solid;
+			border-width: 0px 425px 37px 0px ; 
+			opacity: 0.6;
+			z-index: -10;
+		}
+
+		#triangleBorderReferences1 {
+			position: absolute;
+		margin: -3px 10% 0px 0px;
+		padding-left: 31%;
+			
+			border-color: #FF8300 transparent;
+			border-style: solid;
+			border-width: 0px 350px 37px 0px ; 
+			opacity: 0.6;
+			z-index: -10;
+		}
+
+		#triangleBorderReferences2 {
+			position: absolute;
+			margin: 5px 10% 0px 0px;
+			padding-left: 31%;
+			
+			border-color: #FFD300 transparent;
+			border-style: solid;
+			border-width: 0px 275px 37px 0px ; 
+			opacity: 0.6;
+			z-index: -10;
+		}
+
+		#triangleBorderReferences3 {
+			position: absolute;
+			margin: 5px 10% 0px 0px;
+			padding-left: 31%;
+			
+			border-color: #FFAA00 transparent;
+			border-style: solid;
+			border-width: 0px 200px 37px 0px ; 
+			opacity: 0.6;
+			z-index: -10;
+		}
+
+		.resumeSpace {
+			margin-top: 35px;
+		}
+
+		.resumeSpace8 {
+			margin-top: 8px;
+		}
 
 #navBar {
 	position: absolute;
@@ -706,10 +732,6 @@ a {
 	margin-left: 15%;
 
 	z-index: 100;
-
-}
-
-.headCircle {
 
 }
 
