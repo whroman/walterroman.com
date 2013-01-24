@@ -98,7 +98,7 @@ var navOnClick = function(exception) {
 
 var aboutClick = function() {
 	document.getElementById("intro").className = "introInvis"
-	document.getElementById("aspire").style.marginTop = "-140px";
+	document.getElementById("aspire").style.marginTop = "-105px";
 	
 	document.getElementById("aboutPage").className = "pageVis";
 
@@ -108,7 +108,7 @@ var aboutClick = function() {
 
 var resumeClick = function() {
 	document.getElementById("intro").className = "introInvis"
-	document.getElementById("aspire").style.marginTop = "-140px";
+	document.getElementById("aspire").style.marginTop = "-105px";
 	
 	document.getElementById("resumePage").className = "pageVis";
 
@@ -119,7 +119,7 @@ var resumeClick = function() {
 
 var contactClick = function() {
 	document.getElementById("intro").className = "introInvis";
-	document.getElementById("aspire").style.marginTop = "-140px";
+	document.getElementById("aspire").style.marginTop = "-105px";
 	
 	document.getElementById("contactPage").className = "pageVis";
 

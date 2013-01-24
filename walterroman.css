@@ -90,7 +90,7 @@ a {
 	text-align: right;
 
 	margin: 85px auto 0px 300px;
-	padding: 15px 0px 0px 10%;
+	padding: 35px 0px 0px 10%;
 
 	z-index: 0;
 
@@ -467,7 +467,7 @@ a {
 	#aboutPage.pageInvis {
 		opacity: 0;
 		visibility: hidden;
-		margin-top: 30px;
+		margin-top: 40px;
 		height: 260px
 	}
 
@@ -482,7 +482,7 @@ a {
 	#resumePage.pageInvis {
 		opacity: 0;
 		visibility: hidden;
-		margin-top: 30px;
+		margin-top: 40px;
 		overflow-y: hidden;
 		height: 260px;
 	}
@@ -496,9 +496,11 @@ a {
 	#contactPage.pageInvis {
 		opacity: 0;
 		visibility: hidden;
-		margin-top: 30px;
+		margin-top: 40px;
 	}
 
+
+/* Resume */		
 		#pdfMain {
 			position: absolute;
 			width: 18%;
@@ -507,7 +509,7 @@ a {
 			margin: 30px 0px 0px 450px;
 		}
 
-/* Resume */		#pdfCircle {
+		#pdfCircle {
 			position: absolute;
 			font-weight: 200;
 			text-align: center;
