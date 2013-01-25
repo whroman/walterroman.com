@@ -18,23 +18,23 @@ var navOnClick = function(exception) {
 	
 	if (exception == "About") {
 		navAbout.className = "aboutClick";
-		navAbout.style.marginTop = "-70px";
+		navAbout.style.marginTop = "-110px";
 		navAbout.style.zIndex = "99";
 		document.getElementById("navText1").className = "navTextSelected";
-		document.getElementById("navText1").style.marginTop = "115px";
-		document.getElementById("firstLetterA").style.marginTop = "73px";
+		document.getElementById("navText1").style.marginTop = "155px";
+		document.getElementById("firstLetterA").style.marginTop = "113px";
 
 
 		for (i=0;i<navTabArray.length;i++) {
 			if (navTabArray[i].id != exception) {
 				navResume.className = "navCircle";
-				navResume.style.marginTop = "130px";
+				navResume.style.marginTop = "110px";
 				navResume.style.zIndex = "100";
 				document.getElementById("navText2").className = "navText";
 				document.getElementById("navText2").style.marginTop = "52px";
 				document.getElementById("firstLetterR").style.marginTop = "3px";
 				navContact.className = "navCircle";	
-				navContact.style.marginTop = "260px";
+				navContact.style.marginTop = "220px";
 				navContact.style.zIndex = "100";
 				document.getElementById("navText3").className = "navText";
 				document.getElementById("navText3").style.marginTop = "52px";
@@ -45,11 +45,11 @@ var navOnClick = function(exception) {
 
 	if (exception == "Resume") {
 		navResume.className = "resumeClick"
-		navResume.style.marginTop = "50px";
+		navResume.style.marginTop = "-30px";
 		navResume.style.zIndex = "99"
 		document.getElementById("navText2").className = "navTextSelected";
-		document.getElementById("navText2").style.marginTop = "125px";
-		document.getElementById("firstLetterR").style.marginTop = "83px";
+		document.getElementById("navText2").style.marginTop = "185px";
+		document.getElementById("firstLetterR").style.marginTop = "143px";
 
 		for (i=0;i<navTabArray.length;i++) {
 			if (navTabArray[i].id != exception) {
@@ -60,7 +60,7 @@ var navOnClick = function(exception) {
 				document.getElementById("navText1").style.marginTop = "52px";
 				document.getElementById("firstLetterA").style.marginTop = "3px";
 				navContact.className = "navCircle"	;
-				navContact.style.marginTop = "260px";
+				navContact.style.marginTop = "220px";
 				navContact.style.zIndex = "100";
 				document.getElementById("navText3").className = "navText";
 				document.getElementById("navText3").style.marginTop = "52px";
@@ -71,11 +71,11 @@ var navOnClick = function(exception) {
 
 	if (exception == "Contact") {
 		navContact.className = "contactClick";
-		navContact.style.marginTop = "170px";
+		navContact.style.marginTop = "30px";
 		navContact.style.zIndex = "99"
 		document.getElementById("navText3").className = "navTextSelected";
-		document.getElementById("navText3").style.marginTop = "136px";
-		document.getElementById("firstLetterC").style.marginTop = "93px";
+		document.getElementById("navText3").style.marginTop = "236px";
+		document.getElementById("firstLetterC").style.marginTop = "193px";
 
 		for (i=0;i<navTabArray.length;i++) {
 			if (navTabArray[i].id != exception) {
@@ -86,7 +86,7 @@ var navOnClick = function(exception) {
 				document.getElementById("navText1").style.marginTop = "52px";
 				document.getElementById("firstLetterA").style.marginTop = "3px";
 				navResume.className = "navCircle";	
-				navResume.style.marginTop = "130px";
+				navResume.style.marginTop = "110px";
 				navResume.style.zIndex = "100";
 				document.getElementById("navText2").className = "navText";
 				document.getElementById("navText2").style.marginTop = "52px";
@@ -97,9 +97,7 @@ var navOnClick = function(exception) {
 }
 
 var aboutClick = function() {
-	document.getElementById("intro").className = "introInvis"
-	document.getElementById("aspire").style.marginTop = "-105px";
-	
+	// document.getElementById("intro").className = "introInvis"	
 	document.getElementById("aboutPage").className = "pageVis";
 
 	document.getElementById("contactPage").className = "pageInvis";
@@ -107,9 +105,7 @@ var aboutClick = function() {
 }
 
 var resumeClick = function() {
-	document.getElementById("intro").className = "introInvis"
-	document.getElementById("aspire").style.marginTop = "-105px";
-	
+	// document.getElementById("intro").className = "introInvis"	
 	document.getElementById("resumePage").className = "pageVis";
 
 	document.getElementById("contactPage").className = "pageInvis";
@@ -118,9 +114,7 @@ var resumeClick = function() {
 }
 
 var contactClick = function() {
-	document.getElementById("intro").className = "introInvis";
-	document.getElementById("aspire").style.marginTop = "-105px";
-	
+	// document.getElementById("intro").className = "introInvis";	
 	document.getElementById("contactPage").className = "pageVis";
 
 	document.getElementById("aboutPage").className = "pageInvis";
