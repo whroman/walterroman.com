@@ -12,28 +12,6 @@ h2 {
 	width: 90%
 }
 
-/*#topBorder {
-	position: absolute;
-	margin-top: 129px;
-
-	background-color: #FFAA00;
-	height: 14px;
-	width: 100%;
-
-	opacity: 0.6;
-
-	z-index: 105;
-}
-*/
-/*#intro em {
-	font-weight: 100;
-	font-style: normal;
-	font-size: 80px;
-	color: #000;
-
-	z-index: 10;
-}*/
-
 em {
 	font-weight: 400;
 	font-style: normal;
@@ -57,23 +35,6 @@ a {
 	width: 12.5%;
 	height: 100%;
 }
-
-/*#head {
-	position: relative;
-	float: left;
-	margin: 30px -523px 0px 20px;
-	z-index: 2;	
-
-	background-color: transparent;
-	width: 68%;
-	min-width: 580px;
-
-	font-weight: 400;
-	font-size: 68px;
-	text-align: center;
-
-	opacity: 1;
-}*/
 
 #intro {
 	position: absolute;
@@ -521,7 +482,7 @@ a {
 	line-height: 1.5;
 
 
-	margin: -40px 0px 20px 30px;
+	margin: -40px 0px 20px 0px;
 
 /*
 Keeps pdfcircle from being cutoff in nav transition
