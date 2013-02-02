@@ -1,3 +1,10 @@
+#box {
+	width: 100px;
+	height: 30px;
+	background-color: pink;
+	margin-left: 50px;
+}
+
 body { 
 	margin: 0px;
 	width: 0px;
@@ -110,7 +117,7 @@ a {
 	color: #BB6500;
 	opacity: 1;	
 	padding: 0px 13px;
-	margin: 0px -13px;
+	margin: 0px -13px 0px 0px;
 	background-color: transparent;
 	border-radius: 5px;
 	z-index: 102;
@@ -180,6 +187,25 @@ a {
 	opacity: 0;
 }
 
+#aspire .aspireLinkInvert {
+	color: #FFF;
+	opacity: 0.8;
+	margin-right: 0px;
+}
+
+#aspire #musician.aspireLinkInvert {
+	background-color: #BB6500
+}
+
+#aspire #developer.aspireLinkInvert {
+	background-color: #961800;
+}
+
+#aspire #human.aspireLinkInvert {
+	background-color: #002B60;
+
+}
+
 #musician:hover {
 	background-color: #BB6500;
 }
@@ -196,6 +222,26 @@ a {
 	color: #fff;
 	opacity: 0.8;
 }
+
+#aspire #musician.aspireLinkInvert:hover {
+	opacity: 0.9;	
+	background-color: transparent;	
+	color: #BB6500;
+}
+
+#aspire #developer.aspireLinkInvert:hover {
+	opacity: 0.9;	
+	background-color: #FFF;	
+	color: #961800;
+}
+
+#aspire #human.aspireLinkInvert:hover {
+	opacity: 0.9;	
+	background-color: #FFF;	
+	color: #002B60;
+}
+
+
 
 	.toolTip {
 		position: absolute;
@@ -1059,4 +1105,38 @@ Compensated for in #aboutPage.pageVis
 
 #navText3 {
 	margin-left: 92px;
+}
+
+#toTop {
+	position: fixed;
+	z-index: 200;
+	height: 75px;
+	width: 63px;
+	border-radius: 20px;
+	padding: 10px 8px;
+	background-color: transparent;
+	margin: 20px 0px 0px 90%;
+
+	border: 5px solid transparent;
+
+
+	opacity: 0;
+
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s; 
+	transition: all 0.5s;
+}
+
+#toTop:hover {
+	cursor: pointer;
+
+	border: 5px solid #000;
+
+	-o-transition: all 0s;
+	-ms-transition: all 0s;
+	-moz-transition: all 0s;
+	-webkit-transition: all 0s; 
+	transition: all 0s;
 }

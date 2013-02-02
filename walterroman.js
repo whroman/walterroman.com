@@ -13,25 +13,35 @@ var navOnClick = function(exception) {
 	navAbout = document.getElementById("About");
 	navResume = document.getElementById("Resume");
 	navContact = document.getElementById("Contact");
+	intro = document.getElementById("intro");
+	aspire = document.getElementById("aspire");
+	navBar = document.getElementById("navBar");
+
+	musician = document.getElementById("musician");
+	developer = document.getElementById("developer");
+	human = document.getElementById("human");
 
 	navTabArray = [navAbout, navResume, navContact];
 
-	document.getElementById("intro").style.marginTop = "-20px";
-	document.getElementById("intro").style.width = "85%";	
-	document.getElementById("intro").style.marginLeft = "100px";	
+	intro.style.marginTop = "-20px";
+	intro.style.width = "85%";	
+	intro.style.marginLeft = "100px";	
 	
-	document.getElementById("aspire").style.marginTop = "110px";
-	document.getElementById("aspire").style.width = "85%";	
-	document.getElementById("aspire").style.marginLeft = "100px";	
-	document.getElementById("aspire").style.minWidth = "800px";	
+	aspire.style.marginTop = "110px";
+	aspire.style.width = "85%";	
+	aspire.style.marginLeft = "100px";	
+	aspire.style.minWidth = "800px";	
 
-	document.getElementById("navBar").style.paddingLeft = "5%";
-	document.getElementById("navBar").style.marginLeft = "-50px";
+	navBar.style.paddingLeft = "5%";
+	navBar.style.marginLeft = "-50px";
 
 	document.getElementById("*1").className = "asteriskVis";
 	document.getElementById("*2").className = "asteriskVis";
 	document.getElementById("*3").className = "asteriskVis";
 
+	musician.className = "aspireLinkInvert";
+	developer.className = "aspireLinkInvert";
+	human.className = "aspireLinkInvert";
 
 	if (exception == "About") {
 		navAbout.className = "aboutClick";
@@ -169,13 +179,69 @@ var toolTipMouseOut = function(exception) {
 
 	if (exception == "toolTip1") {
 		toolTip1.className = "toolTip";
-	}
+	};
 
 	if (exception == "toolTip2") {
 		toolTip2.className = "toolTip";
-	}
+	};
 
 	if (exception == "toolTip3") {
 		toolTip3.className = "toolTip";
+	};
+};
+
+var pageScroll = function() {
+	var walt = Math.ceil(pageYOffset / 10);
+
+	if (pageYOffset == 0) {
+		return    
+	} else if (pageYOffset != 0) {
+    	window.scrollBy(0,(-walt)); // horizontal and vertical scroll increments
+    	var scrollDelay = setTimeout('pageScroll()',10); // scrolls every 100 milliseconds
+    };	
+    console.log(walt);
+};
+
+// var scrollButton = function() {
+// 	document.getElementById("toTop").style.marginTop = Math.floor(window.innerHeight * .7) + "px";
+// 	console.log(window.innerHeight)
+// }
+ 
+var scroll = function() {
+	scroller = document.getElementById("toTop");
+
+	var displacement =  document.body.scrollTop;
+	if (displacement < 600) {
+		scroller.style.opacity = "0";
 	}
+
+	if (displacement >= 600 && displacement < 800) {
+		scroller.style.opacity = "0.1";
+	}
+
+	if (displacement >= 800 && displacement < 1000) {
+		scroller.style.opacity = "0.2";
+	}
+
+	if (displacement >= 1000 && displacement < 1200) {
+		scroller.style.opacity = "0.3";
+	}
+	
+	if (displacement >= 1200 && displacement < 1400) {
+		scroller.style.opacity = "0.4";
+	}
+
+	if (displacement >= 1400 && displacement < 1600) {
+		scroller.style.opacity = "0.5";
+	}
+
+	if (displacement >= 1600) {
+		scroller.style.opacity = "0.6";
+	}
+};
+
+var scrollIconVis = function () {
+	document.getElementById("toTop").style.opacity = "1";
 }
+
+window.onscroll = scroll;
