@@ -64,11 +64,11 @@ a {
 
 	overflow-x: hidden;
 
-	-o-transition: all 1s;
-	-ms-transition: all 1s;
-	-moz-transition: all 1s;
-	-webkit-transition: all 1s; 
-	transition: all 1s;	
+	-o-transition: all 0.7s;
+	-ms-transition: all 0.7s;
+	-moz-transition: all 0.7s;
+	-webkit-transition: all 0.7s; 
+	transition: all 0.7s;
 
 	text-align: right;
 }
@@ -93,7 +93,7 @@ a {
 	font-weight: 100;
 
 	font-size: 30px;
-	line-height: 1.1;
+	line-height: 1.2;
 
 	text-align: right;
 
@@ -105,19 +105,19 @@ a {
 
 	z-index: 10;
 
-	-o-transition: all 1s;
-	-ms-transition: all 1s;
-	-moz-transition: all 1s;
-	-webkit-transition: all 1s; 
-	transition: all 1s;
+	-o-transition: all 0.7s;
+	-ms-transition: all 0.7s;
+	-moz-transition: all 0.7s;
+	-webkit-transition: all 0.7s; 
+	transition: all 0.7s;	
 }
 
 #musician {
 	position: relative;
 	color: #BB6500;
 	opacity: 1;	
-	padding: 0px 13px;
-	margin: 0px -13px 0px 0px;
+	padding: 0px 15px;
+	margin: 0px -15px 0px 0px;
 	background-color: transparent;
 	border-radius: 5px;
 	z-index: 102;
@@ -427,6 +427,15 @@ a {
 		text-align: left;
 	}
 
+	#octocat {
+		position: absolute;
+		height: 100px;
+		width: 100px;
+
+		margin: 135px 0px 0px 100px;
+
+		background-color: transparent;
+	}
 
 	#tumblr {
 		position: absolute;
@@ -505,11 +514,11 @@ a {
 
 	color: #666;
 
-	-o-transition: all 1s;
-	-ms-transition: all 1s;
-	-moz-transition: all 1s;
-	-webkit-transition: all 1s; 
-	transition: all 1s;
+	-o-transition: all 0.7s;
+	-ms-transition: all 0.7s;
+	-moz-transition: all 0.7s;
+	-webkit-transition: all 0.7s; 
+	transition: all 0.7s;
 }
 
 #resumePage {
@@ -528,22 +537,22 @@ a {
 	line-height: 1.5;
 
 
-	margin: -40px 0px 20px 0px;
+	margin: -40px 0px 0px 0px;
 
 /*
 Keeps pdfcircle from being cutoff in nav transition
 Compensated for in #aboutPage.pageVis
 */	padding-top: 50px;
-
+	
 	padding-left:0px;
 
 	color: #333;
 
-	-o-transition: all 1s;
-	-ms-transition: all 1s;
-	-moz-transition: all 1s;
-	-webkit-transition: all 1s; 
-	transition: all 1s;
+	-o-transition: all 0.7s;
+	-ms-transition: all 0.7s;
+	-moz-transition: all 0.7s;
+	-webkit-transition: all 0.7s; 
+	transition: all 0.7s;
 }
 
 #contactPage {
@@ -565,11 +574,11 @@ Compensated for in #aboutPage.pageVis
 
 	color: #666;
 
-	-o-transition: all 1s;
-	-ms-transition: all 1s;
-	-moz-transition: all 1s;
-	-webkit-transition: all 1s; 
-	transition: all 1s;
+	-o-transition: all 0.7s;
+	-ms-transition: all 0.7s;
+	-moz-transition: all 0.7s;
+	-webkit-transition: all 0.7s; 
+	transition: all 0.7s;
 }
 
 #aboutPage.pageVis {
@@ -861,7 +870,7 @@ Compensated for in #aboutPage.pageVis
 
 	z-index: 100;
 
--o-transition: all 0.7s;
+	-o-transition: all 0.7s;
 	-ms-transition: all 0.7s;
 	-moz-transition: all 0.7s;
 	-webkit-transition: all 0.7s; 
@@ -1119,7 +1128,7 @@ Compensated for in #aboutPage.pageVis
 
 	border: 5px solid transparent;
 
-
+	visibility: hidden;
 	opacity: 0;
 
 	-o-transition: all 0.5s;

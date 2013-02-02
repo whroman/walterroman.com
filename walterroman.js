@@ -211,32 +211,16 @@ var scroll = function() {
 	scroller = document.getElementById("toTop");
 
 	var displacement =  document.body.scrollTop;
+	
 	if (displacement < 600) {
 		scroller.style.opacity = "0";
+		scroller.style.visibility = "hidden"
 	}
 
-	if (displacement >= 600 && displacement < 800) {
-		scroller.style.opacity = "0.1";
-	}
 
-	if (displacement >= 800 && displacement < 1000) {
-		scroller.style.opacity = "0.2";
-	}
-
-	if (displacement >= 1000 && displacement < 1200) {
-		scroller.style.opacity = "0.3";
-	}
-	
-	if (displacement >= 1200 && displacement < 1400) {
-		scroller.style.opacity = "0.4";
-	}
-
-	if (displacement >= 1400 && displacement < 1600) {
-		scroller.style.opacity = "0.5";
-	}
-
-	if (displacement >= 1600) {
-		scroller.style.opacity = "0.6";
+	if ( displacement > 600) {
+		scroller.style.opacity = (displacement  / 2000)
+		scroller.style.visibility = "visible"
 	}
 };
 
