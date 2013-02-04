@@ -91,7 +91,7 @@ a {
 	color: #222;
 	opacity: 1;
 
-	z-index: 0;
+	z-index: 10;
 
 	-o-transition: all 0.7s;
 	-ms-transition: all 0.7s;
@@ -732,6 +732,8 @@ Compensated for in #aboutPage.pageVis
 
 	color: #666;
 
+	z-index: 20;
+
 	-o-transition: all 0.7s;
 	-ms-transition: all 0.7s;
 	-moz-transition: all 0.7s;
@@ -873,16 +875,17 @@ Compensated for in #aboutPage.pageVis
 			margin-right: 70%;
 			text-align: right;
 
-			opacity: 0.6;
+			opacity: 1;
 
 			z-index: 155;
 		}
 
 		.resumeSubHeadDark {
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 			font-size: 28px;
 			min-width: 270px;
-			font-weight: 400;
-			color: #111;
+			font-weight: 100;
+			color: #FFF;
 			margin-top: 0px;
 			margin-right: 70%;
 			text-align: right;
@@ -890,10 +893,11 @@ Compensated for in #aboutPage.pageVis
 		}
 
 		.resumeSubHeadLight {
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 			min-width: 270px;
 			font-size: 20px;
 			font-weight: 100;
-			color: #111;
+			color: #FFF;
 			line-height: 1.4;
 			margin-top: 0px;
 			margin-right: 70%;
