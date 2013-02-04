@@ -229,3 +229,77 @@ var scrollIconVis = function () {
 }
 
 window.onscroll = scroll;
+
+var contactArray = ["cont1","cont2","cont3","cont4","cont5","cont6","cont7","cont8","cont9","contA","contB"]
+var contactSelector = function(except) {
+	for (i=0;i<contactArray.length;i++) {
+		if (contactArray[i] != except) { 
+			document.getElementById(contactArray[i]).style.backgroundColor = "#333";
+		}
+	}
+}
+
+var contactDeselector = function() {
+	for (i=0;i<contactArray.length;i++) {
+		if ((contactArray[i] == "cont1") || (contactArray[i] == "cont5") || (contactArray[i] == "cont6") || (contactArray[i] == "cont9")){ 
+			document.getElementById(contactArray[i]).style.backgroundColor = "#BB6500";
+		}
+
+		if ((contactArray[i] == "cont2") || (contactArray[i] == "cont7") || (contactArray[i] == "contA")) { 
+			document.getElementById(contactArray[i]).style.backgroundColor = "#961800";
+		}
+
+		if ((contactArray[i] == "cont3") || (contactArray[i] == "cont4") || (contactArray[i] == "cont8") || (contactArray[i] == "contB")) { 
+			document.getElementById(contactArray[i]).style.backgroundColor = "#002B60";
+		}
+	}
+}
+
+var phoneClick = function() {
+	var phone = document.getElementById("cont1");
+	var text = document.getElementById("phoneText");
+	if (phone.style.width == "" || phone.style.width == "96px") {
+		phone.style.width = "164px";
+		text.style.visibility = "visible";
+		text.style.opacity = "1";
+	} else if (phone.style.width == "164px") {
+		phone.style.width = "96px"
+		text.style.visibility = "hidden";
+		text.style.opacity = "0";
+	};
+}
+
+var emailClick = function() {
+	var email = document.getElementById("cont6");
+	var text = document.getElementById("emailText");
+	if (email.style.width == "" || email.style.width == "96px") {
+		email.style.width = "290px"
+		text.style.visibility = "visible";
+		text.style.opacity = "1";
+	} else if (email.style.width == "290px") {
+		email.style.width = "96px"
+		text.style.opacity = "0";
+	};
+}
+
+// var emailHover = function() {
+// 	var email = document.getElementById("cont6");
+// 	var text = document.getElementById("emailText");
+
+// 	if (email.style.width == "" || email.style.width == "96px") {
+// 		text.style.textDecoration = "none";
+// 	} else if (email.style.width == "290px") {
+// 		text.style.textDecoration = "underline";
+// 	};
+// }
+
+// var emailUnhover = function() {
+// 	var email = document.getElementById("cont6");
+// 	var text = document.getElementById("emailText");
+
+// 	if (email.style.width == "" || email.style.width == "96px") {
+// 		text.style.textDecoration = "none";
+// 	} else if (email.style.width == "290px") {
+// 		text.style.textDecoration = "none";
+// 	};
+// }
