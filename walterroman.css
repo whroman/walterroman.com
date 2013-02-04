@@ -727,20 +727,21 @@ Compensated for in #aboutPage.pageVis
 #contactPage {
 	position: absolute;
 	background-color: transparent;
-	width: 600px;
+	width: 57%;
+
+	min-width: 600px;
 	height: 400px;
 
 	font-weight: 300;
 
 	font-size: 22px;
-	line-height: 1.5;
 
 	text-align: left;
 
-	margin: 40px 0px 20px 40px;
+	margin: 40px 0px 20px 160px;
 
-	padding-left: 15%;
-
+/*	padding-left: 15%;
+*/
 	color: #666;
 
 	-o-transition: all 0.7s;
@@ -748,6 +749,13 @@ Compensated for in #aboutPage.pageVis
 	-moz-transition: all 0.7s;
 	-webkit-transition: all 0.7s; 
 	transition: all 0.7s;
+}
+
+#contactIconHolder {
+	position: relative;
+	float: right;
+	width: 600px;
+	height: 400px;
 }
 
 #aboutPage.pageVis {
