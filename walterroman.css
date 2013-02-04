@@ -57,7 +57,7 @@ a {
 
 	text-align: right;
 
-	margin: 21px auto 0px 150px;
+	margin: 21px 0px 0px 145px;
 	padding: 35px 0px 0px 0px;
 
 	z-index: 0;
@@ -69,18 +69,6 @@ a {
 	-moz-transition: all 0.7s;
 	-webkit-transition: all 0.7s; 
 	transition: all 0.7s;
-
-	text-align: right;
-}
-
-.introVis {
-	opacity: 0.9;
-	visibility: visible;
-}
-
-.introInvis {
-	opacity: 0;
-	visibility: visible;
 }
 
 #aspire {
@@ -325,17 +313,6 @@ a {
 
 /* Contact */
 
-
-/*
-/Colors
-
-#Yellow: #FFD300
-
-#Orange: #BB6500
-#Red: #961800
-#Blue: #002B60
-*/
-
 #contactPage img {
 	position: absolute;
 	margin-top: 8px;
@@ -363,10 +340,11 @@ a {
 	position: absolute;
 	color: white;
 	font-weight: 100;
-	margin-top: 7px;
-	margin-left: 80px;
+	margin-top: 95px;
+	margin-left: 13px;
 	text-align: left;
-	font-size: 28px;
+	font-size: 32px;
+	text-align: center;
 	line-height: 1;
 	visibility: hidden;
 	opacity: 0;
@@ -383,11 +361,11 @@ a {
 	position: absolute;
 	color: white;
 	font-weight: 100;
-	margin-top: 7px;
+	margin-top: 5px;
 	margin-left: 95px;
 	text-align: left;
-	font-size: 28px;
-	line-height: 1;
+	font-size: 24px;
+	line-height: 0.9;
 	visibility: hidden;
 	opacity: 0;
 
@@ -419,78 +397,88 @@ a {
 	box-shadow: 2px 3px 5px #555;
 }
 
+/*
+/Colors
+
+#Yellow: #FFD300
+
+#Orange: #BB6500
+#Red: #961800
+#Blue: #002B60
+*/
+
 #cont1 {
 		background-color: #BB6500;
 }
 
 #cont2 {
-	background-color: #961800;
+	background-color: #BB6500;
 
 	margin-top: 102px;
-	margin-left: 102px;
+	margin-left: 52px;
 }
 
 #cont3 {
-	background-color: #002B60;
+	background-color: #961800;
 
 	margin-top: 252px;
-	margin-left: 102px;
+	margin-left: 2px;
 }
 
 #cont4 {
-	background-color: #002B60;
+	background-color: #BB6500;
 
 	margin-top: 52px;
-	margin-left: 202px;
+	margin-left: 152px;
 }
 
 #cont5 {
-	background-color: #BB6500;
+	background-color: #961800;
 
 	margin-top: 202px;
-	margin-left: 202px;
+	margin-left: 102px;
 }
 
 #cont6 {
 	background-color: #BB6500;
 
 	margin-top: 2px;
-	margin-left: 302px;
+	margin-left: 252px;
 }
 
 #cont7 {
 	background-color: #961800;
 
 	margin-top: 152px;
-	margin-left: 302px;
+	margin-left: 202px;
 }
 
 #cont8 {
 	background-color: #002B60;
 
 	margin-top: 302px;
-	margin-left: 302px;
+	margin-left: 152px;
 }
 
 #cont9 {
-	background-color: #BB6500;
+	background-color: #002B60;
 
 	margin-top: 252px;
-	margin-left: 402px;
+	margin-left: 252px;
 }
 
 #contA {
-	background-color: #961800;
+	background-color: #002B60;
 
 	margin-top: 202px;
-	margin-left: 502px;
+	margin-left: 352px;
 }
 
 #contB {
 	background-color: #002B60;
 
-	margin-top: 352px;
-	margin-left: 502px;
+	margin-top: 302px;
+	margin-left: 402px;
 }
 
 
@@ -727,10 +715,10 @@ Compensated for in #aboutPage.pageVis
 #contactPage {
 	position: absolute;
 	background-color: transparent;
-	width: 57%;
+	width: 55%;
 
 	min-width: 600px;
-	height: 400px;
+	height: 450px;
 
 	font-weight: 300;
 
@@ -738,10 +726,10 @@ Compensated for in #aboutPage.pageVis
 
 	text-align: left;
 
-	margin: 40px 0px 20px 160px;
+	margin: 40px 0px 20px 0px;
 
-/*	padding-left: 15%;
-*/
+	padding-left: 100px;
+
 	color: #666;
 
 	-o-transition: all 0.7s;
@@ -754,8 +742,8 @@ Compensated for in #aboutPage.pageVis
 #contactIconHolder {
 	position: relative;
 	float: right;
-	width: 600px;
-	height: 400px;
+	width: 450px;
+	height: 450px;
 }
 
 #aboutPage.pageVis {
@@ -792,7 +780,7 @@ Compensated for in #aboutPage.pageVis
 #contactPage.pageVis {
 	opacity: 1;
 	visibility: visible;
-	margin-top: 152px;
+	margin-top: 150px;
 }
 
 	#contactPage.pageInvis {

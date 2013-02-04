@@ -1,4 +1,7 @@
 var navArray = ["About","Resume","Contact"];
+var	navTabArray = ["navAbout", "navResume", "navContact"];
+var contactArray = ["cont1","cont2","cont3","cont4","cont5","cont6","cont7","cont8","cont9","contA","contB"]
+var colorArray = ["#BB6500","#961800","#002B60"]
 
 var navMouseOver = function(hover, text) {
 	navHover = document.getElementById(hover);
@@ -21,11 +24,10 @@ var navOnClick = function(exception) {
 	developer = document.getElementById("developer");
 	human = document.getElementById("human");
 
-	navTabArray = [navAbout, navResume, navContact];
-
 	intro.style.marginTop = "-20px";
 	intro.style.width = "85%";	
 	intro.style.marginLeft = "100px";	
+	intro.style.minWidth = "800px";	
 	
 	aspire.style.marginTop = "110px";
 	aspire.style.width = "85%";	
@@ -50,26 +52,22 @@ var navOnClick = function(exception) {
 		document.getElementById("navText1").className = "navTextSelected";
 		document.getElementById("navText1").style.marginTop = "115px";
 		document.getElementById("firstLetterA").style.marginTop = "73px";
-
 		document.getElementById("navText1").style.marginLeft = "95px";
 		document.getElementById("firstLetterA").style.marginLeft = "43px";
 
-		for (i=0;i<navTabArray.length;i++) {
-			if (navTabArray[i].id != exception) {
-				navResume.className = "navCircle";
-				navResume.style.marginTop = "110px";
-				navResume.style.zIndex = "100";
-				document.getElementById("navText2").className = "navText";
-				document.getElementById("navText2").style.marginTop = "49px";
-				document.getElementById("firstLetterR").style.marginTop = "3px";
-				navContact.className = "navCircle";	
-				navContact.style.marginTop = "220px";
-				navContact.style.zIndex = "100";
-				document.getElementById("navText3").className = "navText";
-				document.getElementById("navText3").style.marginTop = "49px";
-				document.getElementById("firstLetterC").style.marginTop = "3px";
-			}
-		}
+		navResume.className = "navCircle";
+		navResume.style.marginTop = "110px";
+		navResume.style.zIndex = "100";
+		document.getElementById("navText2").className = "navText";
+		document.getElementById("navText2").style.marginTop = "49px";
+		document.getElementById("firstLetterR").style.marginTop = "3px";
+
+		navContact.className = "navCircle";	
+		navContact.style.marginTop = "220px";
+		navContact.style.zIndex = "100";
+		document.getElementById("navText3").className = "navText";
+		document.getElementById("navText3").style.marginTop = "49px";
+		document.getElementById("firstLetterC").style.marginTop = "3px";
 	}
 
 	if (exception == "Resume") {
@@ -80,22 +78,19 @@ var navOnClick = function(exception) {
 		document.getElementById("navText2").style.marginTop = "125px";
 		document.getElementById("firstLetterR").style.marginTop = "83px";
 
-		for (i=0;i<navTabArray.length;i++) {
-			if (navTabArray[i].id != exception) {
-				navAbout.className = "navCircle";
-				navAbout.style.marginTop = "0px";
-				navAbout.style.zIndex = "100";
-				document.getElementById("navText1").className = "navText"
-				document.getElementById("navText1").style.marginTop = "49px";
-				document.getElementById("firstLetterA").style.marginTop = "3px";
-				navContact.className = "navCircle"	;
-				navContact.style.marginTop = "220px";
-				navContact.style.zIndex = "100";
-				document.getElementById("navText3").className = "navText";
-				document.getElementById("navText3").style.marginTop = "49px";
-				document.getElementById("firstLetterC").style.marginTop = "3px";
-			}
-		}
+		navAbout.className = "navCircle";
+		navAbout.style.marginTop = "0px";
+		navAbout.style.zIndex = "100";
+		document.getElementById("navText1").className = "navText"
+		document.getElementById("navText1").style.marginTop = "49px";
+		document.getElementById("firstLetterA").style.marginTop = "3px";
+
+		navContact.className = "navCircle"	;
+		navContact.style.marginTop = "220px";
+		navContact.style.zIndex = "100";
+		document.getElementById("navText3").className = "navText";
+		document.getElementById("navText3").style.marginTop = "49px";
+		document.getElementById("firstLetterC").style.marginTop = "3px";
 	}
 
 	if (exception == "Contact") {
@@ -106,22 +101,32 @@ var navOnClick = function(exception) {
 		document.getElementById("navText3").style.marginTop = "120px";
 		document.getElementById("firstLetterC").style.marginTop = "78px";
 
-		for (i=0;i<navTabArray.length;i++) {
-			if (navTabArray[i].id != exception) {
-				navAbout.className = "navCircle";
-				navAbout.style.marginTop = "0px";
-				navAbout.style.zIndex = "100";
-				document.getElementById("navText1").className = "navText";
-				document.getElementById("navText1").style.marginTop = "49px";
-				document.getElementById("firstLetterA").style.marginTop = "3px";
-				navResume.className = "navCircle";	
-				navResume.style.marginTop = "110px";
-				navResume.style.zIndex = "100";
-				document.getElementById("navText2").className = "navText";
-				document.getElementById("navText2").style.marginTop = "49px";
-				document.getElementById("firstLetterR").style.marginTop = "3px";
-			}
-		}
+		navAbout.className = "navCircle";
+		navAbout.style.marginTop = "0px";
+		navAbout.style.zIndex = "100";
+		document.getElementById("navText1").className = "navText";
+		document.getElementById("navText1").style.marginTop = "49px";
+		document.getElementById("firstLetterA").style.marginTop = "3px";
+		navResume.className = "navCircle";	
+		navResume.style.marginTop = "110px";
+		navResume.style.zIndex = "100";
+		document.getElementById("navText2").className = "navText";
+		document.getElementById("navText2").style.marginTop = "49px";
+		document.getElementById("firstLetterR").style.marginTop = "3px";
+	}
+
+	if(exception != "Contact") {
+		document.getElementById("cont1").style.backgroundColor = "#BB6500";
+		document.getElementById("cont2").style.backgroundColor = "#BB6500";
+		document.getElementById("cont3").style.backgroundColor = "#961800";
+		document.getElementById("cont4").style.backgroundColor = "#BB6500";
+		document.getElementById("cont5").style.backgroundColor = "#961800";
+		document.getElementById("cont6").style.backgroundColor = "#BB6500";
+		document.getElementById("cont7").style.backgroundColor = "#961800";
+		document.getElementById("cont8").style.backgroundColor = "#002B60";
+		document.getElementById("cont9").style.backgroundColor = "#002B60";
+		document.getElementById("contA").style.backgroundColor = "#002B60";
+		document.getElementById("contB").style.backgroundColor = "#002B60";
 	}
 }
 
@@ -230,40 +235,35 @@ var scrollIconVis = function () {
 
 window.onscroll = scroll;
 
-var contactArray = ["cont1","cont2","cont3","cont4","cont5","cont6","cont7","cont8","cont9","contA","contB"]
 var contactSelector = function(except) {
 	for (i=0;i<contactArray.length;i++) {
 		if (contactArray[i] != except) { 
-			document.getElementById(contactArray[i]).style.backgroundColor = "#333";
+			document.getElementById(contactArray[i]).style.backgroundColor = "#000";
 		}
 	}
 }
 
-var contactDeselector = function() {
+
+var contactDeselector = function(except) {
 	for (i=0;i<contactArray.length;i++) {
-		if ((contactArray[i] == "cont1") || (contactArray[i] == "cont5") || (contactArray[i] == "cont6") || (contactArray[i] == "cont9")){ 
-			document.getElementById(contactArray[i]).style.backgroundColor = "#BB6500";
-		}
-
-		if ((contactArray[i] == "cont2") || (contactArray[i] == "cont7") || (contactArray[i] == "contA")) { 
-			document.getElementById(contactArray[i]).style.backgroundColor = "#961800";
-		}
-
-		if ((contactArray[i] == "cont3") || (contactArray[i] == "cont4") || (contactArray[i] == "cont8") || (contactArray[i] == "contB")) { 
-			document.getElementById(contactArray[i]).style.backgroundColor = "#002B60";
-		}
+		if (contactArray[i] != except) { 
+			var ranColor = colorArray[Math.floor(Math.random()*3)];
+			document.getElementById(contactArray[i]).style.backgroundColor = ranColor;
+		}	
 	}
 }
 
 var phoneClick = function() {
 	var phone = document.getElementById("cont1");
 	var text = document.getElementById("phoneText");
-	if (phone.style.width == "" || phone.style.width == "96px") {
-		phone.style.width = "164px";
+	if (phone.style.height == "" || phone.style.height == "96px") {
+		phone.style.height = "215px";
+		phone.style.marginTop = "-115px";
 		text.style.visibility = "visible";
 		text.style.opacity = "1";
-	} else if (phone.style.width == "164px") {
-		phone.style.width = "96px"
+	} else if (phone.style.height == "215px") {
+		phone.style.height = "96px"
+		phone.style.marginTop = "0px";
 		text.style.visibility = "hidden";
 		text.style.opacity = "0";
 	};
@@ -273,10 +273,10 @@ var emailClick = function() {
 	var email = document.getElementById("cont6");
 	var text = document.getElementById("emailText");
 	if (email.style.width == "" || email.style.width == "96px") {
-		email.style.width = "290px"
+		email.style.width = "250px"
 		text.style.visibility = "visible";
 		text.style.opacity = "1";
-	} else if (email.style.width == "290px") {
+	} else if (email.style.width == "250px") {
 		email.style.width = "96px"
 		text.style.opacity = "0";
 	};
