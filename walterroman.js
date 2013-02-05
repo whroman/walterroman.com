@@ -37,13 +37,13 @@ var navOnClick = function(exception) {
 	navBar.style.paddingLeft = "5%";
 	navBar.style.marginLeft = "-50px";
 
-	document.getElementById("*1").className = "asteriskVis";
-	document.getElementById("*2").className = "asteriskVis";
-	document.getElementById("*3").className = "asteriskVis";
+	// document.getElementById("*1").className = "asteriskVis";
+	// document.getElementById("*2").className = "asteriskVis";
+	// document.getElementById("*3").className = "asteriskVis";
 
-	musician.className = "aspireLinkInvert";
-	developer.className = "aspireLinkInvert";
-	human.className = "aspireLinkInvert";
+	// musician.className = "aspireLinkInvert";
+	// developer.className = "aspireLinkInvert";
+	// human.className = "aspireLinkInvert";
 
 	if (exception == "About") {
 		navAbout.className = "aboutClick";
@@ -155,45 +155,99 @@ var contactClick = function() {
 	document.getElementById("resumePage").className = "pageInvis";
 }
 
-var toolTip = function(exception) {
-	toolTip1 = document.getElementById("toolTip1");
-	toolTip2 = document.getElementById("toolTip2");
-	toolTip3 = document.getElementById("toolTip3");
 
-	triangle1 = document.getElementById("triangle1");
-	triangle2 = document.getElementById("triangle2");
-	triangle3 = document.getElementById("triangle3");
+var aboutSelector = function(except) {
+	var info = document.getElementById(except+"Info");
+	var titles = document.getElementById(except+"Titles");
+	var about = document.getElementById("aboutPage");
 
-	if (exception == "toolTip1") {
-		toolTip1.className = "toolTipHover";
-	}
+	if (info.style.height == "" || info.style.height == "0px") {
+		info.style.visibility = "visible";
+		info.style.opacity = "1";
+		titles.style.visibility = "visible";
+		titles.style.opacity = "1";
+			if (except == "personal") {
+				info.style.height = "406px";
+				titles.style.height = "406px";
+			}
+			if (except == "art") {
+				info.style.height = "637px";
+				titles.style.height = "637px";
+			}
+			if (except == "education") {
+				info.style.height = "786px";
+				titles.style.height = "786px";
+			}
+	} else {
+		info.style.height = "0px";
+		info.style.opacity = "0";
+		info.style.visibility = "hidden";
 
-	if (exception == "toolTip2") {
-		toolTip2.className = "toolTipHover";
-	}
-
-	if (exception == "toolTip3") {
-		toolTip3.className = "toolTipHover";
+		titles.style.height = "0px";
+		titles.style.opacity = "0";
+		titles.style.visibility = "hidden";
 	}
 }
 
-var toolTipMouseOut = function(exception) {
-	toolTip1 = document.getElementById("toolTip1");
-	toolTip2 = document.getElementById("toolTip2");
-	toolTip3 = document.getElementById("toolTip3");
+var asteriskClick = function(except) {
+	var one = document.getElementById("ast"+except+"1");
+	var two = document.getElementById("ast"+except+"2");
+	var three = document.getElementById("ast"+except+"3");
+	var four = document.getElementById("ast"+except+"4");
+// Creates minus sign
+	if (one.className == "minus" || one.className == "minus antiPlus") {
+		one.className = "minus selected";
+		two.className = "minus";
+		three.className = "minus";
+		four.className = "minus";
+	} else if (one.className != "minus") {
+// Creates plus sign
+		one.className = "minus";
+		two.className = "minus";
+		three.className = "minus";
+		four.className = "minus plus";
+	}
+}
 
-	if (exception == "toolTip1") {
-		toolTip1.className = "toolTip";
-	};
+var asteriskMouseOver = function(except) {
+	var one = document.getElementById("ast"+except+"1");
+	var two = document.getElementById("ast"+except+"2");
+	var three = document.getElementById("ast"+except+"3");
+	var four = document.getElementById("ast"+except+"4");
+// Keeps minus sign
+	if (one.className == "minus selected") {
+		one.className = "minus selected";
+		two.className = "minus";
+		three.className = "minus";
+		four.className = "minus";
+	} else if (one.className == "minus" || one.className == "minus antiPlus") {
+// Keeps plus sign
+		one.className = "minus antiPlus";
+		two.className = "minus";
+		three.className = "minus";
+		four.className = "minus plus";
+	}
+}
 
-	if (exception == "toolTip2") {
-		toolTip2.className = "toolTip";
-	};
-
-	if (exception == "toolTip3") {
-		toolTip3.className = "toolTip";
-	};
-};
+var asteriskMouseOut = function(except) {
+	var one = document.getElementById("ast"+except+"1");
+	var two = document.getElementById("ast"+except+"2");
+	var three = document.getElementById("ast"+except+"3");
+	var four = document.getElementById("ast"+except+"4");
+// Keeps minus sign
+	if (one.className == "minus selected") {
+		one.className = "minus selected";
+		two.className = "minus";
+		three.className = "minus";
+		four.className = "minus plus45";
+	} else if (one.className == "minus" || one.className == "minus antiPlus") {
+// Keeps asterisk sign
+		one.className = "minus";
+		two.className = "minus plus";
+		three.className = "minus plus45";
+		four.className = "minus plus135";
+	}
+}
 
 var pageScroll = function() {
 	var walt = Math.ceil(pageYOffset / 10);
@@ -238,7 +292,7 @@ window.onscroll = scroll;
 var contactSelector = function(except) {
 	for (i=0;i<contactArray.length;i++) {
 		if (contactArray[i] != except) { 
-			document.getElementById(contactArray[i]).style.backgroundColor = "#000";
+			document.getElementById(contactArray[i]).style.backgroundColor = "#090909";
 		}
 	}
 }
@@ -281,25 +335,3 @@ var emailClick = function() {
 		text.style.opacity = "0";
 	};
 }
-
-// var emailHover = function() {
-// 	var email = document.getElementById("cont6");
-// 	var text = document.getElementById("emailText");
-
-// 	if (email.style.width == "" || email.style.width == "96px") {
-// 		text.style.textDecoration = "none";
-// 	} else if (email.style.width == "290px") {
-// 		text.style.textDecoration = "underline";
-// 	};
-// }
-
-// var emailUnhover = function() {
-// 	var email = document.getElementById("cont6");
-// 	var text = document.getElementById("emailText");
-
-// 	if (email.style.width == "" || email.style.width == "96px") {
-// 		text.style.textDecoration = "none";
-// 	} else if (email.style.width == "290px") {
-// 		text.style.textDecoration = "none";
-// 	};
-// }

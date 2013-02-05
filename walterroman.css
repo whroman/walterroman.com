@@ -11,7 +11,7 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 	background-color: transparent;
 
-	overflow: auto;
+	overflow: visible;
 }
 
 h2 {
@@ -25,6 +25,10 @@ em {
 	color: #000;
 
 	z-index: 10;
+}
+
+h3 {
+	overflow: visible;
 }
 
 a {
@@ -70,6 +74,7 @@ a {
 	-webkit-transition: all 0.7s; 
 	transition: all 0.7s;
 }
+
 
 #aspire {
 	position: absolute;
@@ -229,447 +234,22 @@ a {
 	color: #002B60;
 }
 
-
-
-	.toolTip {
-		position: absolute;
-		margin: -80px 0px 0px 73%;
-		overflow: hidden;
-
-		font-size: 16px;
-		font-weight: 200;
-		text-align: center;
-		color: #222;
-
-		background-color: #000;
-		border-radius: 15px;
-		width: 15px;
-		height: 15px;
-
-		z-index: 1;
-
-		visibility: hidden;
-		opacity: 0;
-
-		-o-transition: all 0.3s 0s;
-		-ms-transition: all 0.3s 0s;
-		-moz-transition: all 0.3s 0s;
-		-webkit-transition: all 0.3s 0s; 
-		transition: all 0.3s 0s;
-	}
-
-
-	.toolTipHover {
-		position: absolute;
-		margin: -83px 0px 0px 100%;
-		overflow: hidden;
-
-		background-color: transparent;
-		border-radius: 128px;
-		width: 108px;
-		height: 108px;
-
-		cursor: default;
-		z-index: 1;
-
-		visibility: visible;
-		opacity: 0.8;
-
-		-o-transition: all 0.3s ease-out 0.4s;
-		-ms-transition: all 0.3s ease-out 0.4s;
-		-moz-transition: all 0.3s ease-out 0.4s;
-		-webkit-transition: all 0.3s ease-out 0.4s; 
-		transition: all 0.3s ease-out 0.4s;
-	}
-
-	.toolTipText {
-		color: #000;
-		font-weight: 100;
-		font-size: 16px;
-		background-color: transparent;
-		cursor: default;
-
-		text-align: center;
-		opacity: 1;
-
-		z-index: 100;
-
-	}
-
-	#toolTip1 {
-		background-color: #BB6500;
-
-	}
-
-	#toolTip2 {
-		background-color: #961800;
-
-	}
-
-	#toolTip3 {
-		background-color: #002B60;
-
-	}
-
-/* Contact */
-
-#contactPage img {
-	position: absolute;
-	margin-top: 8px;
-	margin-left: 8px;
-	height: 80px;
-	width: 80px;
-}
-
-#contactPage #cont3 img {
-	height: 100px;
-	width: 100px;
-	margin-top: -1px;
-	margin-left: -1px;
-}
-
-#contactPage #contA img {
-	height: 80px;
-	width: 80px;
-	margin-top: 16px;
-	margin-left: 8px;
-}
-
-#phoneText {
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	position: absolute;
-	color: white;
-	font-weight: 100;
-	margin-top: 95px;
-	margin-left: 13px;
-	text-align: left;
-	font-size: 32px;
-	text-align: center;
-	line-height: 1;
-	visibility: hidden;
-	opacity: 0;
-
-		-o-transition: all 0.3s 0s;
-		-ms-transition: all 0.3s 0s;
-		-moz-transition: all 0.3s 0s;
-		-webkit-transition: all 0.3s 0s; 
-		transition: all 0.3s 0s;
-}
-
-#emailText {
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	position: absolute;
-	color: white;
-	font-weight: 100;
-	margin-top: 5px;
-	margin-left: 95px;
-	text-align: left;
-	font-size: 24px;
-	line-height: 0.9;
-	visibility: hidden;
-	opacity: 0;
-
-		-o-transition: all 0.3s 0s;
-		-ms-transition: all 0.3s 0s;
-		-moz-transition: all 0.3s 0s;
-		-webkit-transition: all 0.3s 0s; 
-		transition: all 0.3s 0s;
-}
-
-.contCircle {
-			position: absolute;
-			margin: 2px;
-
-			height: 96px;
-			width: 96px;
-			border-radius: 100px;
-
-			opacity: 0.8;
-
-		-o-transition: all 0.3s 0s, box-shadow 0s;
-		-ms-transition: all 0.3s 0s, box-shadow 0s;
-		-moz-transition: all 0.3s 0s, box-shadow 0s;
-		-webkit-transition: all 0.3s 0s, box-shadow 0s; 
-		transition: all 0.3s 0s, box-shadow 0s;
-}
-
-.contCircle:active {
-	box-shadow: 2px 3px 5px #555;
-}
-
-/*
-/Colors
-
-#Yellow: #FFD300
-
-#Orange: #BB6500
-#Red: #961800
-#Blue: #002B60
-*/
-
-#cont1 {
-		background-color: #BB6500;
-}
-
-#cont2 {
-	background-color: #BB6500;
-
-	margin-top: 102px;
-	margin-left: 52px;
-}
-
-#cont3 {
-	background-color: #961800;
-
-	margin-top: 252px;
-	margin-left: 2px;
-}
-
-#cont4 {
-	background-color: #BB6500;
-
-	margin-top: 52px;
-	margin-left: 152px;
-}
-
-#cont5 {
-	background-color: #961800;
-
-	margin-top: 202px;
-	margin-left: 102px;
-}
-
-#cont6 {
-	background-color: #BB6500;
-
-	margin-top: 2px;
-	margin-left: 252px;
-}
-
-#cont7 {
-	background-color: #961800;
-
-	margin-top: 152px;
-	margin-left: 202px;
-}
-
-#cont8 {
-	background-color: #002B60;
-
-	margin-top: 302px;
-	margin-left: 152px;
-}
-
-#cont9 {
-	background-color: #002B60;
-
-	margin-top: 252px;
-	margin-left: 252px;
-}
-
-#contA {
-	background-color: #002B60;
-
-	margin-top: 202px;
-	margin-left: 352px;
-}
-
-#contB {
-	background-color: #002B60;
-
-	margin-top: 302px;
-	margin-left: 402px;
-}
-
-
-	#circlePhone {
-		position: absolute;
-		margin: -24px 0px 0px -8px;
-
-		background-color: #BB6500;
-		border-radius: 78px;
-		height: 78px;
-		width: 78px;
-
-		opacity: 0.8;
-	}
-
-	#circleEmail {
-		position: absolute;
-		margin: 49px 0px 0px 42px;
-		
-		background-color: #961800;
-		border-radius: 71px;
-		height: 71px;
-		width: 71px;
-
-		opacity: 0.8;	
-	}
-
-	#circleGit {
-		position: absolute;
-		margin: 112px 0px 0px 91px;
-		
-		background-color: #002B60;
-		border-radius: 85px;
-		height: 85px;
-		width: 85px;
-
-		opacity: 0.8;	
-	}
-
-	#circleTumblr {
-		position: absolute;
-		margin: 184px 0px 0px 148px;
-
-		background-color: #BB6500;
-		border-radius: 82px;
-		height: 82px;
-		width: 82px;
-
-		opacity: 0.8;
-	}
-
-	#circleFacebook {
-		position: absolute;
-		margin: 238px 0px 0px 41px;
-
-		background-color: #961800;
-		border-radius: 1000px;
-		height: 114px;
-		width: 114px;
-
-		opacity: 0.8;
-	}
-
-	#phone {
-		position: absolute;
-		z-index: 10;
-
-		background-color: transparent;
-
-		color: #fff;
-		font-weight: 400;
-		text-shadow: 1px 1px 2px #000;
-		text-align: left;
-
-		cursor: default;
-	}
-
-	#email {
-		position: absolute;
-		margin: 70px 0px 0px 50px;
-		z-index: 10;
-
-		background-color: transparent;
-
-		color: #fff;
-		font-weight: 400;
-		text-shadow: 1px 1px 2px #000;
-		text-align: left;
-
-		cursor: default;
-	}
-
-	#git {
-		position: absolute;
-		margin: 140px 0px 0px 100px;
-		z-index: 10;
-
-		background-color: transparent;
-
-		color: #fff;
-		font-weight: 400;
-		text-shadow: 1px 1px 2px #000;
-		text-align: left;
-	}
-
-	#octocat {
-		position: absolute;
-		height: 100px;
-		width: 100px;
-
-		margin: 135px 0px 0px 100px;
-
-		background-color: transparent;
-	}
-
-	#tumblr {
-		position: absolute;
-		margin: 210px 0px 0px 155px;
-		z-index: 10;
-
-		background-color: transparent;
-
-		color: #fff;
-		font-weight: 400;
-		text-shadow: 1px 1px 2px #000;
-		text-align: left;
-
-		cursor: default;
-	}
-
-	#facebook {
-		position: absolute;
-		margin: 280px 0px 0px 50px;
-		z-index: 10;
-
-		background-color: transparent;
-
-		color: #fff;
-		font-weight: 400;
-		text-shadow: 1px 1px 2px #000;
-		text-align: left;
-	}
-
-
-	#contactPage a:hover {
-	color: black;
-	text-decoration: underline;	
-	}
-
-	.contactTextDark {
-		margin: 0px 0px 0px 1px;
-
-		color: #444;
-		font-size: 22px;
-		line-height: 1;
-		text-shadow: 0px 0px 0px transparent;
-		font-weight: 800;
-	}
-
-	.contactTextLight {
-		margin: 1px 0px 0px 1px;
-
-		color: #666;
-		font-size: 22px;
-		line-height: 1;
-		text-shadow: 0px 0px 0px transparent;
-		font-weight: 300;
-	}
-
 #aboutPage {
 	position: absolute;
 	background-color: transparent;
-	width: auto;
-	height: 260px;
-	min-width: 550px;
 
-	overflow: hidden;
-
-		font-weight: 300;
+	font-weight: 300;
 
 	font-size: 22px;
 	line-height: 1.5;
 
 	text-align: left;
 
-	margin: -40px 0px 20px 195px;
-
-	padding-left: 10%;
 	padding-bottom: 30px;
 
-	color: #666;
+	z-index: 11;
+
+	color: #000;
 
 	-o-transition: all 0.7s;
 	-ms-transition: all 0.7s;
@@ -749,18 +329,27 @@ Compensated for in #aboutPage.pageVis
 }
 
 #aboutPage.pageVis {
-	opacity: 1;
+	background-color: pink;
+	opacity: 0.7;
 	visibility: visible;
-	margin-top: 144px;
-	margin-left: 185px;
-	height: 450px;
+	margin-top: 165px;
+	margin-left: 10%;
+	height: auto;
+	padding-left: 250px;
+	width: 600px;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 	#aboutPage.pageInvis {
 		opacity: 0;
 		visibility: hidden;
 		margin-top: 40px;
-		height: 260px
+		margin-left: 20%;
+		width: 671px;
+		padding-left: 225px;
+		height: auto;
+		overflow: hidden;
 	}
 
 #resumePage.pageVis {
@@ -791,17 +380,243 @@ Compensated for in #aboutPage.pageVis
 		margin-top: 40px;
 	}
 
+/* ##About */
 
-/* Resume */		
-		#pdfMain {
+/*
+/Colors
+
+#Orange: #BB6500
+#Red: #961800
+#Blue: #002B60
+*/	
+
+#personalTitles, #personalInfo, #artTitles, #artInfo, #educationTitles, #artInfo {
+	height: 0px;
+}
+
+#aboutPage .aboutTitles {
+	position: absolute;
+	background-color: transparent;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+	font-weight: 200;
+
+	font-size: 22px;
+	line-height: 1.5;
+
+	text-align: right;
+
+	margin-left: -209px;
+
+	padding-bottom: 10px;
+
+	color: #666;
+
+	opacity: 0;
+
+	width: 200px;
+	height: 0px;
+
+
+	visibility: hidden;
+
+	overflow: visible;
+
+	-o-transition: all 0.7s;
+	-ms-transition: all 0.7s;
+	-moz-transition: all 0.7s;
+	-webkit-transition: all 0.7s; 
+	transition: all 0.7s;
+}
+
+#aboutPage .aboutText {
+	position: relative;
+	background-color: transparent;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+	font-weight: 200;
+
+	font-size: 22px;
+	line-height: 1.5;
+
+	text-align: left;
+
+	margin-left: 3px;
+	padding-bottom: 10px;
+
+	color: #666;
+
+	opacity: 0;
+
+	height: 0px;
+
+
+	visibility: hidden;
+
+	-o-transition: all 0.7s;
+	-ms-transition: all 0.7s;
+	-moz-transition: all 0.7s;
+	-webkit-transition: all 0.7s; 
+	transition: all 0.7s;
+}
+
+#aboutPage .italics {
+	font-style: italic;
+}
+
+#aboutPage #eduEnd {
+	position: absolute;
+	width: 650px;
+	text-align: left;
+	margin-left: -182px;	
+	font-size: 40px;
+}
+
+#aboutPage .absolute {
+	position: absolute;
+	width: 588px;
+}
+
+#personalInfo.aboutText {
+	width: 330px;
+}
+
+#artInfo.aboutText {
+	width: 213px;
+}
+
+#educationInfo.aboutText {
+	width: 353px;
+}
+
+#aboutContain {
+	position: absolute;
+
+	background-color: blue;
+
+	width: 591px;
+	margin-left: -500px;
+	padding-left: 100px;
+	padding-right: 0px;
+
+	opacity: 0.3;
+	visibility: visible;
+
+	overflow-y: hidden;
+	overflow-x: visible;
+	height: 300px;
+}
+
+#aboutPage .aboutHead {
+	position: relative;
+	cursor: pointer;
+	font-size: 48px;
+}
+
+
+/*Gives padding to asterisk for onClick*/
+#aboutPage .aboutNavPad {
+	padding-left: 80px;
+	margin-left: -80px;
+}
+
+	#asterPers {
+		margin: -40px 0px 40px -70px;
+	}
+
+	#asterPers .minus {
+		background-color: #BB6500;
+	}
+
+	#asterArt {
+		margin: -40px 0px 40px -70px;
+	}
+
+	#asterArt .minus {
+		background-color: #961800;
+	}
+
+	#asterEdu {
+		margin: -40px 0px 40px -70px;
+	}
+
+	#asterEdu .minus {
+		background-color: #002B60;
+	}
+
+.minus {
+	position: absolute;
+	height: 5px;
+	width: 54px;
+	margin: 0px 0px 67px 0px;
+
+	-o-transition: all 0.7s;
+	-ms-transition: all 0.7s;
+	-moz-transition: all 0.7s;
+	-webkit-transition: all 0.7s; 
+	transition: all 0.7s;
+}
+
+.plus {
+	transform:rotate(90deg);
+	-ms-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);   
+	-webkit-transform:rotate(90deg);
+	-o-transform:rotate(90deg); 
+}
+
+.plus45 {
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);   
+	-webkit-transform:rotate(45deg);
+	-o-transform:rotate(45deg); 
+}
+
+.plus135 {
+	transform:rotate(135deg);
+	-ms-transform:rotate(135deg);
+	-moz-transform:rotate(135deg);   
+	-webkit-transform:rotate(135deg);
+	-o-transform:rotate(135deg); 
+}
+
+.antiPlus {
+	transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg);
+	-moz-transform:rotate(-90deg);   
+	-webkit-transform:rotate(-90deg);
+	-o-transform:rotate(-90deg); 
+}
+
+.anti45 {
+	transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);   
+	-webkit-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg); 	
+}
+
+
+/* ##Resume */
+
+/*
+/Colors
+
+#Orange: #BB6500
+#Red: #961800
+#Blue: #002B60
+*/	
+
+#pdfMain {
 			position: absolute;
 			width: 70%;
 			text-align: left;
 
 			margin: 260px 0px 0px 31%;
-		}
+}
 
-		#pdfCircle {
+	#pdfCircle {
 			position: absolute;
 			font-weight: 200;
 			text-align: center;
@@ -825,15 +640,14 @@ Compensated for in #aboutPage.pageVis
 			-moz-transition: all 0.5s, text-shadow 0s;
 			-webkit-transition: all 0.5s, text-shadow 0s; 
 			transition: all 0.5s, text-shadow 0s;
-		}
+	}
 
-		#DLpdf {
+	#DLpdf {
 			color: #fff;
 				margin-top: 15px;
 				font-weight: 400;
-		}
+	}
 
-/* HTML Resume Styling */
 		#resumeBody {
 			width: 100%;	
 			margin: 240px 0px 0px -30px;
@@ -1028,6 +842,209 @@ Compensated for in #aboutPage.pageVis
 			margin-top: 8px;
 		}
 
+/* ##Contact */
+
+#contactPage img {
+	position: absolute;
+	margin-top: 8px;
+	margin-left: 8px;
+	height: 80px;
+	width: 80px;
+}
+
+#contactPage #cont3 img {
+	height: 100px;
+	width: 100px;
+	margin-top: -1px;
+	margin-left: -1px;
+}
+
+#contactPage #contA img {
+	height: 80px;
+	width: 80px;
+	margin-top: 16px;
+	margin-left: 8px;
+}
+
+#phoneText {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	position: absolute;
+	color: white;
+	font-weight: 100;
+	margin-top: 95px;
+	margin-left: 13px;
+	text-align: left;
+	font-size: 32px;
+	text-align: center;
+	line-height: 1;
+	visibility: hidden;
+	opacity: 0;
+
+		-o-transition: all 0.3s 0s;
+		-ms-transition: all 0.3s 0s;
+		-moz-transition: all 0.3s 0s;
+		-webkit-transition: all 0.3s 0s; 
+		transition: all 0.3s 0s;
+}
+
+#emailText {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	position: absolute;
+	color: white;
+	font-weight: 100;
+	margin-top: 5px;
+	margin-left: 95px;
+	text-align: left;
+	font-size: 24px;
+	line-height: 0.9;
+	visibility: hidden;
+	opacity: 0;
+
+		-o-transition: all 0.3s 0s;
+		-ms-transition: all 0.3s 0s;
+		-moz-transition: all 0.3s 0s;
+		-webkit-transition: all 0.3s 0s; 
+		transition: all 0.3s 0s;
+}
+
+.contCircle {
+			position: absolute;
+			margin: 2px;
+
+			height: 96px;
+			width: 96px;
+			border-radius: 100px;
+
+			opacity: 0.8;
+
+		-o-transition: all 0.3s 0s, box-shadow 0s;
+		-ms-transition: all 0.3s 0s, box-shadow 0s;
+		-moz-transition: all 0.3s 0s, box-shadow 0s;
+		-webkit-transition: all 0.3s 0s, box-shadow 0s; 
+		transition: all 0.3s 0s, box-shadow 0s;
+}
+
+.contCircle:active {
+	box-shadow: 2px 3px 5px #555;
+}
+
+/*
+/Colors
+
+#Orange: #BB6500
+#Red: #961800
+#Blue: #002B60
+*/
+
+#cont1 {
+		background-color: #BB6500;
+}
+
+#cont2 {
+	background-color: #BB6500;
+
+	margin-top: 102px;
+	margin-left: 52px;
+}
+
+#cont3 {
+	background-color: #961800;
+
+	margin-top: 252px;
+	margin-left: 2px;
+}
+
+#cont4 {
+	background-color: #BB6500;
+
+	margin-top: 52px;
+	margin-left: 152px;
+}
+
+#cont5 {
+	background-color: #961800;
+
+	margin-top: 202px;
+	margin-left: 102px;
+}
+
+#cont6 {
+	background-color: #BB6500;
+
+	margin-top: 2px;
+	margin-left: 252px;
+}
+
+#cont7 {
+	background-color: #961800;
+
+	margin-top: 152px;
+	margin-left: 202px;
+}
+
+#cont8 {
+	background-color: #002B60;
+
+	margin-top: 302px;
+	margin-left: 152px;
+}
+
+#cont9 {
+	background-color: #002B60;
+
+	margin-top: 252px;
+	margin-left: 252px;
+}
+
+#contA {
+	background-color: #002B60;
+
+	margin-top: 202px;
+	margin-left: 352px;
+}
+
+#contB {
+	background-color: #002B60;
+
+	margin-top: 302px;
+	margin-left: 402px;
+}
+
+	#contactPage a:hover {
+	color: black;
+	text-decoration: underline;	
+	}
+
+	.contactTextDark {
+		margin: 0px 0px 0px 1px;
+
+		color: #444;
+		font-size: 22px;
+		line-height: 1;
+		text-shadow: 0px 0px 0px transparent;
+		font-weight: 800;
+	}
+
+	.contactTextLight {
+		margin: 1px 0px 0px 1px;
+
+		color: #666;
+		font-size: 22px;
+		line-height: 1;
+		text-shadow: 0px 0px 0px transparent;
+		font-weight: 300;
+	}
+
+
+/* ##NavBar */
+
+/*
+/Colors
+
+#Orange: #BB6500
+#Red: #961800
+#Blue: #002B60
+*/
 #navBar {
 	position: absolute;
 	font-size: 32px;
@@ -1045,16 +1062,6 @@ Compensated for in #aboutPage.pageVis
 	-webkit-transition: all 0.7s; 
 	transition: all 0.7s;
 }
-
-/*
-/Colors
-
-#Yellow: #FFD300
-
-#Orange: #BB6500
-#Red: #961800
-#Blue: #002B60
-*/
 
 #About {
 	position: absolute;
