@@ -465,6 +465,7 @@ Compensated for in #aboutPage.pageVis
 	width: 588px;
 }
 
+
 #personalInfo.aboutText {
 	width: 330px;
 }
@@ -475,24 +476,6 @@ Compensated for in #aboutPage.pageVis
 
 #educationInfo.aboutText {
 	width: 353px;
-}
-
-#aboutContain {
-	position: absolute;
-
-	background-color: blue;
-
-	width: 591px;
-	margin-left: -500px;
-	padding-left: 100px;
-	padding-right: 0px;
-
-	opacity: 0.3;
-	visibility: visible;
-
-	overflow-y: hidden;
-	overflow-x: visible;
-	height: 300px;
 }
 
 #aboutPage .aboutHead {
@@ -838,6 +821,8 @@ Compensated for in #aboutPage.pageVis
 	margin-left: 8px;
 	height: 80px;
 	width: 80px;
+
+	border: 0px solid transparent;
 }
 
 #contactPage #cont3 img {

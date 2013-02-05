@@ -134,6 +134,20 @@ var aboutClick = function() {
 	// document.getElementById("intro").className = "introInvis"	
 	document.getElementById("aboutPage").className = "pageVis";
 
+	var persInfo = document.getElementById("personalInfo");
+	var persTitles = document.getElementById("personalTitles");
+	var arts = document.getElementById("artInfo");
+	var edu = document.getElementById("educationInfo");
+
+	if ((persInfo.style.height == "0px" || persInfo.style.height == "") && (arts.style.height == "0px" || arts.style.height == "") && (edu.style.height == "0px" || arts.style.height == "")) {
+		persInfo.style.height = "406px";
+		persInfo.style.opacity = "1";
+		persInfo.style.visibility = "visible";
+		persTitles.style.height = "406px";
+		persTitles.style.opacity = "1";
+		persTitles.style.visibility = "visible"
+	}
+
 	document.getElementById("contactPage").className = "pageInvis";
 	document.getElementById("resumePage").className = "pageInvis";
 }
