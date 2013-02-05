@@ -25,14 +25,14 @@ var navOnClick = function(exception) {
 	human = document.getElementById("human");
 
 	intro.style.marginTop = "-20px";
-	intro.style.width = "85%";	
-	intro.style.marginLeft = "100px";	
-	intro.style.minWidth = "800px";	
+	intro.style.width = "50%";	
+	intro.style.marginLeft = "500px";	
+	intro.style.minWidth = "500px";	
 	
 	aspire.style.marginTop = "110px";
-	aspire.style.width = "85%";	
-	aspire.style.marginLeft = "100px";	
-	aspire.style.minWidth = "800px";	
+	aspire.style.width = "50%";	
+	aspire.style.marginLeft = "500px";	
+	aspire.style.minWidth = "500px";	
 
 	navBar.style.paddingLeft = "5%";
 	navBar.style.marginLeft = "-50px";
@@ -171,8 +171,8 @@ var aboutSelector = function(except) {
 				titles.style.height = "406px";
 			}
 			if (except == "art") {
-				info.style.height = "637px";
-				titles.style.height = "637px";
+				info.style.height = "670px";
+				titles.style.height = "670px";
 			}
 			if (except == "education") {
 				info.style.height = "786px";
@@ -192,60 +192,71 @@ var aboutSelector = function(except) {
 var asteriskClick = function(except) {
 	var one = document.getElementById("ast"+except+"1");
 	var two = document.getElementById("ast"+except+"2");
-	var three = document.getElementById("ast"+except+"3");
-	var four = document.getElementById("ast"+except+"4");
 // Creates minus sign
-	if (one.className == "minus" || one.className == "minus antiPlus") {
+	if (one.className == "minus") {
 		one.className = "minus selected";
 		two.className = "minus";
-		three.className = "minus";
-		four.className = "minus";
 	} else if (one.className != "minus") {
 // Creates plus sign
 		one.className = "minus";
-		two.className = "minus";
-		three.className = "minus";
-		four.className = "minus plus";
+		two.className = "minus plus";
 	}
 }
 
 var asteriskMouseOver = function(except) {
 	var one = document.getElementById("ast"+except+"1");
 	var two = document.getElementById("ast"+except+"2");
-	var three = document.getElementById("ast"+except+"3");
-	var four = document.getElementById("ast"+except+"4");
+	var head = document.getElementById(except+"Head");
+
+	one.style.backgroundColor = "#000";
+	two.style.backgroundColor = "#000";
 // Keeps minus sign
 	if (one.className == "minus selected") {
 		one.className = "minus selected";
 		two.className = "minus";
-		three.className = "minus";
-		four.className = "minus";
-	} else if (one.className == "minus" || one.className == "minus antiPlus") {
+	} else if (one.className == "minus") {
 // Keeps plus sign
-		one.className = "minus antiPlus";
-		two.className = "minus";
-		three.className = "minus";
-		four.className = "minus plus";
+		one.className = "minus";
+		two.className = "minus plus";
+	}
+
+	if (except == 'Pers') {
+		head.style.color = "#BB6500";
+	}
+	if (except == 'Art') {
+		head.style.color = "#961800";
+	}
+	if (except == 'Edu') {
+		head.style.color = "#002B60";
 	}
 }
 
 var asteriskMouseOut = function(except) {
 	var one = document.getElementById("ast"+except+"1");
 	var two = document.getElementById("ast"+except+"2");
-	var three = document.getElementById("ast"+except+"3");
-	var four = document.getElementById("ast"+except+"4");
+	
+	document.getElementById(except+"Head").style.color = "#000";
 // Keeps minus sign
 	if (one.className == "minus selected") {
 		one.className = "minus selected";
 		two.className = "minus";
-		three.className = "minus";
-		four.className = "minus plus45";
-	} else if (one.className == "minus" || one.className == "minus antiPlus") {
+	} else if (one.className == "minus") {
 // Keeps asterisk sign
 		one.className = "minus";
 		two.className = "minus plus";
-		three.className = "minus plus45";
-		four.className = "minus plus135";
+	}
+
+	if (except == 'Pers') {
+		one.style.backgroundColor = "#BB6500";
+		two.style.backgroundColor = "#BB6500";
+	}
+	if (except == 'Art') {
+		one.style.backgroundColor = "#961800";
+		two.style.backgroundColor = "#961800";
+	}
+	if (except == 'Edu') {
+		one.style.backgroundColor = "#002B60";
+		two.style.backgroundColor = "#002B60";
 	}
 }
 
