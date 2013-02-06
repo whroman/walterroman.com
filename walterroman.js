@@ -140,10 +140,10 @@ var aboutClick = function() {
 	var edu = document.getElementById("educationInfo");
 
 	if ((persInfo.style.height == "0px" || persInfo.style.height == "") && (arts.style.height == "0px" || arts.style.height == "") && (edu.style.height == "0px" || arts.style.height == "")) {
-		persInfo.style.height = "406px";
+		persInfo.style.height = "340px";
 		persInfo.style.opacity = "1";
 		persInfo.style.visibility = "visible";
-		persTitles.style.height = "406px";
+		persTitles.style.height = "340px";
 		persTitles.style.opacity = "1";
 		persTitles.style.visibility = "visible"
 	}
@@ -181,8 +181,8 @@ var aboutSelector = function(except) {
 		titles.style.visibility = "visible";
 		titles.style.opacity = "1";
 			if (except == "personal") {
-				info.style.height = "406px";
-				titles.style.height = "406px";
+				info.style.height = "340px";
+				titles.style.height = "340px";
 			}
 			if (except == "art") {
 				info.style.height = "670px";

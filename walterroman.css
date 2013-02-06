@@ -240,11 +240,11 @@ a {
 
 	color: #000;
 
-	-o-transition: all 0.7s;
-	-ms-transition: all 0.7s;
-	-moz-transition: all 0.7s;
-	-webkit-transition: all 0.7s; 
-	transition: all 0.7s;
+	-o-transition: all 1s;
+	-ms-transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s; 
+	transition: all 1s;
 }
 
 #resumePage {
@@ -888,6 +888,8 @@ Compensated for in #aboutPage.pageVis
 			width: 96px;
 			border-radius: 100px;
 
+			border: 7px solid #FFF;
+
 			opacity: 0.8;
 
 		-o-transition: all 0.4s;
@@ -895,6 +897,10 @@ Compensated for in #aboutPage.pageVis
 		-moz-transition: all 0.4s;
 		-webkit-transition: all 0.4s; 
 		transition: all 0.4s;
+}
+
+.contCircle:hover {
+	border: 7px solid #000;
 }
 
 .contCircle:active {
