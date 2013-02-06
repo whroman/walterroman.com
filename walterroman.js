@@ -50,9 +50,9 @@ var navOnClick = function(exception) {
 		navAbout.style.marginTop = "-70px";
 		navAbout.style.zIndex = "99";
 		document.getElementById("navText1").className = "navTextSelected";
-		document.getElementById("navText1").style.marginTop = "115px";
+		document.getElementById("navText1").style.marginTop = "119px";
+		document.getElementById("navText1").style.marginLeft = "102px";
 		document.getElementById("firstLetterA").style.marginTop = "73px";
-		document.getElementById("navText1").style.marginLeft = "95px";
 		document.getElementById("firstLetterA").style.marginLeft = "43px";
 
 		navResume.className = "navCircle";
@@ -60,6 +60,7 @@ var navOnClick = function(exception) {
 		navResume.style.zIndex = "100";
 		document.getElementById("navText2").className = "navText";
 		document.getElementById("navText2").style.marginTop = "49px";
+		document.getElementById("navText2").style.marginLeft = "95px";
 		document.getElementById("firstLetterR").style.marginTop = "3px";
 
 		navContact.className = "navCircle";	
@@ -67,6 +68,7 @@ var navOnClick = function(exception) {
 		navContact.style.zIndex = "100";
 		document.getElementById("navText3").className = "navText";
 		document.getElementById("navText3").style.marginTop = "49px";
+		document.getElementById("navText3").style.marginLeft = "96px";
 		document.getElementById("firstLetterC").style.marginTop = "3px";
 	}
 
@@ -75,7 +77,8 @@ var navOnClick = function(exception) {
 		navResume.style.marginTop = "30px";
 		navResume.style.zIndex = "99"
 		document.getElementById("navText2").className = "navTextSelected";
-		document.getElementById("navText2").style.marginTop = "125px";
+		document.getElementById("navText2").style.marginTop = "128px";
+		document.getElementById("navText2").style.marginLeft = "93px";
 		document.getElementById("firstLetterR").style.marginTop = "83px";
 
 		navAbout.className = "navCircle";
@@ -83,6 +86,7 @@ var navOnClick = function(exception) {
 		navAbout.style.zIndex = "100";
 		document.getElementById("navText1").className = "navText"
 		document.getElementById("navText1").style.marginTop = "49px";
+		document.getElementById("navText1").style.marginLeft = "97px";
 		document.getElementById("firstLetterA").style.marginTop = "3px";
 
 		navContact.className = "navCircle"	;
@@ -90,28 +94,32 @@ var navOnClick = function(exception) {
 		navContact.style.zIndex = "100";
 		document.getElementById("navText3").className = "navText";
 		document.getElementById("navText3").style.marginTop = "49px";
+		document.getElementById("navText3").style.marginLeft = "96px";
 		document.getElementById("firstLetterC").style.marginTop = "3px";
 	}
 
 	if (exception == "Contact") {
 		navContact.className = "contactClick";
-		navContact.style.marginTop = "155px";
+		navContact.style.marginTop = "135px";
 		navContact.style.zIndex = "99"
 		document.getElementById("navText3").className = "navTextSelected";
-		document.getElementById("navText3").style.marginTop = "120px";
-		document.getElementById("firstLetterC").style.marginTop = "78px";
+		document.getElementById("navText3").style.marginTop = "134px";
+		document.getElementById("firstLetterC").style.marginTop = "88px";
+		document.getElementById("navText3").style.marginLeft = "97px";
 
 		navAbout.className = "navCircle";
 		navAbout.style.marginTop = "0px";
 		navAbout.style.zIndex = "100";
 		document.getElementById("navText1").className = "navText";
 		document.getElementById("navText1").style.marginTop = "49px";
+		document.getElementById("navText1").style.marginLeft = "97px";
 		document.getElementById("firstLetterA").style.marginTop = "3px";
 		navResume.className = "navCircle";	
 		navResume.style.marginTop = "110px";
 		navResume.style.zIndex = "100";
 		document.getElementById("navText2").className = "navText";
 		document.getElementById("navText2").style.marginTop = "49px";
+		document.getElementById("navText2").style.marginLeft = "95px";
 		document.getElementById("firstLetterR").style.marginTop = "3px";
 	}
 
@@ -138,6 +146,8 @@ var aboutClick = function() {
 	var persTitles = document.getElementById("personalTitles");
 	var arts = document.getElementById("artInfo");
 	var edu = document.getElementById("educationInfo");
+	var one = document.getElementById("astPers1");
+	var two = document.getElementById("astPers2");
 
 	if ((persInfo.style.height == "0px" || persInfo.style.height == "") && (arts.style.height == "0px" || arts.style.height == "") && (edu.style.height == "0px" || arts.style.height == "")) {
 		persInfo.style.height = "340px";
@@ -146,6 +156,9 @@ var aboutClick = function() {
 		persTitles.style.height = "340px";
 		persTitles.style.opacity = "1";
 		persTitles.style.visibility = "visible"
+
+		one.className = "minus selected"
+		two.className = "minus";
 	}
 
 	document.getElementById("contactPage").className = "pageInvis";
@@ -189,8 +202,8 @@ var aboutSelector = function(except) {
 				titles.style.height = "670px";
 			}
 			if (except == "education") {
-				info.style.height = "786px";
-				titles.style.height = "786px";
+				info.style.height = "986px";
+				titles.style.height = "986px";
 			}
 	} else {
 		info.style.height = "0px";

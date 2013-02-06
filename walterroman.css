@@ -40,7 +40,7 @@ a {
 	position: absolute;
 	background-color: transparent;
 	width: 68%;
-	color: #111;
+	color: #000;
 	min-width: 520px;
 
 	font-weight: 100;
@@ -82,7 +82,7 @@ a {
 	margin: 151px 0px 20px 145px;
 
 	padding: 0px 0px 0px 0px;
-	color: #222;
+	color: #000;
 	opacity: 1;
 
 	z-index: 10;
@@ -202,7 +202,7 @@ a {
 
 #musician:hover, #developer:hover, #human:hover {
 	color: #fff;
-	opacity: 0.8;
+	opacity: 0.9;
 }
 
 #aspire #musician.aspireLinkInvert:hover {
@@ -320,7 +320,7 @@ Compensated for in #aboutPage.pageVis
 #aboutPage.pageVis {
 	background-color: transparent;
 	visibility: visible;
-	margin-top: 165px;
+	margin-top: 134px;
 	margin-left: 10%;
 	height: auto;
 	padding-left: 300px;
@@ -344,8 +344,8 @@ Compensated for in #aboutPage.pageVis
 	opacity: 1;
 	visibility: visible;
 	margin-top: 134px;
-	overflow-y: visible;
-	height: 2410px;
+	overflow-y: hidden;
+	height: 2530px;
 }
 
 	#resumePage.pageInvis {
@@ -394,7 +394,7 @@ Compensated for in #aboutPage.pageVis
 
 	text-align: right;
 
-	margin-left: -209px;
+	margin-left: -219px;
 
 	padding-bottom: 10px;
 
@@ -452,12 +452,12 @@ Compensated for in #aboutPage.pageVis
 	font-style: italic;
 }
 
+#aboutPage .underline {
+	text-decoration: underline;
+}
+
 #aboutPage #eduEnd {
-	position: absolute;
-	width: 650px;
-	text-align: left;
-	margin-left: -182px;	
-	font-size: 36px;
+	font-size: 32px;
 }
 
 #aboutPage .absolute {
@@ -603,7 +603,7 @@ Compensated for in #aboutPage.pageVis
 
 			z-index: 102;
 
-			opacity: 0.8;
+			opacity: 1;
 
 
 				-o-transition: all 0.5s;
@@ -717,7 +717,7 @@ Compensated for in #aboutPage.pageVis
 			border-color: #BB6500 transparent;
 			border-style: solid;
 			border-width: 0px 750px 129px 0px ; 
-			opacity: 0.8;
+			opacity: 1;
 			z-index: -10;
 		}
 
@@ -729,7 +729,7 @@ Compensated for in #aboutPage.pageVis
 			border-color: #961800 transparent;
 			border-style: solid;
 			border-width: 0px 675px 165px 0px ; 
-			opacity: 0.8;
+			opacity: 1;
 			z-index: -10;
 		}
 
@@ -741,7 +741,7 @@ Compensated for in #aboutPage.pageVis
 			border-color: #002B60 transparent;
 			border-style: solid;
 			border-width: 0px 600px 93px 0px ; 
-			opacity: 0.8;
+			opacity: 1;
 			z-index: -10;
 		}
 
@@ -753,7 +753,7 @@ Compensated for in #aboutPage.pageVis
 			border-color: #BB6500 transparent;
 			border-style: solid;
 			border-width: 0px 525px 77px 0px ; 
-			opacity: 0.8;
+			opacity: 1;
 			z-index: -10;
 		}
 
@@ -765,7 +765,7 @@ Compensated for in #aboutPage.pageVis
 			border-color: #961800 transparent;
 			border-style: solid;
 			border-width: 0px 425px 37px 0px ; 
-			opacity: 0.8;
+			opacity: 1;
 			z-index: -10;
 		}
 
@@ -777,7 +777,7 @@ Compensated for in #aboutPage.pageVis
 			border-color: #002B60 transparent;
 			border-style: solid;
 			border-width: 0px 350px 37px 0px ; 
-			opacity: 0.8;
+			opacity: 1;
 			z-index: -10;
 		}
 
@@ -789,7 +789,7 @@ Compensated for in #aboutPage.pageVis
 			border-color: #BB6500 transparent;
 			border-style: solid;
 			border-width: 0px 275px 37px 0px ; 
-			opacity: 0.8;
+			opacity: 1;
 			z-index: -10;
 		}
 
@@ -801,7 +801,7 @@ Compensated for in #aboutPage.pageVis
 			border-color: #961800 transparent;
 			border-style: solid;
 			border-width: 0px 200px 37px 0px ; 
-			opacity: 0.8;
+			opacity: 1;
 			z-index: -10;
 		}
 
@@ -890,7 +890,7 @@ Compensated for in #aboutPage.pageVis
 
 			border: 7px solid #FFF;
 
-			opacity: 0.8;
+			opacity: 1;
 
 		-o-transition: all 0.4s;
 		-ms-transition: all 0.4s;
@@ -1112,7 +1112,7 @@ Compensated for in #aboutPage.pageVis
 	height: 100px;
 	border-radius: 100px;
 	background-color: #000;
-	opacity: 0.8;
+	opacity: 1;
 
 	z-index: 0;
 
@@ -1139,7 +1139,7 @@ Compensated for in #aboutPage.pageVis
 	width: 236px;
 	height: 236px;
 	border-radius: 416px;
-	opacity: 0.8;
+	opacity: 0.9;
 	z-index: 10;
 
 	-o-transition: all 0.5s;
@@ -1153,7 +1153,7 @@ Compensated for in #aboutPage.pageVis
 	width: 260px;
 	height: 260px;
 	border-radius: 453px;
-	opacity: 0.8;
+	opacity: 0.9;
 	z-index: 10;
 
 	-o-transition: all 0.5s;
@@ -1167,7 +1167,7 @@ Compensated for in #aboutPage.pageVis
 	width: 260px;
 	height: 260px;
 	border-radius: 460px;
-	opacity: 0.8;
+	opacity: 0.9;
 	z-index: 10;
 
 	-o-transition: all 0.5s;
@@ -1180,23 +1180,16 @@ Compensated for in #aboutPage.pageVis
 #navTextAbout {
 	position: absolute;
 	margin-top: 0px;
-
-	margin-left: 8px;
 }
 
 #navTextResume {
 	position: absolute;
 	margin-top: 0px;
-
-	margin-left: 11px;
-
 }
 
 #navTextContact {
 	position: absolute;
 	margin-top: 0px;
-
-	margin-left: 6px;
 }
 
 
@@ -1205,9 +1198,13 @@ Compensated for in #aboutPage.pageVis
 }
 
 .firstLetter {
+
 	position: absolute;
 	margin-left: 38px;
 	margin-top: 3px;
+
+	font-weight: 300;
+
 
 	background-color: transparent;
 	z-index: 101;
@@ -1215,8 +1212,6 @@ Compensated for in #aboutPage.pageVis
 
 	color: #FFF;
 	font-size: 86px;
-
-	text-shadow: 1px 1px 2px #000;
 
 	-o-transition: all 0.5s;
 	-ms-transition: all 0.5s;
@@ -1238,16 +1233,19 @@ Compensated for in #aboutPage.pageVis
 	-webkit-transition: all 0.5s; 
 	transition: all 0.5s;
 
-	color: #333;
+	color: #000;
 }
 
+/*
+some .navtextselected attributes are set in JS
+*/
 .navTextSelected {
 	position: absolute;
 	margin-top: 49px;
+	font-weight: 100;
 
-	 -left: 107px;
 	z-index: 11;
-	font-size: 40px;
+	font-size: 36px;
 
 
 	-o-transition: all 0.5s, margin-top 0.3s;
@@ -1256,19 +1254,19 @@ Compensated for in #aboutPage.pageVis
 	-webkit-transition: all 0.5s, margin-top 0.3s; 
 	transition: all 0.5s, margin-top 0.3s;
 
-	color: black;
+	color: #FFF;
 }
 
 #navText1 {
-	margin-left: 90px;
+	margin-left: 97px;
 }
 
 #navText2 {
-	margin-left: 88px;
+	margin-left: 95px;
 }
 
 #navText3 {
-	margin-left: 92px;
+	margin-left: 96px;
 }
 
 #toTop {
