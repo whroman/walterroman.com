@@ -142,24 +142,24 @@ var aboutClick = function() {
 	// document.getElementById("intro").className = "introInvis"	
 	document.getElementById("aboutPage").className = "pageVis";
 
-	var persInfo = document.getElementById("personalInfo");
-	var persTitles = document.getElementById("personalTitles");
-	var arts = document.getElementById("artInfo");
-	var edu = document.getElementById("educationInfo");
-	var one = document.getElementById("astPers1");
-	var two = document.getElementById("astPers2");
+	// var persInfo = document.getElementById("personalInfo");
+	// var persTitles = document.getElementById("personalTitles");
+	// var arts = document.getElementById("artInfo");
+	// var edu = document.getElementById("educationInfo");
+	// var one = document.getElementById("astPers1");
+	// var two = document.getElementById("astPers2");
 
-	if ((persInfo.style.height == "0px" || persInfo.style.height == "") && (arts.style.height == "0px" || arts.style.height == "") && (edu.style.height == "0px" || arts.style.height == "")) {
-		persInfo.style.height = "340px";
-		persInfo.style.opacity = "1";
-		persInfo.style.visibility = "visible";
-		persTitles.style.height = "340px";
-		persTitles.style.opacity = "1";
-		persTitles.style.visibility = "visible"
+	// if ((persInfo.style.height == "0px" || persInfo.style.height == "") && (arts.style.height == "0px" || arts.style.height == "") && (edu.style.height == "0px" || arts.style.height == "")) {
+	// 	persInfo.style.height = "340px";
+	// 	persInfo.style.opacity = "1";
+	// 	persInfo.style.visibility = "visible";
+	// 	persTitles.style.height = "340px";
+	// 	persTitles.style.opacity = "1";
+	// 	persTitles.style.visibility = "visible"
 
-		one.className = "minus selected"
-		two.className = "minus";
-	}
+	// 	one.className = "minus selected"
+	// 	two.className = "minus";
+	// }
 
 	document.getElementById("contactPage").className = "pageInvis";
 	document.getElementById("resumePage").className = "pageInvis";
