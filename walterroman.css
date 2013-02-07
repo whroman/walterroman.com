@@ -98,8 +98,8 @@ a {
 	position: relative;
 	color: #BB6500;
 	opacity: 1;	
-	padding: 0px 15px;
-	margin: 0px -15px 0px 0px;
+	padding: 0px 8px 3px 8px;
+	margin-right: -7px;
 	background-color: transparent;
 	border-radius: 5px;
 	z-index: 102;
@@ -118,8 +118,8 @@ a {
 	position: relative;
 	color: #961800;
 	opacity: 1;	
-	padding: 0px 13px;
-	margin-right: -13px;
+	padding: 0px 8px 3px 8px;
+	margin-right: -7px;
 	background-color: transparent;
 	border-radius: 5px;
 	z-index: 102;
@@ -137,8 +137,8 @@ a {
 	position: relative;
 	color: #002B60;
 	opacity: 1;	
-	padding: 0px 13px;
-	margin-right: -13px;
+	padding: 0px 8px 3px 8px;
+	margin-right: -7px;
 	background-color: transparent;
 	border-radius: 5px;
 	z-index: 102;
@@ -320,7 +320,7 @@ Compensated for in #aboutPage.pageVis
 #aboutPage.pageVis {
 	background-color: transparent;
 	visibility: visible;
-	margin-top: 134px;
+	margin-top: 184px;
 	margin-left: 10%;
 	height: auto;
 	padding-left: 300px;
@@ -458,6 +458,14 @@ Compensated for in #aboutPage.pageVis
 
 #aboutPage #eduEnd {
 	font-size: 32px;
+}
+
+#eduEnd a {
+	color: #BB6500;
+}
+
+#eduEnd a:hover {
+	text-decoration: underline;
 }
 
 #aboutPage .absolute {
