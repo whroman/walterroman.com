@@ -1295,12 +1295,24 @@ some .navtextselected attributes are set in JS
 	margin-left: 97px;
 }
 
+#navTextAbout.navTextSelected {
+	margin-top: 70px;
+}
+
 #navTextResume {
 	margin-left: 95px;
 }
 
+#navTextResume.navTextSelected {
+	margin-top: 79px;
+}
+
 #navTextContact {
 	margin-left: 96px;
+}
+
+#navTextContact.navTextSelected {
+	margin-top: 85px;
 }
 
 #toTop {
