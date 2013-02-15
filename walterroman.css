@@ -121,11 +121,11 @@ a {
 	height: auto;
 	width: auto;
 
-	-o-transition: all 0.3s 0s;
-		-ms-transition: all 0.3s 0s;
-		-moz-transition: all 0.3s 0s;
-		-webkit-transition: all 0.3s 0s; 
-		transition: all 0.3s 0s;
+	-o-transition: all 0s;
+		-ms-transition: all 0s;
+		-moz-transition: all 0s;
+		-webkit-transition: all 0s; 
+		transition: all 0s;
 }
 
 #developer {
@@ -163,24 +163,6 @@ a {
 		-moz-transition: all 0.3s 0s;
 		-webkit-transition: all 0.3s 0s; 
 		transition: all 0.3s 0s;
-}
-
-.asteriskVis {
-	position: absolute;
-	color: inherit;
-	opacity: 0.8;
-
-	-o-transition: opacity 0.5s 0s;
-	-ms-transition: opacity 0.5s 0s;
-	-moz-transition: opacity 0.5s 0s;
-	-webkit-transition: opacity 0.5s 0s; 
-	transition: opacity 0.5s 0s;
-}
-
-.asteriskInvis {
-	position: absolute;
-	color: transparent;
-	opacity: 0;
 }
 
 #aspire .aspireLinkInvert {

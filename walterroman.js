@@ -246,9 +246,8 @@ var pageScroll = function() {
 		return    
 	} else if (pageYOffset != 0) {
     	window.scrollBy(0,(-walt)); // horizontal and vertical scroll increments
-    	var scrollDelay = setTimeout('pageScroll()',10); // scrolls every 100 milliseconds
+    	var scrollDelay = setTimeout('pageScroll()',10); // scrolls every 10 milliseconds
     };	
-    console.log(walt);
 };
  
 var scroll = function() {
