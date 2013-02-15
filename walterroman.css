@@ -64,6 +64,13 @@ a {
 	transition: all 0.7s;
 }
 
+#intro.introJS {
+	width: 50%;
+	min-width: 500px;
+	margin-left: 500px;
+	margin-top: -20px;
+}
+
 
 #aspire {
 	position: absolute;
@@ -92,6 +99,13 @@ a {
 	-moz-transition: all 0.7s;
 	-webkit-transition: all 0.7s; 
 	transition: all 0.7s;	
+}
+
+#aspire.aspireJS {
+	width: 50%;
+	min-width: 500px;
+	margin-left: 500px;
+	margin-top: 110px;
 }
 
 #musician {
@@ -1033,6 +1047,7 @@ Compensated for in #aboutPage.pageVis
 #Red: #961800
 #Blue: #002B60
 */
+
 #navBar {
 	position: absolute;
 	font-size: 32px;
@@ -1050,6 +1065,12 @@ Compensated for in #aboutPage.pageVis
 	-webkit-transition: all 0.7s; 
 	transition: all 0.7s;
 }
+
+#navBar.navBarJS {
+	padding-left: 5%;
+	margin-left: -50px;
+}
+
 
 #About {
 	position: absolute;
@@ -1186,7 +1207,7 @@ Compensated for in #aboutPage.pageVis
 	transition: all 0.5s;
 }
 
-#navTextAbout {
+/*#navTextAbout {
 	position: absolute;
 	margin-top: 0px;
 }
@@ -1199,7 +1220,7 @@ Compensated for in #aboutPage.pageVis
 #navTextContact {
 	position: absolute;
 	margin-top: 0px;
-}
+}*/
 
 
 .navCircle:hover, .firstLetter:hover, .firstLetterSelected:hover, .navText:hover, .navTextSelected:hover {
@@ -1231,7 +1252,7 @@ Compensated for in #aboutPage.pageVis
 
 .navText {
 	position: absolute;
-	margin-top: 49px;
+	margin-top: 0px;
 	font-weight: 100;
 	z-index: 11;
 	font-size: 36px;
@@ -1243,6 +1264,10 @@ Compensated for in #aboutPage.pageVis
 	transition: all 0.5s;
 
 	color: #000;
+}
+
+#navBar .navTextInitial {
+	margin-top: 49px;
 }
 
 /*
@@ -1266,15 +1291,15 @@ some .navtextselected attributes are set in JS
 	color: #FFF;
 }
 
-#navText1 {
+#navTextAbout {
 	margin-left: 97px;
 }
 
-#navText2 {
+#navTextResume {
 	margin-left: 95px;
 }
 
-#navText3 {
+#navTextContact {
 	margin-left: 96px;
 }
 

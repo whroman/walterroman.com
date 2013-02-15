@@ -16,59 +16,40 @@ var navOnClick = function(exception) {
 	navAbout = document.getElementById("About");
 	navResume = document.getElementById("Resume");
 	navContact = document.getElementById("Contact");
-	intro = document.getElementById("intro");
-	aspire = document.getElementById("aspire");
-	navBar = document.getElementById("navBar");
 
 	musician = document.getElementById("musician");
 	developer = document.getElementById("developer");
-	human = document.getElementById("human");
+	human = document.getElementById("human");	
 
-	intro.style.marginTop = "-20px";
-	intro.style.width = "50%";	
-	intro.style.marginLeft = "500px";	
-	intro.style.minWidth = "500px";	
-	
-	aspire.style.marginTop = "110px";
-	aspire.style.width = "50%";	
-	aspire.style.marginLeft = "500px";	
-	aspire.style.minWidth = "500px";	
+	document.getElementById("intro").className = "introJS";
+	document.getElementById("aspire").className = "aspireJS";
+	document.getElementById("navBar").className = "navBarJS";
 
-	navBar.style.paddingLeft = "5%";
-	navBar.style.marginLeft = "-50px";
-
-	// document.getElementById("*1").className = "asteriskVis";
-	// document.getElementById("*2").className = "asteriskVis";
-	// document.getElementById("*3").className = "asteriskVis";
-
-	// musician.className = "aspireLinkInvert";
-	// developer.className = "aspireLinkInvert";
-	// human.className = "aspireLinkInvert";
-
+// Mods Nav Bar text and circles onClick
 	if (exception == "About") {
 		navAbout.className = "aboutClick";
 		navAbout.style.marginTop = "-70px";
 		navAbout.style.zIndex = "99";
-		document.getElementById("navText1").className = "navTextSelected";
-		document.getElementById("navText1").style.marginTop = "119px";
-		document.getElementById("navText1").style.marginLeft = "102px";
+		document.getElementById("navTextAbout").className = "navTextSelected";
+		document.getElementById("navTextAbout").style.marginTop = "70px";
+		document.getElementById("navTextAbout").style.marginLeft = "101px";
 		document.getElementById("firstLetterA").style.marginTop = "73px";
 		document.getElementById("firstLetterA").style.marginLeft = "43px";
 
 		navResume.className = "navCircle";
 		navResume.style.marginTop = "110px";
 		navResume.style.zIndex = "100";
-		document.getElementById("navText2").className = "navText";
-		document.getElementById("navText2").style.marginTop = "49px";
-		document.getElementById("navText2").style.marginLeft = "95px";
+		document.getElementById("navTextResume").className = "navText";
+		document.getElementById("navTextResume").style.marginTop = "0px";
+		document.getElementById("navTextResume").style.marginLeft = "95px";
 		document.getElementById("firstLetterR").style.marginTop = "3px";
 
 		navContact.className = "navCircle";	
 		navContact.style.marginTop = "220px";
 		navContact.style.zIndex = "100";
-		document.getElementById("navText3").className = "navText";
-		document.getElementById("navText3").style.marginTop = "49px";
-		document.getElementById("navText3").style.marginLeft = "96px";
+		document.getElementById("navTextContact").className = "navText";
+		document.getElementById("navTextContact").style.marginTop = "0px";
+		document.getElementById("navTextContact").style.marginLeft = "96px";
 		document.getElementById("firstLetterC").style.marginTop = "3px";
 	}
 
@@ -76,25 +57,25 @@ var navOnClick = function(exception) {
 		navResume.className = "resumeClick"
 		navResume.style.marginTop = "30px";
 		navResume.style.zIndex = "99"
-		document.getElementById("navText2").className = "navTextSelected";
-		document.getElementById("navText2").style.marginTop = "128px";
-		document.getElementById("navText2").style.marginLeft = "93px";
+		document.getElementById("navTextResume").className = "navTextSelected";
+		document.getElementById("navTextResume").style.marginTop = "79px";
+		document.getElementById("navTextResume").style.marginLeft = "93px";
 		document.getElementById("firstLetterR").style.marginTop = "83px";
 
 		navAbout.className = "navCircle";
 		navAbout.style.marginTop = "0px";
 		navAbout.style.zIndex = "100";
-		document.getElementById("navText1").className = "navText"
-		document.getElementById("navText1").style.marginTop = "49px";
-		document.getElementById("navText1").style.marginLeft = "97px";
+		document.getElementById("navTextAbout").className = "navText"
+		document.getElementById("navTextAbout").style.marginTop = "0px";
+		document.getElementById("navTextAbout").style.marginLeft = "101px";
 		document.getElementById("firstLetterA").style.marginTop = "3px";
 
 		navContact.className = "navCircle"	;
 		navContact.style.marginTop = "220px";
 		navContact.style.zIndex = "100";
-		document.getElementById("navText3").className = "navText";
-		document.getElementById("navText3").style.marginTop = "49px";
-		document.getElementById("navText3").style.marginLeft = "96px";
+		document.getElementById("navTextContact").className = "navText";
+		document.getElementById("navTextContact").style.marginTop = "0px";
+		document.getElementById("navTextContact").style.marginLeft = "96px";
 		document.getElementById("firstLetterC").style.marginTop = "3px";
 	}
 
@@ -102,35 +83,40 @@ var navOnClick = function(exception) {
 		navContact.className = "contactClick";
 		navContact.style.marginTop = "135px";
 		navContact.style.zIndex = "99"
-		document.getElementById("navText3").className = "navTextSelected";
-		document.getElementById("navText3").style.marginTop = "134px";
+		document.getElementById("navTextContact").className = "navTextSelected";
+		document.getElementById("navTextContact").style.marginTop = "85px";
 		document.getElementById("firstLetterC").style.marginTop = "88px";
-		document.getElementById("navText3").style.marginLeft = "97px";
+		document.getElementById("navTextContact").style.marginLeft = "97px";
 
 		navAbout.className = "navCircle";
 		navAbout.style.marginTop = "0px";
 		navAbout.style.zIndex = "100";
-		document.getElementById("navText1").className = "navText";
-		document.getElementById("navText1").style.marginTop = "49px";
-		document.getElementById("navText1").style.marginLeft = "97px";
+		document.getElementById("navTextAbout").className = "navText";
+		document.getElementById("navTextAbout").style.marginTop = "0px";
+		document.getElementById("navTextAbout").style.marginLeft = "101px";
 		document.getElementById("firstLetterA").style.marginTop = "3px";
 		navResume.className = "navCircle";	
 		navResume.style.marginTop = "110px";
 		navResume.style.zIndex = "100";
-		document.getElementById("navText2").className = "navText";
-		document.getElementById("navText2").style.marginTop = "49px";
-		document.getElementById("navText2").style.marginLeft = "95px";
+		document.getElementById("navTextResume").className = "navText";
+		document.getElementById("navTextResume").style.marginTop = "0px";
+		document.getElementById("navTextResume").style.marginLeft = "95px";
 		document.getElementById("firstLetterR").style.marginTop = "3px";
 	}
 
 	if(exception != "Contact") {
+		// Orange
 		document.getElementById("cont1").style.backgroundColor = "#BB6500";
 		document.getElementById("cont2").style.backgroundColor = "#BB6500";
-		document.getElementById("cont3").style.backgroundColor = "#961800";
 		document.getElementById("cont4").style.backgroundColor = "#BB6500";
-		document.getElementById("cont5").style.backgroundColor = "#961800";
 		document.getElementById("cont6").style.backgroundColor = "#BB6500";
+
+		// Red
+		document.getElementById("cont3").style.backgroundColor = "#961800";
+		document.getElementById("cont5").style.backgroundColor = "#961800";
 		document.getElementById("cont7").style.backgroundColor = "#961800";
+
+		// Blue
 		document.getElementById("cont8").style.backgroundColor = "#002B60";
 		document.getElementById("cont9").style.backgroundColor = "#002B60";
 		document.getElementById("contA").style.backgroundColor = "#002B60";
