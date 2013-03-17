@@ -20,7 +20,7 @@ var awesome = function () {
 	            } else { // When a prime number is found...
 	       		    n+=1;
 
-		            if (primeArray[n] > Math.sqrt(primer)) {
+		            if (primeArray[n] > Math.sqrt(primer)) { // Only check primer against ints <= primer's sqrt
 			            primeSum += primeArray[primeArray.length-1];
 			            primeArray.push(primer);
 						notPrime = true // Ensures do/while loop closes
@@ -52,7 +52,7 @@ var awesome = function () {
 		document.getElementById('chain').innerHTML += 
 		'<div class="block"><div class="title">Information for Clean Chain ' + instance + 
 		'</div><div class="text"><span class="bold"> Array Length: </span>' + primeArray.length +
-		'<br><span class="bold"> Sum of Primes: </span>' + primeSum + 
+		'<br><span class="bold"> Sum of All Primes Except Last: </span>' + primeSum + 
 		'<br><span class="bold">Final Prime in Chain: </span>' + primeArray[primeArray.length-1] + 
 		'<br><span class="bold">Array: </span></div><div class="tiny">{ ' + 
 		(primeArray.join(' | ')).toString() + ' }</div></div>';
@@ -61,7 +61,7 @@ var awesome = function () {
 		document.getElementById('chain').innerHTML += 
 		'<div class="block"><div class="title">Information<br>for Clean Chain ' + instance + 
 		'</div><div class="text"><span class="bold"> Array Length: </span>' + primeArray.length +
-		'<br><span class="bold"> Sum of Primes: </span>' + primeSum + 
+		'<br><span class="bold"> Sum of All Primes Except Last: </span>' + primeSum + 
 		'<br><span class="bold">Final Prime in Chain: </span>' + primeArray[primeArray.length-1] + 
 		'<br><span class="bold">Array: </span>{ ' + primeArray.join(' | ') + ' }</div><div>';
 
