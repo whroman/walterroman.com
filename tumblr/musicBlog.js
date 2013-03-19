@@ -1,5 +1,5 @@
 
-var hover = function(changeOpac,setOpac,changeBlur,setBlur,changeColor,setColor,changeText,setText,changeFont,setFont) {
+var hover = function(changeOpac,setOpac,changeBlur,setBlur,changeColor,setColor,changeText,setText,changeFont,setFont, setFont2) {
 	var elemOpac = document.getElementById(changeOpac);
 	elemOpac.className = setOpac;
 	var elemBlur = document.getElementById(changeBlur);
@@ -19,9 +19,11 @@ var hover = function(changeOpac,setOpac,changeBlur,setBlur,changeColor,setColor,
 					console.log(elemFont.childNodes[i]);
 					console.log(i);	
 
-
-		if (i==6) {
-			elemFont.childNodes[i].className = setFont;
+		if (i==4) {
+			elemFont.childNodes[i].className = setFont + ' ' + setFont2;
+		}
+		else if (i==6) {
+			elemFont.childNodes[i].className = setFont + ' ' + setFont2;
 		} else {
 					elemFont.childNodes[i].className = setFont;
 
