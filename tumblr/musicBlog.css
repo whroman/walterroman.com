@@ -1,0 +1,267 @@
+body {
+  font-family: 'Helvetica Neue',arial,san-serif;
+  font-weight: 300;
+}
+
+#titles, #titles2 {
+
+  height: 65px;
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: -250px;
+  padding: 10px 0 5px 0;
+
+
+
+  text-align: center;
+
+    -webkit-transition: opacity 0.2s, margin 0.2s;
+
+}
+
+#titles:hover, #titles2:hover {
+}
+
+#holes #titles span:nth-of-type(2):hover, #holes2 #titles2 span:nth-of-type(2):hover {
+    -webkit-transition:opacity 0.2s, margin 0.2s;
+
+  opacity: 0.8;
+  cursor: default;
+
+  font-size: 32px;
+}
+
+
+#holes #titles .change:hover, #holes2 #titles2 .change:hover {
+    -webkit-transition:font-size 0.2s, opacity 0.2s, margin 0.2s;
+
+  cursor: pointer;
+  opacity: 1;
+
+  font-size: 36px;
+
+}
+
+#holes, #holes2 {
+  position: relative;
+
+  border-radius: 500px;
+
+  width: 510px;
+  height: auto;
+  margin: 100px auto 200px auto;
+  padding-top: 150px;
+}
+
+#playHole, #playHole2 {
+border: 5px solid white;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 500px;
+    overflow: hidden;
+  margin: 0px auto 0 auto;
+
+  -webkit-transition: width 0.2s, height 0.2s, margin 0.2s;
+
+  z-index: 10;
+}
+
+#playHole img, #playHole2 img {
+  border-radius: 500px;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  margin: -150px -150px;
+
+  -webkit-transition: width 0.2s, height 0.2s, margin 0.2s;
+
+  z-index: 0;  
+}
+
+#playHole #playButton, #playHole2 #playButton2 {
+  margin: 52px 52px;  
+
+  z-index: 10;
+
+  width: 96px;
+  height: 96px;
+  
+  position: relative;
+
+  background-color: transparent;
+
+  -webkit-transition: opacity 0.2s, margin 0.2s;
+
+}
+
+#holes #playHole #playButton:active, #holes2 #playHole2 #playButton2:active {
+margin-left: 205px;
+}
+
+#holes #playHole .smallButtons, #holes2 #playHole2 .smallButtons {
+  border-radius: 0;
+  visibility: hidden;
+  z-index: 20;
+  position: absolute;
+  -webkit-transition: opacity 0.2s, margin 0.2s;
+
+  padding: 10px;
+  background-color: black;
+  border-radius: 40px;
+}
+
+#holes #playHole #playButton:hover, #holes #playHole #reblogButton:hover, #holes #playHole #favoriteButton:hover, #holes #playHole #backButton:hover, #holes #playHole #frontButton:hover, #holes #playHole #infoButton:hover, #holes #playHole #archiveButton:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+#holes2 #playHole2 #playButton2:hover, #holes2 #playHole2 #reblogButton:hover, #holes2 #playHole2 #favoriteButton:hover, #holes2 #playHole2 #backButton:hover, #holes2 #playHole2 #frontButton:hover, #holes2 #playHole2 #infoButton:hover, #holes2 #playHole2 #archiveButton:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+
+#playHole #favoriteButton, #playHole2 #favoriteButton {
+
+  margin: 395px 290px;  
+  width: 48px;
+  height: 48px;
+}
+
+#holes #playHole #favoriteButton:active, #holes2 #playHole2 #favoriteButton:active {
+margin-left: 293px;
+}
+
+#playHole #reblogButton, #playHole2 #reblogButton {
+  margin: 397px 142px;  
+  width: 48px;
+  height: 48px;
+}
+
+#holes #playHole #reblogButton:active, #holes2 #playHole2 #reblogButton:active {
+margin-left: 145px;
+}
+
+#playHole #backButton, #playHole2 #backButton {
+  margin: 216px 30px;  
+  width: 48px;
+  height: 48px;
+}
+
+#holes #playHole #backButton:active, #holes2 #playHole2 #backButton:active {
+margin-left: 27px;
+}
+
+#playHole #frontButton, #playHole2 #frontButton {
+  margin: 216px 404px;  
+  width: 48px;
+  height: 48px;
+}
+
+#holes #playHole #frontButton:active, #holes2 #playHole2 #frontButton:active {
+margin-left: 407px;
+}
+
+#playHole #infoButton, #playHole2 #infoButton {
+  margin: 49px 170px;  
+  width: 40px;
+  height: 40px;
+}
+
+#holes #playHole #infoButton:active, #holes2 #playHole2 #infoButton:active {
+margin-left: 173px;
+}
+
+
+#playHole #archiveButton, #playHole2 #archiveButton {
+  margin: 405px 130px;  
+  width: 48px;
+  height: 48px;
+}
+
+#holes #playHole #archiveButton:active, #holes2 #playHole2 #archiveButton:active {
+margin-left: 133px;
+}
+
+/*
+JavaSCript
+*/
+
+#holes .gray, #holes2 .gray {
+  filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+}
+
+#holes .color, #holes2 .color {
+  filter: none;
+  -webkit-filter: grayscale(0); /* Google Chrome & Safari 6+ */
+}
+
+#holes #playHole .lightOpac, #holes2 #playHole2 .lightOpac {
+  opacity: 0.8;
+}
+
+
+#holes #playHole .maxOpac, #holes2 #playHole2 .maxOpac {
+  opacity: 1;
+}
+
+#holes .expand, #holes2 .expand {
+  width: 500px;
+  height: 500px;
+  margin-top: -150px;
+}
+
+#holes .close, #holes2 .close {
+  width: 200px;
+  height: 200px;
+  margin-top: 0px;
+}
+
+#holes .imgShift, #holes2 .imgShift {
+  margin: 0px;
+
+}
+
+#holes #playButton.btnShift, #holes2 #playButton2.btnShift {
+  margin: 202px 202px;
+  background-color: black;
+
+}
+
+#holes #playHole .vis, #holes2 #playHole2 .vis {
+  visibility: visible;
+}
+
+
+#titles.textShift, #titles2.textShift {
+  margin-top: -440px;
+}
+
+#titles .change, #titles2 .change {
+  line-height: 24px;
+  font-weight: 800;
+  position: relative;
+  color: white;
+  opacity: 1;
+
+  font-size: 34px;
+
+  text-shadow: 0px 0px 5px black;
+
+
+  /*color: white;
+   -webkit-text-fill-color: white;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: black;*/
+}
+
+#holes #titles .thirtyTwo, #holes #titles2 .thirtyTwo {
+  font-size: 102px;
+}
+

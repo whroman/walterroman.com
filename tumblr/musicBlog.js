@@ -14,7 +14,18 @@ var hover = function(changeOpac,setOpac,changeBlur,setBlur,changeColor,setColor,
 	var elemFont = document.getElementById(changeFont);
 
 	for (i=0;i<elemFont.childNodes.length;i++) {
-		elemFont.childNodes[i].className = setFont;
+
+
+					console.log(elemFont.childNodes[i]);
+					console.log(i);	
+
+
+		if (i==6) {
+			elemFont.childNodes[i].className = setFont;
+		} else {
+					elemFont.childNodes[i].className = setFont;
+
+		}
 	}
 }
 
