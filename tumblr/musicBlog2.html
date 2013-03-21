@@ -5,8 +5,82 @@
   <script type="text/javascript" src='musicBlog.js'></script>
   </head>
   
-  <body>
+  <body onload='alternate();'>
     
+    <div id='imgSpecif'>
+      <img id="sidebarToggle"
+        src='listPNG.png' alt=''
+        onClick='sidebar();'
+        >
+    </div>
+    
+    <div id='sidebar'>
+      
+      <div id='sidebarHeader'>
+        <h1>Songs We Like</h1>
+        <span>Walter Roman</span>
+        <br>
+        <span>Muhammad Usman</span>
+      </div>
+      <div id='postContainer'>
+      
+        <div class='post'>
+          <img src="moreno.jpg" alt="">
+                  
+          <div class='postNum'>IV.</div>
+          <span class='postTitle'>Y Tu Sombra</span>
+          <br>
+          <span class='preTitle'>by</span>
+          <span class='postTitle'>Gaby Moreno</span>
+          <br>
+          <span class='preTitle'>posted</span> 
+          <span class='preTitle'>by</span> 
+          <span class='postTitle'>Walter</span>
+        </div>
+      
+        <div class='post'>
+          <img src="menahan.jpg" alt="">
+                  
+          <div class='postNum'>III.</div>
+          <span class='postTitle'>Home Again!</span>
+          <br>
+          <span class='preTitle'>by</span>
+          <span class='postTitle'>Menahan Street Band</span>
+          <br>
+          <span class='preTitle'>Posted</span> 
+          <span class='preTitle'>by</span> 
+          <span class='postTitle'>Walter</span>
+        </div>
+      
+        <div class='post'>
+          <img src="explosions.jpg" alt="">
+                  
+          <div class='postNum'>II.</div>
+          <span class='postTitle'>Postcard from 1952</span>
+          <br>
+          <span class='preTitle'>by</span>
+          <span class='postTitle'>Explosions in the Sky</span>
+          <br>
+          <span class='preTitle'>posted</span> 
+          <span class='preTitle'>by</span> 
+          <span class='postTitle'>Muhammad</span>
+        </div>
+        
+        <div class='post'>
+          <img src="sparrow.jpg" alt="">
+                  
+          <div class='postNum'>I.</div>
+          <span class='postTitle'>Little Elder Sister</span>
+          <br>
+          <span class='preTitle'>by</span>
+          <span class='postTitle'>Sparrow</span>
+          <br>
+          <span class='preTitle'>Posted</span> 
+          <span class='preTitle'>by</span> 
+          <span class='postTitle'>Muhammad</span>
+        </div>
+      </div>
+    </div>
     
     <div id='holes'>
       
@@ -22,11 +96,10 @@
       >
         <img id="backButton" class='smallButtons' src='backPNG.png' alt=''/>
         <img id="frontButton" class='smallButtons' src='frontPNG.png' alt=''/>
-<!--         <img id="archiveButton" class='smallButtons' src='listPNG.png' alt=''/>
- -->        <img id="reblogButton" class='smallButtons' src='reblogPNG.png' alt=''/>
+        <img id="reblogButton" class='smallButtons' src='reblogPNG.png' alt=''/>
         <img id="favoriteButton" class='smallButtons' src='favoritePNG.png' alt=''/>
         
-        <img id='playImage' class='' src="moreno.jpg" alt=""/>
+        <img id='playImage' class='' src="menahan.jpg" alt=""/>
         <img id="playButton" class='maxOpac' src='playPNG.png' alt=''/>
       </div>
     
@@ -34,7 +107,7 @@
       onMouseOver="hover('playButton','lightOpac btnShift','playImage','imgShift','playHole','expand','titles','textShift','titles','change','thirtyTwo'); 
       
       iconAppear('playHole');">
-      <span class='title'> Y Tu Sombra</span><br> <span class='title'>by </span> <span class='title'>Gaby Moreno</span>
+      <span class='title'> Home Again!</span><br> <span class='title'>by </span> <span class='title'>Menahan Street Band</span>
       </div>
     </div>
     

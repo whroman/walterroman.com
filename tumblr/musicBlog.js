@@ -14,11 +14,6 @@ var hover = function(changeOpac,setOpac,changeBlur,setBlur,changeColor,setColor,
 	var elemFont = document.getElementById(changeFont);
 
 	for (i=0;i<elemFont.childNodes.length;i++) {
-
-
-					console.log(elemFont.childNodes[i]);
-					console.log(i);	
-
 		if (i==4) {
 			elemFont.childNodes[i].className = setFont + ' ' + setFont2;
 		}
@@ -51,5 +46,45 @@ var iconDisappear = function(elem) {
 		if (elem.childNodes[i].id != 'playImage' && elem.childNodes[i].id != 'playButton' && elem.childNodes[i].id != 'playImage2' && elem.childNodes[i].id != 'playButton2') {
 		elem.childNodes[i].className = 'smallButtons'
 	}
+	}
+}
+
+var sidebar = function() {
+	var sidebar = document.getElementById('sidebar');
+	var button = document.getElementById('sidebarToggle');
+	var holes = document.getElementById('holes');
+	var holes2 = document.getElementById('holes2');
+
+	if (sidebar.style.marginLeft == '-405px' || sidebar.style.marginLeft == '') {
+
+		sidebar.style.marginLeft = '-3px'
+
+		button.style.marginLeft = '410px';
+		button.style.border = '2px solid black'
+
+		holes.style.margin = '100px auto 200px 45%'
+		holes2.style.margin = '100px auto 200px 45%'
+
+	} else {
+
+		sidebar.style.marginLeft = '-405px';
+
+		button.style.marginLeft = '15px';
+		button.style.border = 'none';
+
+		holes.style.margin = '100px auto 200px 30%'
+		holes2.style.margin = '100px auto 200px 30%'
+
+	} 
+	console.log(sidebar.style.marginLeft);
+}
+
+var alternate = function() {
+	var sidePosts = document.getElementById('postContainer').childNodes;
+	for (i=1;i<sidePosts.length;i+=4) {
+		
+		console.log(sidePosts[i]);
+
+		sidePosts[i].className = 'postAlt'
 	}
 }
