@@ -6,6 +6,11 @@ body {
   outline: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /*
 SIDEBAR
 */
@@ -38,15 +43,23 @@ SIDEBAR
   overflow-y: visible;
 }
 
-#sidebarHeader h1 {
+#sidebarHeader h1 a {
   margin: 15px 0px;
   font-weight: 100;
   font-size: 56px;
 }
 
-#sidebarHeader span {
+#sidebarHeader h1 a:hover{
+  text-decoration: underline;
+}
+
+#sidebarHeader a {
   font-size: 32px;
   font-weight: 100;
+}
+
+#sidebarHeader a:hover {
+  text-decoration: underline;
 }
 
 #sidebarToggle {
