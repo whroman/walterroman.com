@@ -31,59 +31,41 @@ var navOnClick = function(exception) {
 // Mods Nav Bar text and circles onClick
 	if (exception == "About") {
 	// About Tab Selected
-		navAbout.className = "aboutClick";
-		navAbout.style.marginTop = "-70px";
-		navAbout.style.zIndex = "99";
-
+		navAbout.className = "navCircle aboutClick";
 		navTextAbout.className = "navTextSelected";
 		navTextAbout.style.marginLeft = "101px";
-
 		navA.style.marginTop = "73px";
 		navA.style.marginLeft = "43px";
 
 	// Resume Tab
 		navResume.className = "navCircle";
-		navResume.style.marginTop = "110px";
-		navResume.style.zIndex = "100";
-
 		navTextResume.className = "navText";
 		navTextResume.style.marginLeft = "95px";
-
 		navR.style.marginTop = "3px";
 
 	// Contact Tab
 		navContact.className = "navCircle";	
-		navContact.style.marginTop = "220px";
-		navContact.style.zIndex = "100";
-
 		navTextContact.className = "navText";
 		navTextContact.style.marginLeft = "96px";
-
 		navC.style.marginTop = "3px";
 	}
 
 	if (exception == "Resume") {
 
 	// Resume Tab Selected
-		navResume.className = "resumeClick"
-		navResume.style.marginTop = "30px";
-		navResume.style.zIndex = "99"
+		navResume.className = "navCircle resumeClick"
 		navTextResume.className = "navTextSelected";
 		navTextResume.style.marginLeft = "93px";
 		navR.style.marginTop = "83px";
 
 	// About Tab
 		navAbout.className = "navCircle";
-		navAbout.style.marginTop = "0px";
-		navAbout.style.zIndex = "100";
 		navTextAbout.className = "navText"
 		navTextAbout.style.marginLeft = "101px";
 		navA.style.marginTop = "3px";
 
 	// Contact Tab
 		navContact.className = "navCircle"	;
-		navContact.style.marginTop = "220px";
-		navContact.style.zIndex = "100";
 		navTextContact.className = "navText";
 		navTextContact.style.marginLeft = "96px";
 		navC.style.marginTop = "3px";
@@ -92,29 +74,21 @@ var navOnClick = function(exception) {
 	if (exception == "Contact") {
 
 	// Contact Tab Selected
-		navContact.className = "contactClick";
-		navContact.style.marginTop = "135px";
-		navContact.style.zIndex = "99"
+		navContact.className = "navCircle contactClick";
 		navTextContact.className = "navTextSelected";
 		navC.style.marginTop = "88px";
 		navTextContact.style.marginLeft = "97px";
 
 	// About Tab
 		navAbout.className = "navCircle";
-		navAbout.style.marginTop = "0px";
-		navAbout.style.zIndex = "100";
 		navTextAbout.className = "navText";
 		navTextAbout.style.marginLeft = "101px";
 		navA.style.marginTop = "3px";
 
 	// Resume Tab
 		navResume.className = "navCircle";	
-		navResume.style.marginTop = "110px";
-		navResume.style.zIndex = "100";
-
 		navTextResume.className = "navText";
 		navTextResume.style.marginLeft = "95px";
-
 		navR.style.marginTop = "3px";
 	}
 
