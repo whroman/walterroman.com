@@ -1,10 +1,8 @@
-var navArray = ["About","Resume","Contact"];
 var	navTabArray = ["navAbout", "navResume", "navContact"];
-var contactArray = ["cont1","cont2","cont3","cont4","cont5","cont6","cont7","cont8","cont9","contA","contB"]
+var contactArray = ["cont1","cont2","cont3","cont4","cont5","cont6","cont7","cont8","cont9"]
 var colorArray = ["#BB6500","#961800","#002B60"]
 
 var navMouseOver = function(hover, text) {
-	navHover = document.getElementById(hover);
 	navText = document.getElementById(text);
 
 	navText.className = "navTextHovered";
@@ -15,7 +13,16 @@ var navMouseOver = function(hover, text) {
 var navOnClick = function(exception) {
 	navAbout = document.getElementById("About");
 	navResume = document.getElementById("Resume");
-	navContact = document.getElementById("Contact");	
+	navContact = document.getElementById("Contact");
+
+	navTextAbout = document.getElementById('navTextAbout');
+	navTextResume = document.getElementById('navTextResume');
+	navTextContact = document.getElementById('navTextContact');
+ 
+	navA = document.getElementById('firstLetterA');
+	navR = document.getElementById('firstLetterR');
+	navC = document.getElementById('firstLetterC');
+
 
 	document.getElementById("intro").className = "introJS";
 	document.getElementById("aspire").className = "aspireJS";
@@ -23,117 +30,142 @@ var navOnClick = function(exception) {
 
 // Mods Nav Bar text and circles onClick
 	if (exception == "About") {
+	// About Tab Selected
 		navAbout.className = "aboutClick";
 		navAbout.style.marginTop = "-70px";
 		navAbout.style.zIndex = "99";
-		document.getElementById("navTextAbout").className = "navTextSelected";
-		document.getElementById("navTextAbout").style.marginLeft = "101px";
-		document.getElementById("firstLetterA").style.marginTop = "73px";
-		document.getElementById("firstLetterA").style.marginLeft = "43px";
 
+		navTextAbout.className = "navTextSelected";
+		navTextAbout.style.marginLeft = "101px";
+
+		navA.style.marginTop = "73px";
+		navA.style.marginLeft = "43px";
+
+	// Resume Tab
 		navResume.className = "navCircle";
 		navResume.style.marginTop = "110px";
 		navResume.style.zIndex = "100";
-		document.getElementById("navTextResume").className = "navText";
-		document.getElementById("navTextResume").style.marginLeft = "95px";
-		document.getElementById("firstLetterR").style.marginTop = "3px";
 
+		navTextResume.className = "navText";
+		navTextResume.style.marginLeft = "95px";
+
+		navR.style.marginTop = "3px";
+
+	// Contact Tab
 		navContact.className = "navCircle";	
 		navContact.style.marginTop = "220px";
 		navContact.style.zIndex = "100";
-		document.getElementById("navTextContact").className = "navText";
-		document.getElementById("navTextContact").style.marginLeft = "96px";
-		document.getElementById("firstLetterC").style.marginTop = "3px";
+
+		navTextContact.className = "navText";
+		navTextContact.style.marginLeft = "96px";
+
+		navC.style.marginTop = "3px";
 	}
 
 	if (exception == "Resume") {
+
+	// Resume Tab Selected
 		navResume.className = "resumeClick"
 		navResume.style.marginTop = "30px";
 		navResume.style.zIndex = "99"
-		document.getElementById("navTextResume").className = "navTextSelected";
-		document.getElementById("navTextResume").style.marginLeft = "93px";
-		document.getElementById("firstLetterR").style.marginTop = "83px";
+		navTextResume.className = "navTextSelected";
+		navTextResume.style.marginLeft = "93px";
+		navR.style.marginTop = "83px";
 
+	// About Tab
 		navAbout.className = "navCircle";
 		navAbout.style.marginTop = "0px";
 		navAbout.style.zIndex = "100";
-		document.getElementById("navTextAbout").className = "navText"
-		document.getElementById("navTextAbout").style.marginLeft = "101px";
-		document.getElementById("firstLetterA").style.marginTop = "3px";
+		navTextAbout.className = "navText"
+		navTextAbout.style.marginLeft = "101px";
+		navA.style.marginTop = "3px";
 
+	// Contact Tab
 		navContact.className = "navCircle"	;
 		navContact.style.marginTop = "220px";
 		navContact.style.zIndex = "100";
-		document.getElementById("navTextContact").className = "navText";
-		document.getElementById("navTextContact").style.marginLeft = "96px";
-		document.getElementById("firstLetterC").style.marginTop = "3px";
+		navTextContact.className = "navText";
+		navTextContact.style.marginLeft = "96px";
+		navC.style.marginTop = "3px";
 	}
 
 	if (exception == "Contact") {
+
+	// Contact Tab Selected
 		navContact.className = "contactClick";
 		navContact.style.marginTop = "135px";
 		navContact.style.zIndex = "99"
-		document.getElementById("navTextContact").className = "navTextSelected";
-		document.getElementById("firstLetterC").style.marginTop = "88px";
-		document.getElementById("navTextContact").style.marginLeft = "97px";
+		navTextContact.className = "navTextSelected";
+		navC.style.marginTop = "88px";
+		navTextContact.style.marginLeft = "97px";
 
+	// About Tab
 		navAbout.className = "navCircle";
 		navAbout.style.marginTop = "0px";
 		navAbout.style.zIndex = "100";
-		document.getElementById("navTextAbout").className = "navText";
-		document.getElementById("navTextAbout").style.marginLeft = "101px";
-		document.getElementById("firstLetterA").style.marginTop = "3px";
+		navTextAbout.className = "navText";
+		navTextAbout.style.marginLeft = "101px";
+		navA.style.marginTop = "3px";
+
+	// Resume Tab
 		navResume.className = "navCircle";	
 		navResume.style.marginTop = "110px";
 		navResume.style.zIndex = "100";
-		document.getElementById("navTextResume").className = "navText";
-		document.getElementById("navTextResume").style.marginLeft = "95px";
-		document.getElementById("firstLetterR").style.marginTop = "3px";
+
+		navTextResume.className = "navText";
+		navTextResume.style.marginLeft = "95px";
+
+		navR.style.marginTop = "3px";
 	}
 
 	if(exception != "Contact") {
-		// Orange
+		// Set Contact Links as Orange
 		document.getElementById("cont1").style.backgroundColor = "#BB6500";
 		document.getElementById("cont2").style.backgroundColor = "#BB6500";
 		document.getElementById("cont4").style.backgroundColor = "#BB6500";
 		document.getElementById("cont6").style.backgroundColor = "#BB6500";
 
-		// Red
+		// Set Contact Links as Red
 		document.getElementById("cont3").style.backgroundColor = "#961800";
 		document.getElementById("cont5").style.backgroundColor = "#961800";
 		document.getElementById("cont7").style.backgroundColor = "#961800";
 
-		// Blue
+		// Set Contact Links as Blue
 		document.getElementById("cont8").style.backgroundColor = "#002B60";
 		document.getElementById("cont9").style.backgroundColor = "#002B60";
-		document.getElementById("contA").style.backgroundColor = "#002B60";
-		document.getElementById("contB").style.backgroundColor = "#002B60";
 	}
 }
 
+
 var aboutClick = function() {
+	// Page to be selected
 	document.getElementById("aboutPage").className = "pageVis";
 
+	// Pages to be deselect
 	document.getElementById("contactPage").className = "pageInvis";
 	document.getElementById("resumePage").className = "pageInvis";
 }
 
 var resumeClick = function() {
+	// Page to be selected
 	document.getElementById("resumePage").className = "pageVis";
 
+	// Pages to be deselect
 	document.getElementById("contactPage").className = "pageInvis";
 	document.getElementById("aboutPage").className = "pageInvis";
 
 }
 
 var contactClick = function() {
+	// Page to be selected
 	document.getElementById("contactPage").className = "pageVis";
 
+	// Pages to be deselect
 	document.getElementById("aboutPage").className = "pageInvis";
 	document.getElementById("resumePage").className = "pageInvis";
 }
 
-// Custom accordion
+// Custom Accordion
 var aboutSelector = function(except) {
 	var info = document.getElementById(except+"Info");
 	var titles = document.getElementById(except+"Titles");
@@ -236,7 +268,9 @@ var asteriskMouseOut = function(except) {
 		one.style.backgroundColor = "#002B60";
 		two.style.backgroundColor = "#002B60";
 	}
-}	// End of custom accordion
+}	
+
+// End of custom accordion
 
 
 var pageScroll = function() {
@@ -253,7 +287,7 @@ var pageScroll = function() {
 var scroll = function() {
 	scroller = document.getElementById("toTop");
 
-	var displacement =  document.body.scrollTop;
+	var displacement = document.body.scrollTop;
 	
 	if (displacement < 600) {
 		scroller.style.opacity = "0";
@@ -271,8 +305,11 @@ var scrollIconVis = function () {
 	document.getElementById("toTop").style.opacity = "1";
 }
 
+// When window is scrolled, run scroll function
 window.onscroll = scroll;
 
+
+// Turns all Contact links black except for the selected one
 var contactSelector = function(except) {
 	for (i=0;i<contactArray.length;i++) {
 		if (contactArray[i] != except) { 
@@ -281,7 +318,7 @@ var contactSelector = function(except) {
 	}
 }
 
-
+// Color randomizer for Contact links
 var contactDeselector = function(except) {
 	for (i=0;i<contactArray.length;i++) {
 		if (contactArray[i] != except) { 
@@ -291,24 +328,25 @@ var contactDeselector = function(except) {
 	}
 }
 
+
+// Contact circle for phone
 var phoneClick = function() {
-	var phone = document.getElementById("cont1");
+	var phone = document.getElementById("cont8");
 	var text = document.getElementById("phoneText");
 	if (phone.style.height == "" || phone.style.height == "96px") {
 		phone.style.height = "215px";
-		phone.style.marginTop = "-115px";
 		text.style.visibility = "visible";
 		text.style.opacity = "1";
 	} else if (phone.style.height == "215px") {
-		phone.style.height = "96px"
-		phone.style.marginTop = "0px";
+		phone.style.height = "96px";
 		text.style.visibility = "hidden";
 		text.style.opacity = "0";
 	};
 }
 
+// Contact circle for email
 var emailClick = function() {
-	var email = document.getElementById("cont6");
+	var email = document.getElementById("cont9");
 	var text = document.getElementById("emailText");
 	if (email.style.width == "" || email.style.width == "96px") {
 		email.style.width = "250px"
@@ -318,4 +356,338 @@ var emailClick = function() {
 		email.style.width = "96px"
 		text.style.opacity = "0";
 	};
+}
+
+
+
+var aboutCrumble = function() {
+	var aboutPage = document.getElementById('aboutPage'),
+		aspire = document.getElementById('aspire'), 
+		aspireWidth = aspire.clientWidth, 
+		aspireProjectedWidth = aspire.clientWidth*(23/17),
+		aspirePercentProjected = 100*((aspire.clientWidth/window.innerWidth)*(23/17)).toFixed(2)
+	console.log(aspireWidth);
+
+// Checks whether the site is on landing page or not, based off the size of #aspire
+	if (aspirePercentProjected > 80 && aspirePercentProjected < 92) {
+		var aspireWidth = aspireProjectedWidth	
+	}  
+	console.log(aspireWidth);
+	
+	if (aspireWidth <= 918) {
+		var aboutTop = 184+((918-aspireWidth));
+
+		if (aboutTop >= 475) {
+	// Margin at lowest page expansion
+			aboutPage.style.marginTop = '475px';
+		} else { 
+	// Margin in between both caps of page expansion
+			aboutPage.style.marginTop = aboutTop + 'px';
+		};
+	} else {
+	// Margin at fullest page expansion		
+		aboutPage.style.marginTop = '184px';
+	}
+
+// Makes page responsive with Margin Left	
+
+	if (aspireWidth < 500) {
+		aboutPage.style.marginLeft = '-80px';
+	} else if (aspireWidth < 550) {
+		aboutPage.style.marginLeft = '-60px';
+	} else if (aspireWidth < 600) {
+		aboutPage.style.marginLeft = '-40px';
+	} else if (aspireWidth < 650) {
+		aboutPage.style.marginLeft = '-20px';
+	} else if (aspireWidth < 700) {
+		aboutPage.style.marginLeft = '10px';
+	} else if (aspireWidth < 750) {
+		aboutPage.style.marginLeft = '2%';
+	} else if (aspireWidth < 800) {
+		aboutPage.style.marginLeft = '2.6%';
+	} else if (aspireWidth < 850) {
+		aboutPage.style.marginLeft = '3.2%';
+	} else if (aspireWidth < 900) {
+		aboutPage.style.marginLeft = '4.4%';
+	} else if (aspireWidth < 950) {
+		aboutPage.style.marginLeft = '5.6%';
+	} else if (aspireWidth < 1000) {
+		aboutPage.style.marginLeft = '7.8%';
+	} else {
+		aboutPage.style.marginLeft = '10%';
+	} 
+}
+
+function resumeCrumble () {
+		var resumePage = document.getElementById('resumePage'),
+		aspire = document.getElementById('aspire'), 
+		aspireWidth = aspire.clientWidth, 
+		aspireProjectedWidth = aspire.clientWidth*(23/17),
+		aspirePercentProjected = 100*((aspire.clientWidth/window.innerWidth)*(23/17)).toFixed(2)
+	console.log(aspireWidth);
+
+// Checks whether the site is on landing page or not, based off the size of #aspire
+	if (aspirePercentProjected > 80 && aspirePercentProjected < 92) {
+		var aspireWidth = aspireProjectedWidth;
+	}  
+	console.log(aspireWidth);
+	
+	if (aspireWidth <= 1105) {
+		var resumeTop = 134+((1105-aspireWidth)*(4/7));
+
+		if (resumeTop >= 455) {
+	// Margin at lowest page expansion
+			resumePage.style.marginTop = '455px';
+		} else { 
+	// Margin in between both caps of page expansion
+	console.log('resume ' + resumeTop);
+			resumePage.style.marginTop = '455px';
+			resumePage.style.marginTop = resumeTop + 'px';
+		};
+	} else {
+	// Margin at fullest page expansion		
+		resumePage.style.marginTop = '134px';
+	}
+
+// var aboutPage = document.getElementById('resumePage');
+	// var aspire = document.getElementById('aspire');
+
+	// var aspireWidth = aspire.clientWidth;
+
+	// if (aspire.clientWidth <= 1105) {
+	// 	var resumeTop = (134+(1105-aspire.clientWidth)*(4/7));
+
+	// 	resumePage.style.marginTop = resumeTop+'px';
+
+	// 	if (resumeTop >= 455) {
+	// 		resumePage.style.marginTop = '455px';
+	// 	} 
+
+	// } else {
+	// 	resumePage.style.marginTop = '134px';
+	// }; 
+}
+
+var contactCrumble = function() {
+	var cont1 = document.getElementById('cont1')
+	var cont2 = document.getElementById('cont2')
+	var cont3 = document.getElementById('cont3')
+	var cont4 = document.getElementById('cont4')
+	var cont5 = document.getElementById('cont5')
+	var cont6 = document.getElementById('cont6')
+	var cont7 = document.getElementById('cont7')
+	var cont8 = document.getElementById('cont8')
+	var cont9 = document.getElementById('cont9')
+
+	var contactPage = document.getElementById('contactPage'),
+		aspire = document.getElementById('aspire'), 
+		aspireWidth = aspire.clientWidth, 
+		aspireProjectedWidth = aspire.clientWidth*(23/17),
+		aspirePercentProjected = 100*((aspire.clientWidth/window.innerWidth)*(23/17)).toFixed(2)
+	console.log(aspireWidth);
+
+// Checks whether the site is on landing page or not, based off the size of #aspire
+	if (aspirePercentProjected > 80 && aspirePercentProjected < 92) {
+		var aspireWidth = aspireProjectedWidth;
+	}  
+	console.log(aspireWidth);
+	
+	if (aspireWidth <= 1105) {
+		var contactTop = 40+((1105-aspireWidth)*(3/5));
+
+		if (contactTop >= 455) {
+	// Margin at lowest page expansion
+			contactPage.style.marginTop = '455px';
+		} else { 
+	// Margin in between both caps of page expansion
+			contactPage.style.marginTop = contactTop + 'px';
+		};
+	} else {
+	// Margin at fullest page expansion		
+		contactPage.style.marginTop = '40px';
+	}
+
+// Adjusts links into shapes
+	if (aspireWidth < 550) {
+// Stage 6
+	contactPage.style.marginLeft = '24%'
+
+	cont4.style.backgroundColor = '#961800';
+	cont4.style.marginTop = '134px';
+	cont4.style.marginLeft = '-77px';
+
+	cont5.style.backgroundColor = '#961800';
+	cont5.style.marginTop = '230px';
+	cont5.style.marginLeft = '-132px';
+
+	cont6.style.backgroundColor = '#961800';
+	cont6.style.marginTop = '326px';
+	cont6.style.marginLeft = '-187px';
+
+	cont7.style.backgroundColor = '#002B60';
+	cont7.style.marginTop = '326px';
+	cont7.style.marginLeft = '-22px';
+
+	cont8.style.backgroundColor = '#002B60';
+	cont8.style.marginTop = '326px';
+	cont8.style.marginLeft = '88px';
+
+	cont9.style.backgroundColor = '#002B60';
+	cont9.style.marginTop = '326px';
+	cont9.style.marginLeft = '198px';
+
+	} else if (aspireWidth < 650) {
+// Stage 5
+	contactPage.style.marginLeft = '22%'
+
+	cont4.style.backgroundColor = '#961800';
+	cont4.style.marginTop = '170px';
+	cont4.style.marginLeft = '-55px';
+
+	cont5.style.backgroundColor = '#961800';
+	cont5.style.marginTop = '266px';
+	cont5.style.marginLeft = '-110px';
+
+	cont6.style.backgroundColor = '#961800';
+	cont6.style.marginTop = '362px';
+	cont6.style.marginLeft = '-165px';
+
+	cont7.style.backgroundColor = '#002B60';
+	cont7.style.marginTop = '323px';
+	cont7.style.marginLeft = '19px';
+
+	cont8.style.backgroundColor = '#002B60';
+	cont8.style.marginTop = '323px';
+	cont8.style.marginLeft = '129px';
+
+	cont9.style.backgroundColor = '#002B60';
+	cont9.style.marginTop = '323px';
+	cont9.style.marginLeft = '239px';
+	} else if (aspireWidth < 700) {
+// Stage 4
+	contactPage.style.marginLeft = '20%'
+
+	cont4.style.backgroundColor = '#961800';
+	cont4.style.marginTop = '206px';
+	cont4.style.marginLeft = '-33px';
+
+	cont5.style.backgroundColor = '#961800';
+	cont5.style.marginTop = '302px';
+	cont5.style.marginLeft = '-88px';
+
+	cont6.style.backgroundColor = '#961800';
+	cont6.style.marginTop = '398px';
+	cont6.style.marginLeft = '-143px';
+
+	cont7.style.backgroundColor = '#002B60';
+	cont7.style.marginTop = '320px';
+	cont7.style.marginLeft = '54px';
+
+	cont8.style.backgroundColor = '#002B60';
+	cont8.style.marginTop = '320px';
+	cont8.style.marginLeft = '164px';
+
+	cont9.style.backgroundColor = '#002B60';
+	cont9.style.marginTop = '320px';
+	cont9.style.marginLeft = '274px';
+	} else if (aspireWidth < 800) {
+// Stage 3
+	contactPage.style.marginLeft = '18%'
+
+	cont4.style.backgroundColor = '#961800';
+	cont4.style.marginTop = '242px';
+	cont4.style.marginLeft = '-11px';
+
+	cont5.style.backgroundColor = '#961800';
+	cont5.style.marginTop = '338px';
+	cont5.style.marginLeft = '-66px';
+
+	cont6.style.backgroundColor = '#961800';
+	cont6.style.marginTop = '434px';
+	cont6.style.marginLeft = '-121px';
+
+	cont7.style.backgroundColor = '#002B60';
+	cont7.style.marginTop = '317px';
+	cont7.style.marginLeft = '89px';
+
+	cont8.style.backgroundColor = '#002B60';
+	cont8.style.marginTop = '317px';
+	cont8.style.marginLeft = '199px';
+
+	cont9.style.backgroundColor = '#002B60';
+	cont9.style.marginTop = '317px';
+	cont9.style.marginLeft = '309px';
+
+	} else  {
+// Stage 2
+	contactPage.style.marginLeft = '16%'
+
+	cont4.style.backgroundColor = '#961800';
+	cont4.style.marginTop = '278px';
+	cont4.style.marginLeft = '11px';
+
+	cont5.style.backgroundColor = '#961800';
+	cont5.style.marginTop = '372px';
+	cont5.style.marginLeft = '-44px';
+
+	cont6.style.backgroundColor = '#961800';
+	cont6.style.marginTop = '468px';
+	cont6.style.marginLeft = '-99px';
+
+	cont7.style.backgroundColor = '#002B60';
+	cont7.style.marginTop = '315px';
+	cont7.style.marginLeft = '152px';
+
+	cont8.style.backgroundColor = '#002B60';
+	cont8.style.marginTop = '315px';
+	cont8.style.marginLeft = '262px';
+
+	cont9.style.backgroundColor = '#002B60';
+	cont9.style.marginTop = '315px';
+	cont9.style.marginLeft = '372px';
+
+	} 
+// 	else {
+// // Stage 1
+// 	contactPage.style.marginLeft = '8%'
+
+// 	cont4.style.backgroundColor = '#961800';
+// 	cont4.style.marginTop = '312px';
+// 	cont4.style.marginLeft = '33px';
+
+// 	cont5.style.backgroundColor = '#961800';
+// 	cont5.style.marginTop = '408px';
+// 	cont5.style.marginLeft = '-22px';
+
+// 	cont6.style.backgroundColor = '#961800';
+// 	cont6.style.marginTop = '504px';
+// 	cont6.style.marginLeft = '-77px';
+
+// 	cont7.style.backgroundColor = '#002B60';
+// 	cont7.style.marginTop = '312px';
+// 	cont7.style.marginLeft = '187px';
+
+// 	cont8.style.backgroundColor = '#002B60';
+// 	cont8.style.marginTop = '312px';
+// 	cont8.style.marginLeft = '297px';
+
+// 	cont9.style.backgroundColor = '#002B60';
+// 	cont9.style.marginTop = '312px';
+// 	cont9.style.marginLeft = '407px';
+
+	
+	// }
+}
+
+window.onresize = function() {
+	aboutCrumble();
+	resumeCrumble();
+	contactCrumble();
+};
+
+window.onload = function() {
+	
+	aboutCrumble();
+	resumeCrumble();
+	contactCrumble();
 }

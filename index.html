@@ -1,8 +1,8 @@
  <!doctype html>
 <html>
 	<head>
-		<link rel="stylesheet" href="walterroman.css">
-		<script type="text/javascript" src="walterroman.js"></script>
+		<link rel="stylesheet" href="contactTest.css">
+		<script type="text/javascript" src="contactTest.js"></script>
 		<title>
 			Walter Roman
 		</title>
@@ -14,30 +14,30 @@
 		<div id="navBar">
 		
 			<div id="About" class="navCircle" 
-				onClick="navOnClick('About'); aboutClick(); ">
+				onClick="navOnClick('About'); aboutClick(); aboutCrumble();">
 				<div id="firstLetterA" class="firstLetter">A</div>
 				<div id="navTextAbout"
-					onClick="navOnClick('About')">
+					onClick="navOnClick('About'); aboutCrumble();">
 					<div id="navText1" class="navText navTextInitial">bout</div>
 				</div>
 			</div>
 			
 			
 			<div id="Resume" class="navCircle"
-				onClick="navOnClick('Resume'); resumeClick();">
+				onClick="navOnClick('Resume'); resumeCrumble(); resumeClick();">
 				<div id="firstLetterR" class="firstLetter">R</div>
 				<div id="navTextResume"
-					onClick="navOnClick('Resume')">
+					onClick="navOnClick('Resume'); resumeCrumble();">
 					<div id="navText2"class="navText navTextInitial">esume</div>
 				</div>
 			</div>
 			
 			
 			<div id="Contact" class="navCircle"
-				onClick="navOnClick('Contact'); contactClick();">
+				onClick="navOnClick('Contact'); contactCrumble(); contactClick();">
 				<div id="firstLetterC" class="firstLetter">C</div>
 				<div id="navTextContact"
-					onClick="navOnClick('Contact')">
+					onClick="navOnClick('Contact'); contactCrumble();">
 					<div id="navText3" class="navTextInitial">ontact</div>
 				</div>
 			</div>
@@ -48,7 +48,8 @@
 			<div id="intro">Hello, I'm Walter</div>
 		</h1>		
 		<h1>
-			<div id="aspire"> I'm an aspiring</br>
+			<div id="aspire"
+			onResize='crumble();'> I'm an aspiring</br>
 				<a id="musician" href="http://maddoxtheband.com">[musician]</a><br><br>
 					
 				An aspiring</br>
@@ -235,7 +236,7 @@
 			</div>
 		</div>
 		
-		<h3 id="resumePage" class="pageInvis"> 
+		<h1 id="resumePage" class="pageInvis"> 
 		
 			<div id="pdfMain"> 
 				<a id="pdfCircle" href="https://github.com/whroman3/walterroman.com/blob/master/WALTER.pdf?raw=true"> 
@@ -248,9 +249,9 @@
 					Profile
 				</div>
 				
-				<h1 class="resumeTextLight resumeProfileText">
+				<h2 class="resumeTextLight resumeProfileText">
 					Dynamic applicant with Honors Diploma.</br>Accomplished musician with National experience and a passion for the visual arts, music and science.</br></br>I am in search of a position that will allow me to combine my passion for helping others with my drive for completing goals.
-				</h1>
+				</h2>
 			</div>
 				
 			<div id="resumeBody">
@@ -457,30 +458,34 @@
 				</div>
 				
 			</div>	
-		</h3>
+		</h1>
 
 		<h3 id="contactPage" class="pageInvis">
 			<div id="contactIconHolder">
+			
+			<a href="javascript:emailClick()">
+				<div id="cont9" class="contCircle"
+					onMouseOver="contactSelector('cont9')"
+					onMouseOut="contactDeselector('cont9')">
+					<img src="email_white.png">
+					<div id="emailText">
+						walter<br>humberto<br>.roman<br>@gmail.com
+					</div>
+				</div>
+			</a>
 			<a href="javascript:phoneClick()">
-				<div id="cont1" class="contCircle"
-					onMouseOver="contactSelector('cont1')"
-					onMouseOut="contactDeselector('cont1')">
+				<div id="cont8" class="contCircle"
+					onMouseOver="contactSelector('cont8')"
+					onMouseOut="contactDeselector('cont8')">
 					<img src="phone_white.png">
 					<div id="phoneText">909<br>921<br>4207</div>
 				</div>
 			</a>
 			<a href="https://github.com/whroman3">
-				<div id="cont2" class="contCircle"
-					onMouseOver="contactSelector('cont2')"
-					onMouseOut="contactDeselector('cont2')">
+				<div id="cont7" class="contCircle"
+					onMouseOver="contactSelector('cont7')"
+					onMouseOut="contactDeselector('cont7')">
 					<img src="octocat_white.png">
-				</div>
-			</a>
-			<a href="http://www.facebook.com/walterroman">
-				<div id="cont3" class="contCircle"
-					onMouseOver="contactSelector('cont3')"
-					onMouseOut="contactDeselector('cont3')">
-					<img src="facebook_white.png">
 				</div>
 			</a>
 			<a href="http://www.codecademy.com/users/whroman3">				
@@ -490,57 +495,39 @@
 					<img src="codecademy_white.png">
 				</div>
 			</a>
-			<a href="http://lavozdeunbuitre.tumblr.com/">
+			<a href="http://youtu.be/XJQCsHLbd1k">
 				<div id="cont5" class="contCircle"
 					onMouseOver="contactSelector('cont5')"
 					onMouseOut="contactDeselector('cont5')">
-					<img src="tumblr_white.png">
-				</div>
-			</a>
-			
-			<a href="javascript:emailClick()">
-				<div id="cont6" class="contCircle"
-					onMouseOver="contactSelector('cont6')"
-					onMouseOut="contactDeselector('cont6')">
-					<img src="email_white.png">
-					<div id="emailText">
-						walter<br>humberto<br>.roman<br>@gmail.com
-					</div>
-				</div>
-			</a>
-			<a href="http://instagram.com/whroman3">
-				<div id="cont7" class="contCircle"
-					onMouseOver="contactSelector('cont7')"
-					onMouseOut="contactDeselector('cont7')">
-					<img src="instagram_white.png">
-				</div>
-			</a>
-			<a href="http://maddoxtheband.com">
-				<div id="cont8" class="contCircle"
-					onMouseOver="contactSelector('cont8')"
-					onMouseOut="contactDeselector('cont8')">
-					<img src="music_white.png">
-				</div>
-			</a>
-			<a href="http://www.last.fm/user/Patojo007">
-				<div id="cont9" class="contCircle"
-					onMouseOver="contactSelector('cont9')"
-					onMouseOut="contactDeselector('cont9')">
-					<img src="lastfm_white.png">
+					<img src="youtube_white.png">
 				</div>
 			</a>
 			<a href="http://open.spotify.com/user/whroman3">
-				<div id="contA" class="contCircle"
-					onMouseOver="contactSelector('contA')"
-					onMouseOut="contactDeselector('contA')">
+				<div id="cont6" class="contCircle"
+					onMouseOver="contactSelector('cont6')"
+					onMouseOut="contactDeselector('cont6')">
 					<img src="Spotify_white.png">
 				</div>
 			</a>
-			<a href="http://youtu.be/XJQCsHLbd1k">
-				<div id="contB" class="contCircle"
-					onMouseOver="contactSelector('contB')"
-					onMouseOut="contactDeselector('contB')">
-					<img src="youtube_white.png">
+			<a href="http://www.facebook.com/walterroman">
+				<div id="cont1" class="contCircle"
+					onMouseOver="contactSelector('cont1')"
+					onMouseOut="contactDeselector('cont1')">
+					<img src="facebook_white.png">
+				</div>
+			</a>
+			<a href="http://lavozdeunbuitre.tumblr.com/">
+				<div id="cont2" class="contCircle"
+					onMouseOver="contactSelector('cont2')"
+					onMouseOut="contactDeselector('cont2')">
+					<img src="tumblr_white.png">
+				</div>
+			</a>
+			<a href="http://instagram.com/whroman3">
+				<div id="cont3" class="contCircle"
+					onMouseOver="contactSelector('cont3')"
+					onMouseOut="contactDeselector('cont3')">
+					<img src="instagram_white.png">
 				</div>
 			</a>
 			</div>	

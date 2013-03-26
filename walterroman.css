@@ -1,15 +1,9 @@
 body { 
 	margin: 0px;
-	width: 0px;
 	font-family: Helvetica, Arial, sans-serif;
 	background-color: transparent;
 
 	overflow: visible;
-}
-
-h2 {
-	margin: 0%;
-	width: 90%
 }
 
 em {
@@ -26,16 +20,6 @@ a {
 	color: inherit;
 }
 
-#h1div {
-	position: relative;
-	float: left;
-	margin-top: 0px;
-
-	background-color: transparent;
-	width: 12.5%;
-	height: 100%;
-}
-
 #intro {
 	position: absolute;
 	background-color: transparent;
@@ -46,14 +30,16 @@ a {
 	font-weight: 100;
 
 	font-size: 58px;
-	line-height: 1.2;
+	line-height: 1;
+
+	overflow: hidden;
 
 	text-align: right;
 
 	margin: 21px 0px 0px 145px;
 	padding: 35px 0px 0px 0px;
 
-	z-index: 0;
+	z-index: 100;
 
 	overflow-x: hidden;
 
@@ -65,10 +51,10 @@ a {
 }
 
 #intro.introJS {
-	width: 50%;
-	min-width: 500px;
-	margin-left: 500px;
-	margin-top: -20px;
+	width: 95%;
+	min-width: 520px;
+	margin-left: 20px;
+	margin-top: -30px;
 }
 
 
@@ -77,7 +63,6 @@ a {
 	background-color: transparent;
 	width: 68%;
 	height: auto;
-	min-width: 520px;
 
 	font-weight: 100;
 
@@ -102,10 +87,10 @@ a {
 }
 
 #aspire.aspireJS {
-	width: 50%;
-	min-width: 500px;
-	margin-left: 500px;
-	margin-top: 110px;
+	width: 95%;
+	min-width: 520px;
+	margin-left: 20px;
+	margin-top: 100px;
 }
 
 #musician {
@@ -239,7 +224,7 @@ a {
 	-o-transition: all 0.7s;
 	-ms-transition: all 0.7s;
 	-moz-transition: all 0.7s;
-	-webkit-transition: all 0.7s; 
+	-webkit-transition: all 0.7s, margin-top 0.2s, margin-left 0.2s; 
 	transition: all 0.7s;
 }
 
@@ -248,10 +233,6 @@ a {
 	background-color: transparent;
 	width: 100%;
 	min-width: 580px;
-	height: 300px;
-
-	overflow-y: hidden;
-	overflow-x: visible;
 
 	font-weight: 300;
 
@@ -273,16 +254,16 @@ Compensated for in #aboutPage.pageVis
 	-o-transition: all 0.7s;
 	-ms-transition: all 0.7s;
 	-moz-transition: all 0.7s;
-	-webkit-transition: all 0.7s; 
+	-webkit-transition: all 0.7s, margin-top 0.2s, margin-left 0.2s; 
 	transition: all 0.7s;
 }
 
 #contactPage {
 	position: absolute;
 	background-color: transparent;
-	width: 55%;
+	width: 22%;
 
-	min-width: 600px;
+	min-width: 200px;
 	height: 450px;
 
 	font-weight: 300;
@@ -291,7 +272,7 @@ Compensated for in #aboutPage.pageVis
 
 	text-align: left;
 
-	margin: 40px 0px 20px 0px;
+	margin: 40px 0px 20px 10%;
 
 	padding-left: 100px;
 
@@ -302,15 +283,16 @@ Compensated for in #aboutPage.pageVis
 	-o-transition: all 0.7s;
 	-ms-transition: all 0.7s;
 	-moz-transition: all 0.7s;
-	-webkit-transition: all 0.7s; 
+	-webkit-transition: all 0.7s, margin-top 0.2s, margin-left 0.2s; 
 	transition: all 0.7s;
 }
 
 #contactIconHolder {
 	position: relative;
 	float: right;
-	width: 450px;
-	height: 450px;
+	width: 150px;
+	height: 150px;
+
 }
 
 #aboutPage.pageVis {
@@ -339,7 +321,6 @@ Compensated for in #aboutPage.pageVis
 #resumePage.pageVis {
 	opacity: 1;
 	visibility: visible;
-	margin-top: 134px;
 	overflow-x: visible;
 	overflow-y: hidden;
 	height: 2530px;
@@ -348,21 +329,21 @@ Compensated for in #aboutPage.pageVis
 	#resumePage.pageInvis {
 		opacity: 0;
 		visibility: hidden;
-		margin-top: 40px;
+		overflow-x: hidden;
 		overflow-y: hidden;
-		height: 260px;
+		height: 0px;
 	}
 
 #contactPage.pageVis {
 	opacity: 1;
 	visibility: visible;
-	margin-top: 150px;
+	height: auto;
 }
 
 	#contactPage.pageInvis {
 		opacity: 0;
 		visibility: hidden;
-		margin-top: 40px;
+		height: 0px;
 	}
 
 /* ##About */
@@ -589,7 +570,7 @@ Compensated for in #aboutPage.pageVis
 			width: 70%;
 			text-align: left;
 
-			margin: 260px 0px 0px 31%;
+			margin: 263px 0px 0px 31%;
 }
 
 	#pdfCircle {
@@ -658,7 +639,7 @@ Compensated for in #aboutPage.pageVis
 			color: #000;
 			font-weight: 100;
 
-			min-width: 300px;
+			min-width: 332px;
 
 			margin-top: 15px;
 			margin-bottom: -10px;
@@ -830,14 +811,14 @@ Compensated for in #aboutPage.pageVis
 	border: 0px solid transparent;
 }
 
-#contactPage #cont3 img {
+#contactPage #cont1 img {
 	height: 100px;
 	width: 100px;
 	margin-top: -1px;
 	margin-left: -1px;
 }
 
-#contactPage #contA img {
+#contactPage #cont6 img {
 	height: 80px;
 	width: 80px;
 	margin-top: 16px;
@@ -849,10 +830,10 @@ Compensated for in #aboutPage.pageVis
 	position: absolute;
 	color: white;
 	font-weight: 100;
-	margin-top: 95px;
-	margin-left: 13px;
+	margin-top: 97px;
+	margin-left: 15px;
 	text-align: left;
-	font-size: 32px;
+	font-size: 31px;
 	text-align: center;
 	line-height: 1;
 	visibility: hidden;
@@ -920,79 +901,159 @@ Compensated for in #aboutPage.pageVis
 #Blue: #002B60
 */
 
-#cont1 {
-		background-color: #BB6500;
+#contCrumble {
+	background-color: #666;
+	margin-top: 0px;
+	margin-left: -100px;
+	opacity: 0.1;
 }
 
-#cont2 {
-	background-color: #BB6500;
-
-	margin-top: 102px;
-	margin-left: 52px;
+#contCrumble:hover {
+	opacity: 0.5;
 }
 
-#cont3 {
+#cont1 
+{
+	background-color: #002B60;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+#cont2 
+{
+	background-color: #002B60;
+
+	margin-top: 96px;
+	margin-left: 55px;
+}
+
+#cont3 
+{
+	background-color: #002B60;
+
+	margin-top: 192px;
+	margin-left: 110px;
+}
+
+#cont4 
+{
 	background-color: #961800;
 
-	margin-top: 252px;
-	margin-left: 2px;
+	margin-top: 312px;
+	margin-left: 33px;
 }
 
-#cont4 {
-	background-color: #BB6500;
-
-	margin-top: 52px;
-	margin-left: 152px;
-}
-
-#cont5 {
+#cont5 
+{
 	background-color: #961800;
 
-	margin-top: 202px;
-	margin-left: 102px;
+	margin-top: 408px;
+	margin-left: -22px;
 }
 
-#cont6 {
-	background-color: #BB6500;
-
-	margin-top: 2px;
-	margin-left: 252px;
-}
-
-#cont7 {
+#cont6 
+{
 	background-color: #961800;
 
-	margin-top: 152px;
-	margin-left: 202px;
+	margin-top: 504px;
+	margin-left: -77px;
 }
 
-#cont8 {
+#cont7 
+{
+	background-color: #BB6500;
+
+	margin-top: 312px;
+	margin-left: 187px;
+}
+
+#cont8 
+{
+	background-color: #BB6500;
+
+	margin-top: 312px;
+	margin-left: 297px;
+}
+
+#cont9 
+{
+	background-color: #BB6500;
+
+	margin-top: 312px;
+	margin-left: 407px;
+}
+
+/*#cont1 
+{
+	background-color: #BB6500;
+	margin-top: 426px;
+	margin-left: 0px;
+}
+
+#cont2 
+{
+	background-color: #BB6500;
+
+	margin-top: 321px;
+	margin-left: 60px;
+}
+
+#cont3 
+{
+	background-color: #BB6500;
+
+	margin-top: 210px;
+	margin-left: 120px;
+}
+
+#cont4 
+{
+	background-color: #961800;
+
+	margin-top: 426px;
+	margin-left: 180px;
+}
+
+#cont5 
+{
+	background-color: #961800;
+
+	margin-top: 426px;
+	margin-left: 300px;
+}
+
+#cont6 
+{
+	background-color: #961800;
+
+	margin-top: 426px;
+	margin-left: 420px;
+}
+
+#cont7 
+{
 	background-color: #002B60;
 
-	margin-top: 302px;
-	margin-left: 152px;
+	margin-top: 270px;
+	margin-left: 330px;
 }
 
-#cont9 {
+#cont8 
+{
 	background-color: #002B60;
 
-	margin-top: 252px;
-	margin-left: 252px;
+	margin-top: 165px;
+	margin-left: 270px;
 }
 
-#contA {
+#cont9 
+{
 	background-color: #002B60;
 
-	margin-top: 202px;
-	margin-left: 352px;
-}
+	margin-top: 60px;
+	margin-left: 210px;
+}*/
 
-#contB {
-	background-color: #002B60;
-
-	margin-top: 302px;
-	margin-left: 402px;
-}
 
 	#contactPage a:hover {
 	color: black;
