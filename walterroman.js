@@ -76,8 +76,8 @@ var navOnClick = function(exception) {
 	// Contact Tab Selected
 		navContact.className = "navCircle contactClick";
 		navTextContact.className = "navTextSelected";
-		navC.style.marginTop = "88px";
 		navTextContact.style.marginLeft = "97px";
+		navC.style.marginTop = "88px";
 
 	// About Tab
 		navAbout.className = "navCircle";

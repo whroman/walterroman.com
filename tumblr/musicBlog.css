@@ -16,14 +16,16 @@ SIDEBAR
 */
 
 #sidebar {
+  background-color: white;
   margin-top: -80px;
   margin-left: -405px;
+
   overflow-y: hidden;
   overflow-x: hidden;
 
 
-/*  background: url(moreno.jpg);
-*/
+  background-color:rgba(255,255,255,0.7);
+
 /*  -webkit-filter: grayscale(1);
 */  
   position: fixed;
@@ -106,7 +108,7 @@ img#sidebarToggle:active {
 }
 
 #postContainer div:hover {
-  background-color: #9E9E9E;
+  background-color: rgba(138,138,138,0.8);
   cursor: pointer;
 }
 
@@ -137,7 +139,7 @@ img#sidebarToggle:active {
 
   border-radius: 5px;
 
-  background-color: #2E2E2E;
+  background-color: rgba(0,0,0,0.8);
   color: #FFF;
 /*  opacity: 0.8;
 */
@@ -174,10 +176,19 @@ img#sidebarToggle:active {
   text-align: right;
 }
 
+#postContainer div.postNum:hover {
+  background-color: rgba(0,0,0,0)
+}
+
 #postContainer .postAlt div.postNum {
   margin-top: -2px;
   margin-left: 99px;
   text-align: left;
+
+}
+
+#postContainer .postAlt div.postNum:hover {
+  background-color: rgba(0,0,0,0)
 }
 
 #postContainer span.postTitle {
