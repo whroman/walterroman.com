@@ -94,19 +94,19 @@ var navOnClick = function(exception) {
 
 	if(exception != "Contact") {
 		// Set Contact Links as Orange
-		document.getElementById("cont1").style.backgroundColor = "#BB6500";
-		document.getElementById("cont2").style.backgroundColor = "#BB6500";
-		document.getElementById("cont4").style.backgroundColor = "#BB6500";
-		document.getElementById("cont6").style.backgroundColor = "#BB6500";
+		document.getElementById("cont1").style.backgroundColor = "#002B60";
+		document.getElementById("cont2").style.backgroundColor = "#002B60";
+		document.getElementById("cont3").style.backgroundColor = "#002B60";
 
 		// Set Contact Links as Red
-		document.getElementById("cont3").style.backgroundColor = "#961800";
+		document.getElementById("cont4").style.backgroundColor = "#961800";
 		document.getElementById("cont5").style.backgroundColor = "#961800";
-		document.getElementById("cont7").style.backgroundColor = "#961800";
+		document.getElementById("cont6").style.backgroundColor = "#961800";
 
 		// Set Contact Links as Blue
-		document.getElementById("cont8").style.backgroundColor = "#002B60";
-		document.getElementById("cont9").style.backgroundColor = "#002B60";
+		document.getElementById("cont7").style.backgroundColor = "#BB6500";
+		document.getElementById("cont8").style.backgroundColor = "#BB6500";
+		document.getElementById("cont9").style.backgroundColor = "#BB6500";
 	}
 }
 
@@ -498,15 +498,15 @@ var contactCrumble = function() {
 	cont6.style.marginTop = '326px';
 	cont6.style.marginLeft = '-187px';
 
-	cont7.style.backgroundColor = '#002B60';
+	cont7.style.backgroundColor = '#BB6500';
 	cont7.style.marginTop = '326px';
 	cont7.style.marginLeft = '-22px';
 
-	cont8.style.backgroundColor = '#002B60';
+	cont8.style.backgroundColor = '#BB6500';
 	cont8.style.marginTop = '326px';
 	cont8.style.marginLeft = '88px';
 
-	cont9.style.backgroundColor = '#002B60';
+	cont9.style.backgroundColor = '#BB6500';
 	cont9.style.marginTop = '326px';
 	cont9.style.marginLeft = '198px';
 
@@ -526,15 +526,15 @@ var contactCrumble = function() {
 	cont6.style.marginTop = '362px';
 	cont6.style.marginLeft = '-165px';
 
-	cont7.style.backgroundColor = '#002B60';
+	cont7.style.backgroundColor = '#BB6500';
 	cont7.style.marginTop = '323px';
 	cont7.style.marginLeft = '19px';
 
-	cont8.style.backgroundColor = '#002B60';
+	cont8.style.backgroundColor = '#BB6500';
 	cont8.style.marginTop = '323px';
 	cont8.style.marginLeft = '129px';
 
-	cont9.style.backgroundColor = '#002B60';
+	cont9.style.backgroundColor = '#BB6500';
 	cont9.style.marginTop = '323px';
 	cont9.style.marginLeft = '239px';
 	} else if (aspireWidth < 700) {
@@ -553,15 +553,15 @@ var contactCrumble = function() {
 	cont6.style.marginTop = '398px';
 	cont6.style.marginLeft = '-143px';
 
-	cont7.style.backgroundColor = '#002B60';
+	cont7.style.backgroundColor = '#BB6500';
 	cont7.style.marginTop = '320px';
 	cont7.style.marginLeft = '54px';
 
-	cont8.style.backgroundColor = '#002B60';
+	cont8.style.backgroundColor = '#BB6500';
 	cont8.style.marginTop = '320px';
 	cont8.style.marginLeft = '164px';
 
-	cont9.style.backgroundColor = '#002B60';
+	cont9.style.backgroundColor = '#BB6500';
 	cont9.style.marginTop = '320px';
 	cont9.style.marginLeft = '274px';
 	} else if (aspireWidth < 800) {
@@ -580,15 +580,15 @@ var contactCrumble = function() {
 	cont6.style.marginTop = '434px';
 	cont6.style.marginLeft = '-121px';
 
-	cont7.style.backgroundColor = '#002B60';
+	cont7.style.backgroundColor = '#BB6500';
 	cont7.style.marginTop = '317px';
 	cont7.style.marginLeft = '89px';
 
-	cont8.style.backgroundColor = '#002B60';
+	cont8.style.backgroundColor = '#BB6500';
 	cont8.style.marginTop = '317px';
 	cont8.style.marginLeft = '199px';
 
-	cont9.style.backgroundColor = '#002B60';
+	cont9.style.backgroundColor = '#BB6500';
 	cont9.style.marginTop = '317px';
 	cont9.style.marginLeft = '309px';
 
@@ -608,49 +608,19 @@ var contactCrumble = function() {
 	cont6.style.marginTop = '468px';
 	cont6.style.marginLeft = '-99px';
 
-	cont7.style.backgroundColor = '#002B60';
+	cont7.style.backgroundColor = '#BB6500';
 	cont7.style.marginTop = '315px';
 	cont7.style.marginLeft = '152px';
 
-	cont8.style.backgroundColor = '#002B60';
+	cont8.style.backgroundColor = '#BB6500';
 	cont8.style.marginTop = '315px';
 	cont8.style.marginLeft = '262px';
 
-	cont9.style.backgroundColor = '#002B60';
+	cont9.style.backgroundColor = '#BB6500';
 	cont9.style.marginTop = '315px';
 	cont9.style.marginLeft = '372px';
 
 	} 
-// 	else {
-// // Stage 1
-// 	contactPage.style.marginLeft = '8%'
-
-// 	cont4.style.backgroundColor = '#961800';
-// 	cont4.style.marginTop = '312px';
-// 	cont4.style.marginLeft = '33px';
-
-// 	cont5.style.backgroundColor = '#961800';
-// 	cont5.style.marginTop = '408px';
-// 	cont5.style.marginLeft = '-22px';
-
-// 	cont6.style.backgroundColor = '#961800';
-// 	cont6.style.marginTop = '504px';
-// 	cont6.style.marginLeft = '-77px';
-
-// 	cont7.style.backgroundColor = '#002B60';
-// 	cont7.style.marginTop = '312px';
-// 	cont7.style.marginLeft = '187px';
-
-// 	cont8.style.backgroundColor = '#002B60';
-// 	cont8.style.marginTop = '312px';
-// 	cont8.style.marginLeft = '297px';
-
-// 	cont9.style.backgroundColor = '#002B60';
-// 	cont9.style.marginTop = '312px';
-// 	cont9.style.marginLeft = '407px';
-
-	
-	// }
 }
 
 window.onresize = function() {

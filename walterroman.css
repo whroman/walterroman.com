@@ -984,78 +984,6 @@ Compensated for in #aboutPage.pageVis
 	margin-left: 407px;
 }
 
-/*#cont1 
-{
-	background-color: #BB6500;
-	margin-top: 426px;
-	margin-left: 0px;
-}
-
-#cont2 
-{
-	background-color: #BB6500;
-
-	margin-top: 321px;
-	margin-left: 60px;
-}
-
-#cont3 
-{
-	background-color: #BB6500;
-
-	margin-top: 210px;
-	margin-left: 120px;
-}
-
-#cont4 
-{
-	background-color: #961800;
-
-	margin-top: 426px;
-	margin-left: 180px;
-}
-
-#cont5 
-{
-	background-color: #961800;
-
-	margin-top: 426px;
-	margin-left: 300px;
-}
-
-#cont6 
-{
-	background-color: #961800;
-
-	margin-top: 426px;
-	margin-left: 420px;
-}
-
-#cont7 
-{
-	background-color: #002B60;
-
-	margin-top: 270px;
-	margin-left: 330px;
-}
-
-#cont8 
-{
-	background-color: #002B60;
-
-	margin-top: 165px;
-	margin-left: 270px;
-}
-
-#cont9 
-{
-	background-color: #002B60;
-
-	margin-top: 60px;
-	margin-left: 210px;
-}*/
-
-
 	#contactPage a:hover {
 	color: black;
 	text-decoration: underline;	
@@ -1094,7 +1022,7 @@ Compensated for in #aboutPage.pageVis
 
 #navBar {
 	position: absolute;
-	font-size: 32px;
+	font-size: 36px;
 	margin-top: 126px;
 	width: 0;
 	height: 0;
@@ -1186,7 +1114,7 @@ Compensated for in #aboutPage.pageVis
 	width: 100px;
 	height: 100px;
 	border-radius: 1000px;
-	background-color: #000;
+	background-color: transparent;
 	opacity: 1;
 
 	z-index: 0;
@@ -1293,7 +1221,7 @@ Compensated for in #aboutPage.pageVis
 	transition: all 0.5s;
 }
 
-.navText {
+#navBar .navText {
 	position: absolute;
 	margin-top: 0px;
 	font-weight: 100;
@@ -1316,7 +1244,7 @@ Compensated for in #aboutPage.pageVis
 /*
 some .navtextselected attributes are set in JS
 */
-.navTextSelected {
+#navBar .navTextSelected {
 	position: absolute;
 	margin-top: 49px;
 	font-weight: 100;
