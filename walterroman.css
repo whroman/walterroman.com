@@ -606,12 +606,37 @@ Compensated for in #aboutPage.pageVis
 				font-weight: 400;
 	}
 
-		#resumeBody {
-			width: 100%;	
-			margin: 240px 0px 0px -30px;
-			line-height: 1.3;
-			height: 200px;
-		}
+#portfolio {
+	position: absolute;	
+
+	margin-top: 230px;
+	margin-left: 70%;
+
+	text-align: center;
+
+	vertical-align: middle;
+}
+
+#portfolioLink {
+	display: block;
+	height: 200px;
+	width: 200px;
+	background-color: #961800;
+	border-radius: 1000px;
+
+	line-height: 200px;
+
+	color: #FFF;
+	font-size: 28px;
+
+}
+
+#resumeBody {
+	width: 100%;	
+	margin: 240px 0px 0px -30px;
+	line-height: 1.3;
+	height: 200px;
+}
 
 #resumeProfile {
 			width: 51%;
@@ -1070,7 +1095,7 @@ Compensated for in #aboutPage.pageVis
 	background-color: #002B60;
 }
 
-#About:hover, #Resume:hover, #Contact:hover, #pdfCircle:hover {
+#About:hover, #Resume:hover, #Contact:hover, #pdfCircle:hover, #portfolioLink:hover {
 	cursor: pointer;
 	opacity: 0.9;
 	background-color: #aaa;
@@ -1084,7 +1109,7 @@ Compensated for in #aboutPage.pageVis
 	transition: all 0.5s;
 }
 
-#About:active , #Resume:active , #Contact:active , #pdfCircle:active {
+#About:active , #Resume:active , #Contact:active , #pdfCircle:active, #portfolioLink:active {
 	-o-transition: all 0.2s;
 	-ms-transition: all 0.2s;
 	-moz-transition: all 0.2s;
@@ -1105,6 +1130,10 @@ Compensated for in #aboutPage.pageVis
 }
 
 #pdfCircle:active {
+	background-color: #961800;
+}
+
+#portfolioLink:active {
 	background-color: #961800;
 }
 
