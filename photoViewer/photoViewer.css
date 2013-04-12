@@ -119,7 +119,7 @@ body {
         max-width: 720px;
         max-height: none;
         float: left;
-        background-color: rgba(0,0,0,0.8);
+        background-color: rgba(0,0,0,0.9);
         display: table-cell;
 
         vertical-align: middle;
