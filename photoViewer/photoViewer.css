@@ -97,34 +97,47 @@ body {
   }
   
     .top-container {
-      width: auto;
-      display: inline-block;
+      display: table;
       vertical-align: middle;
       clear: both;
 
-      margin:0 0 0 0%;
+      height: auto;
+
+      text-align: center;
+
+      margin: 0 auto;
     }
     
       .photo {
-        width: auto;
+        max-width: 520px;
         height: 520px;
         float: left;
-        background-color: transparent;
-        text-align: right;
+        background-color: rgba(0,0,0,0.8);
+        display: table-cell;
+
+        vertical-align: middle;
+
+        line-height: 520px;
       }
     
       .photo img {
+        position: relative;
         display: inline-block;
-        width: auto%;
-        height: 100%;
+        width: auto;
+        height: auto;
+        max-width: 520px;
+        max-height: 520px;
+
+        vertical-align: middle;
+
       }
     
       .social-area {
         width: 360px;
         height: 520px;
-        float: left;
 /*        background: url('socialNet.jpg');
 */        background-color: white;
+        display: inline-block;
       }
       
       .post-info {
