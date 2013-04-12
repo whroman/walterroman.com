@@ -1,0 +1,55 @@
+ <!doctype html>
+ <head>
+<link rel="stylesheet" type="text/css" href="reset.css">
+<link rel="stylesheet" type="text/css" href="photoViewer.css">
+<script type="text/javascript" src="photoViewer.js"></script>
+</head>
+
+<body>
+<div id="thumbnail-view">
+
+  <div id="photo-grid">
+    <a href="javascript:toggleOn('pop-up')"><img class="thumbnail" src="Hokusai_Great_Wave_off_Kanagawa.jpg"></a>
+    <a href="javascript:toggleOn('pop-up')"><img class="thumbnail" src="explosions.jpg"></a>
+    <a href="javascript:toggleOn('pop-up')"><img class="thumbnail" src="picasso_portrait_of_ambroise_vollard.jpg"></a>
+    <a href="javascript:toggleOn('pop-up')"><img class="thumbnail" src="explosions.jpg"></a>  
+ </div>
+
+
+
+<div id="pop-up" class="pop-up contain">
+  
+  <div class="valign">
+
+    <div class="top-container contain">   
+
+      <a href="javascript:toggleOff('pop-up')" id="separator" ></a>
+
+      <div class="photo">
+        <img alt="image" 
+          src="Hokusai_Great_Wave_off_Kanagawa.jpg" />
+      </div>
+      
+      <div class="social-area">
+        <a href="javascript:toggleOff('pop-up')"><img class="close" src="close.png" onmouseover="close();" /></a>
+          <div class="post-info">
+            <img class="posted-by-thumb" src="explosions.jpg">
+            <h3 class="posted-by-name">Billy Corgan</h3>
+            <h5 class="posted-by-timestamp">September 24, 2012 via mobile</h5>
+            <h5 class="posted-by-timestamp">near Los Angeles</h5>
+            <h2 class="post-text">The Birth and Death of Day</h2>
+          </div>
+          <div class="interact"></div>
+          <div class="comments"></div>
+      </div>
+
+    </div> <!-- .top-container -->
+        
+  </div>
+</div>  
+</div>
+
+</body>
+
+
+
