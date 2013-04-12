@@ -36,8 +36,8 @@ body {
   width: 200%;
   height: 200%;
 
-  margin-top: -50%;
-  margin-left: -50%;
+  margin-top: -20%;
+  margin-left: -100%;
 
   z-index: -10;
 
@@ -76,10 +76,10 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    background: rgba(50,50,50,0.9);
+    background: rgba(0,0,0,0.9);
     text-align: center;
 
-
+    padding: 5% 0;
     display: table;
     z-index: 10;
 
@@ -88,20 +88,23 @@ body {
 
   .valign {
     display: table-cell;
-    vertical-align: middle;
-    text-align: center;
+/*    vertical-align: middle;
+*/    text-align: center;
       margin: 0 0;
 
-    min-width: 880px;
+    width: 90%;
+    min-width: 1080px;
 
   }
   
     .top-container {
       display: table;
-      vertical-align: middle;
-      clear: both;
+/*      vertical-align: middle;
+*/      clear: both;
 
+      width: auto;
       height: auto;
+
 
       text-align: center;
 
@@ -109,10 +112,14 @@ body {
     }
     
       .photo {
-        max-width: 520px;
-        height: 520px;
+
+
+        width: auto;
+        height: auto;
+        max-width: 720px;
+        max-height: none;
         float: left;
-        background-color: rgba(0,0,0,0);
+        background-color: rgba(0,0,0,0.8);
         display: table-cell;
 
         vertical-align: middle;
@@ -125,7 +132,7 @@ body {
         display: inline-block;
         width: auto;
         height: auto;
-        max-width: 520px;
+        max-width: 720px;
         max-height: 520px;
 
         vertical-align: middle;
@@ -134,7 +141,7 @@ body {
     
       .social-area {
         width: 360px;
-        height: 520px;
+        max-height: 520px;
 /*        background: url('socialNet.jpg');
 */        background-color: white;
         display: inline-block;
@@ -207,4 +214,43 @@ body {
       height: 340px;
       width: 100%;
     }
+
+@media all and (max-width: 1200px) {
+  .photo {
+    background-color: transparent;
+/*    background-color: pink;
+*/  }
+  .photo img {
+    max-width: 600px;
+  }
+  #pop-up {
+    margin-left: -5%;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .photo {
+    background-color: transparent;
+/*    background-color: red;
+*/  }
+  .photo img {
+    max-width: 400px;
+  }
+  #pop-up {
+    margin-left: -15%;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .photo {
+    background-color: transparent;
+/*    background-color: blue;
+*/  }
+  .photo img {
+    max-width: 300px;
+  }
+  #pop-up {
+    margin-left: -25%;
+  }
+}
 
