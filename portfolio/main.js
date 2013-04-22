@@ -108,7 +108,7 @@
           } else if (edge.source.data.color == "#961800" && edge.target.data.color == "#BB6500") {
             ctx.strokeStyle = "rgba(250,150,0,0.2)"
             ctx.lineWidth = 2
-          } else if (edge.source.name=="languages" || edge.source.name=="frames / libs" || edge.source.name=="portfolio") {
+          } else if (edge.source.name=="languages" || edge.source.name=="frames & libs" || edge.source.name=="portfolio") {
             ctx.strokeStyle = "rgba(0,0,0,0.7)"
             ctx.lineWidth = 2.5
           } else {
@@ -266,7 +266,7 @@
             //   console.log(nearest.node.data.link)
             // }
 
-            // if ($.inArray(nearest.node.name, ['languages','portfolio','frames / libs']) >=0 ){
+            // if ($.inArray(nearest.node.name, ['languages','portfolio','frames & libs']) >=0 ){
             //   if (nearest.node.name!=_section){
             //     _section = nearest.node.name
             //     that.switchSection(nearest.node.name)
@@ -377,7 +377,7 @@
           javascript:{color:CLR.code, alpha:1},
           php:{color:CLR.code, alpha:1},
 
-        "frames / libs":{color:CLR.branch, shape:"dot", alpha:1},
+        "frames & libs":{color:CLR.branch, shape:"dot", alpha:1},
           django:{color:CLR.demo, alpha:1, link:'https://www.djangoproject.com'},
           jquery:{color:CLR.demo, alpha:1, link:'http://jquery.com'},
           bootstrap:{color:CLR.demo, alpha:1, link:'http://twitter.github.io/bootstrap'},
@@ -389,7 +389,7 @@
 
         portfolio:{
           languages:{length:70},
-          "frames / libs":{length:70},
+          "frames & libs":{length:70},
 
           "simple imdb":{length: 6},
           "walterroman.com":{length:6},
@@ -400,7 +400,7 @@
         },
 
         languages:{
-          "frames / libs":{length:70},
+          "frames & libs":{length:70},
 
           python:{length:5},
           css:{length:20},
@@ -410,7 +410,7 @@
 
         },
 
-        "frames / libs":{
+        "frames & libs":{
           "arbor.js":{length:20},
           django:{length:20},
           jquery:{length:10},
@@ -456,19 +456,19 @@
           django:{length:10},
           jquery:{length:10},
 
-          "frames / libs":{length:20},
+          "frames & libs":{length:20},
         },
 
         jquery:{
           javascript:{length:30},
 
-          "frames / libs":{length:20},
+          "frames & libs":{length:20},
           languages:{length:20},
         },
 
         django:{
           portfolio:{length:50},
-          "frames / libs":{length:20}
+          "frames & libs":{length:20}
         },     
 
         "arbor.js":{
@@ -493,7 +493,7 @@
           jquery:{length:20},
           "arbor.js":{length:10},
 
-          "frames / libs":{length:15}
+          "frames & libs":{length:15}
         },     
 
 
@@ -503,7 +503,7 @@
           php:{length:10},
           "foundation.zurb":{length:10},
 
-          "frames / libs":{length:30},
+          "frames & libs":{length:30},
           languages:{length:30},
         },  
 
@@ -523,7 +523,7 @@
           python:{length:15},
 
           languages:{length:15},
-          "frames / libs":{length:40},
+          "frames & libs":{length:40},
         },
 
         javascript:{
@@ -539,7 +539,7 @@
           php:{length:15},
           python:{length:15},
 
-          "frames / libs":{length:15}
+          "frames & libs":{length:15}
         },
 
         python:{
