@@ -3,6 +3,26 @@ body {
 
 }
 
+h1 {
+	font-size: 48px;
+	font-weight: 100;
+	letter-spacing: 1px;
+	width: 80%;
+	text-align: center;
+	margin: 20px auto 0 auto;
+	line-height: 48px
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: 100;
+	letter-spacing: 1px;
+	width: 80%;
+	text-align: center;
+	margin: 30px auto 0 auto;
+	line-height: 26px
+}
+
 a {
 	text-decoration: none;
 	color: inherit;
@@ -14,7 +34,7 @@ MASTHEAD
 
 div#masthead {
 	width: 318px;
-	margin: 50px auto 0 auto;
+	margin: 30px auto 0 auto;
 
 	text-align: center;
 }
@@ -251,12 +271,13 @@ div.photo_wrapper img.photo {
 }
 
 div.photo_wrapper div.shadow {
-	background-image: url(shadow-full.png);
+	background-color: white;
+	background-image: url(icons/shadow-full.png);
 	background-size: 100%;
 	background-position: center top;
 	background-repeat: no-repeat;
 	margin: 0 auto;
-	width: 100%;
+	width: auto;
 	height: 10px;
 
 }

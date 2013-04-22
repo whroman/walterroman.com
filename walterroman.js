@@ -630,7 +630,6 @@ window.onresize = function() {
 };
 
 window.onload = function() {
-	
 	aboutCrumble();
 	resumeCrumble();
 	contactCrumble();

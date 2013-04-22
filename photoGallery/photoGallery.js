@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	defineID();
+	delay();
 });
 
 var postArray = [],
@@ -43,6 +44,6 @@ var delay = function() {
 	setTimeout(
 		function(){
 			print();
-		},1
+		},10
 	)
 }	
