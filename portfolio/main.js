@@ -31,7 +31,7 @@
         sys.screen({
           size:{width:dom.width(), height:dom.height()},
           padding:[230,95,95,95],
-          step: 0.04
+          step: 0.03
         }) // have the ‘camera’ zoom somewhat slowly as the graph unfolds 
 
         $(window).resize(that.resize) 
@@ -175,8 +175,8 @@
         var w = $(window).width(),
             h = ($(window).height()-dom.offset().top);
         if (w >= 1000) {
-          if (h <= 750) {
-            h = 750  
+          if (h <= 650) {
+            h = 650  
           }
           canvas.width = w; canvas.height = h;// resize the canvas element to fill the screen
           particleSystem.screenSize(w,h) // inform the system so it can map coords for us
@@ -401,7 +401,6 @@
 
         languages:{
           "frames / libs":{length:70},
-          portfolio:{length:70},
 
           python:{length:5},
           css:{length:20},
@@ -425,6 +424,11 @@
           "photo gallery":{length:20},
           languages:{length:10},
           algorithms:{length:10},
+
+          css:{length:30},
+          html:{length:30},
+          javascript:{length:10},
+
         },
 
         "what you see now":{
@@ -439,7 +443,10 @@
         },
 
         algorithms:{
-          "photo gallery":{length:35},
+
+          javascript:{length:10},
+
+          languages:{length:20},
         },
 
 
@@ -450,33 +457,21 @@
           jquery:{length:10},
 
           "frames / libs":{length:20},
-          languages:{length:120}
         },
-
-        // "Walter Roman":{
-        //   facebook:{length:2},
-        //   tumblr:{length:2},
-        //   phone:{length:2},
-        //   email:{length:2},
-        // },
 
         jquery:{
           javascript:{length:30},
 
           "frames / libs":{length:20},
           languages:{length:20},
-          portfolio:{length:150}
         },
 
         django:{
-          languages:{length:70},
           portfolio:{length:50},
           "frames / libs":{length:20}
         },     
 
         "arbor.js":{
-          languages:{length:80},
-          portfolio:{length:60},
         },     
 
         "foundation.zurb":{
@@ -491,14 +486,6 @@
           javascript:{length:30},
         },
 
-        "walterroman.com":{
-          css:{length:30},
-          html:{length:30},
-          javascript:{length:10},
-
-          languages:{length:150},
-          "frames / libs":{length:90}
-        },
         "what you see now":{
           css:{length:20},
           html:{length:20},
@@ -506,27 +493,18 @@
           jquery:{length:20},
           "arbor.js":{length:10},
 
-          portfolio:{length:60},
-          languages:{length:150},
-          "frames / libs":{length:90}
+          "frames / libs":{length:15}
         },     
 
-        algorithms:{
-          javascript:{length:10},
-
-          "frames / libs":{length:80},
-          languages:{length:20},
-        },  
 
         "wordpress theme":{
           css:{length:20},
           html:{length:20},
           php:{length:10},
           "foundation.zurb":{length:10},
-          "what you see now":{length:15},
 
-          "frames / libs":{length:40},
-          languages:{length:40},
+          "frames / libs":{length:30},
+          languages:{length:30},
         },  
 
         "photo gallery": {
@@ -536,7 +514,6 @@
           javascript:{length:15},
 
           languages:{length:20},
-          "frames / libs":{length:140}
         },
 
         css:{
@@ -547,7 +524,6 @@
 
           languages:{length:15},
           "frames / libs":{length:40},
-          portfolio:{length:190}
         },
 
         javascript:{
@@ -556,7 +532,6 @@
           python:{length:10},
 
           portfolio:{length:20},
-          "frames / libs":{length:100},
           languages:{length:20}
         },
 
@@ -564,7 +539,6 @@
           php:{length:15},
           python:{length:15},
 
-          portfolio:{length:140},
           "frames / libs":{length:15}
         },
 
@@ -578,7 +552,6 @@
         },
 
         "foundation.zurb":{
-          languages:{length:140}
         }
 
       }
