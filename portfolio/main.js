@@ -30,8 +30,8 @@
         // the new dimensions
         sys.screen({
           size:{width:dom.width(), height:dom.height()},
-          padding:[230,90,100,90],
-          step: 0.03
+          padding:[230,95,95,95],
+          step: 0.04
         }) // have the ‘camera’ zoom somewhat slowly as the graph unfolds 
 
         $(window).resize(that.resize) 
@@ -108,7 +108,7 @@
           } else if (edge.source.data.color == "#961800" && edge.target.data.color == "#BB6500") {
             ctx.strokeStyle = "rgba(250,150,0,0.2)"
             ctx.lineWidth = 2
-          } else if (edge.source.name=="languages" || edge.source.name=="frames / libs / other" || edge.source.name=="portfolio") {
+          } else if (edge.source.name=="languages" || edge.source.name=="frames / libs" || edge.source.name=="portfolio") {
             ctx.strokeStyle = "rgba(0,0,0,0.7)"
             ctx.lineWidth = 2.5
           } else {
@@ -145,8 +145,8 @@
           // pt:   {x:#, y:#}  node position in screen coords
 
           if (node.data.shape=='dot'){
-            gfx.oval(pt.x-(w)/2, pt.y-(w)/2-4, w, w, {fill:node.data.color, alpha:node.data.alpha})
-            gfx.text(node.name, pt.x, pt.y+7, {color:"white", align:"center", font:"Helvetica", size:16})
+            gfx.oval(pt.x-(w*2)/3, pt.y-(w*2)/3-4, w*4/3, w*4/3, {fill:node.data.color, alpha:node.data.alpha})
+            gfx.text(node.name, pt.x, pt.y+7, {color:"white", align:"center", font:"Helvetica", size:20})
           } 
           // else if (
           //   node.name=='walterroman.com' ||
@@ -164,7 +164,7 @@
             // gfx.rect(pt.x-(w/2)-6, pt.y-12, w+4, 26, 6, {fill:"white", stroke:"black",alpha:1})
 
             gfx.rect(pt.x-(w/2)-4, pt.y-10, w, 22, 4, {fill:node.data.color, stroke:"black", alpha:node.data.alpha})
-            gfx.text(node.name, pt.x-2, pt.y+9, {color:"white", align:"center", font:"Helvetica", size:14})
+            gfx.text(node.name, pt.x-3, pt.y+9, {color:"white", align:"center", font:"Helvetica", size:14})
           }
         })    	
 
@@ -175,8 +175,8 @@
         var w = $(window).width(),
             h = ($(window).height()-dom.offset().top);
         if (w >= 1000) {
-          if (h <= 650) {
-            h = 650  
+          if (h <= 750) {
+            h = 750  
           }
           canvas.width = w; canvas.height = h;// resize the canvas element to fill the screen
           particleSystem.screenSize(w,h) // inform the system so it can map coords for us
@@ -266,7 +266,7 @@
             //   console.log(nearest.node.data.link)
             // }
 
-            // if ($.inArray(nearest.node.name, ['languages','portfolio','frames / libs / other']) >=0 ){
+            // if ($.inArray(nearest.node.name, ['languages','portfolio','frames / libs']) >=0 ){
             //   if (nearest.node.name!=_section){
             //     _section = nearest.node.name
             //     that.switchSection(nearest.node.name)
@@ -376,9 +376,8 @@
           html:{color:CLR.code, alpha:1},
           javascript:{color:CLR.code, alpha:1},
           php:{color:CLR.code, alpha:1},
-          ajax:{color:CLR.demo, alpha:1},
 
-        "frames / libs / other":{color:CLR.branch, shape:"dot", alpha:1},
+        "frames / libs":{color:CLR.branch, shape:"dot", alpha:1},
           django:{color:CLR.demo, alpha:1, link:'https://www.djangoproject.com'},
           jquery:{color:CLR.demo, alpha:1, link:'http://jquery.com'},
           bootstrap:{color:CLR.demo, alpha:1, link:'http://twitter.github.io/bootstrap'},
@@ -387,32 +386,49 @@
             },
 
       edges:{
-        // "Walter Roman":{
-        //   portfolio:{length:.8},
-        //   education:{length:.8},
-        //   tech:{length:.8},
-          // contact:{length:5}          
-        // },
+
         portfolio:{
-          languages:{length:50},
-          "frames / libs / other":{length:50},
-          "simple imdb":{length: 10},
-          "walterroman.com":{length:10},
+          languages:{length:70},
+          "frames / libs":{length:70},
+
+          "simple imdb":{length: 6},
+          "walterroman.com":{length:6},
           "what you see now":{length:6},
           "wordpress theme":{length:6},
-          "photo gallery":{length:10},
+          "photo gallery":{length:6},
           algorithms:{length:6},
+        },
+
+        languages:{
+          "frames / libs":{length:70},
+          portfolio:{length:70},
+
+          python:{length:5},
+          css:{length:20},
+          html:{length:10},
+          javascript:{length:10},
+          php:{length:10},
+
+        },
+
+        "frames / libs":{
+          "arbor.js":{length:20},
+          django:{length:20},
+          jquery:{length:10},
+          bootstrap:{length:10},
+          "foundation.zurb":{length:10},
         },
 
         "walterroman.com":{
           "what you see now":{length:30},
           "wordpress theme":{length:25},
           "photo gallery":{length:20},
+          languages:{length:10},
           algorithms:{length:10},
         },
 
         "what you see now":{
-          "wordpress theme":{length:20},
+          "wordpress theme":{length:15},
           "photo gallery":{length:20},
           algorithms:{length:10},
         },
@@ -426,35 +442,15 @@
           "photo gallery":{length:35},
         },
 
-       languages:{
-          "frames / libs / other":{length:60},
-          python:{length:5},
-          css:{length:20},
-          html:{length:10},
-          javascript:{length:10},
-          php:{length:10},
 
-        },
-
-        "frames / libs / other":{
-          "arbor.js":{length:20},
-          django:{length:20},
-          jquery:{length:10},
-          bootstrap:{length:10},
-          "foundation.zurb":{length:10},
-          ajax:{length:10},
-        },
 
         "simple imdb":{
           python:{length:10},
           django:{length:10},
-          ajax:{length:10},
           jquery:{length:10},
-          languages:{length:10},
-        },
 
-        ajax:{
-          javascript:{length:5},
+          "frames / libs":{length:20},
+          languages:{length:120}
         },
 
         // "Walter Roman":{
@@ -465,17 +461,22 @@
         // },
 
         jquery:{
-          javascript:{length:30}
+          javascript:{length:30},
+
+          "frames / libs":{length:20},
+          languages:{length:20},
+          portfolio:{length:150}
         },
 
         django:{
-          languages:{length:40},
-          portfolio:{length:40},
+          languages:{length:70},
+          portfolio:{length:50},
+          "frames / libs":{length:20}
         },     
 
         "arbor.js":{
-          languages:{length:40},
-          portfolio:{length:20},
+          languages:{length:80},
+          portfolio:{length:60},
         },     
 
         "foundation.zurb":{
@@ -494,18 +495,27 @@
           css:{length:30},
           html:{length:30},
           javascript:{length:10},
-          languages:{length:20}
+
+          languages:{length:150},
+          "frames / libs":{length:90}
         },
         "what you see now":{
           css:{length:20},
           html:{length:20},
           javascript:{length:20},
           jquery:{length:20},
-          "arbor.js":{length:5},
+          "arbor.js":{length:10},
+
+          portfolio:{length:60},
+          languages:{length:150},
+          "frames / libs":{length:90}
         },     
 
         algorithms:{
           javascript:{length:10},
+
+          "frames / libs":{length:80},
+          languages:{length:20},
         },  
 
         "wordpress theme":{
@@ -514,6 +524,9 @@
           php:{length:10},
           "foundation.zurb":{length:10},
           "what you see now":{length:15},
+
+          "frames / libs":{length:40},
+          languages:{length:40},
         },  
 
         "photo gallery": {
@@ -522,6 +535,8 @@
           jquery:{length:30},
           javascript:{length:15},
 
+          languages:{length:20},
+          "frames / libs":{length:140}
         },
 
         css:{
@@ -530,25 +545,42 @@
           php:{length:15},
           python:{length:15},
 
-          languages:{length:20},
-          "frames / libs / other":{length:30},
-          portfolio:{length:20}
+          languages:{length:15},
+          "frames / libs":{length:40},
+          portfolio:{length:190}
         },
 
         javascript:{
           html:{length:10},
           php:{length:10},
           python:{length:10},
+
+          portfolio:{length:20},
+          "frames / libs":{length:100},
+          languages:{length:20}
         },
 
         html:{
           php:{length:15},
           python:{length:15},
+
+          portfolio:{length:140},
+          "frames / libs":{length:15}
         },
 
         python:{
           php:{length:15},
+          django:{length:8}
         },
+
+        php:{
+          portfolio:{length:20},
+        },
+
+        "foundation.zurb":{
+          languages:{length:140}
+        }
+
       }
     }
 
