@@ -250,6 +250,9 @@
                   .replace('\.\./','walterroman.com/')
                   .replace('/index.html','')
                   .replace('\#','')
+
+                  .replace(/walterroman.com\/(?=simple)/,'download ')
+                  .replace('simpleIMDB.zip','simpleIMDB.zip (a tiny Django test project)')
                   )   
               }
               else{
@@ -367,7 +370,7 @@
           "what you see now":{color:CLR.doc, alpha:1, link:"../portfolio/index.html"},
           "wordpress theme":{color:CLR.doc, alpha:1, link:'#coming soon'},
           "image viewer":{color:CLR.doc, alpha:1, link:'../imageViewer/index.html'},
-          "simple imdb":{color:CLR.doc, alpha:1, link:'#coming soon'},
+          "simple imdb":{color:CLR.doc, alpha:1, link:'../simpleIMDB.zip'},
           algorithms:{color:CLR.doc, alpha:1, link:'../primeChains/index.html'},
 
         languages:{color:CLR.branch, shape:"dot", alpha:1},
