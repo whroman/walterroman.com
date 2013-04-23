@@ -152,7 +152,7 @@
           //   node.name=='walterroman.com' ||
           //   node.name=='custom wp theme' ||
           //   node.name=='algorithms' ||
-          //   node.name=='photo gallery' ||
+          //   node.name=='image viewer' ||
           //   node.name=='simple imdb' ||
           //   node.name=='what you see now'
           //   ) {
@@ -366,7 +366,7 @@
           "walterroman.com":{color:CLR.doc, alpha:1, link:'http://www.walterroman.com'},
           "what you see now":{color:CLR.doc, alpha:1, link:"../portfolio/index.html"},
           "wordpress theme":{color:CLR.doc, alpha:1, link:'#coming soon'},
-          "photo gallery":{color:CLR.doc, alpha:1, link:'../photoGallery/index.html'},
+          "image viewer":{color:CLR.doc, alpha:1, link:'../imageViewer/index.html'},
           "simple imdb":{color:CLR.doc, alpha:1, link:'#coming soon'},
           algorithms:{color:CLR.doc, alpha:1, link:'../primeChains/index.html'},
 
@@ -395,7 +395,7 @@
           "walterroman.com":{length:10},
           "what you see now":{length:10},
           "wordpress theme":{length:6},
-          "photo gallery":{length:6},
+          "image viewer":{length:6},
           algorithms:{length:6},
         },
 
@@ -403,25 +403,25 @@
           "frames & libs":{length:70},
 
           python:{length:5},
-          css:{length:15},
-          html:{length:10},
-          javascript:{length:10},
-          php:{length:10},
+          css:{length:12},
+          html:{length:6},
+          javascript:{length:6},
+          php:{length:6},
 
         },
 
         "frames & libs":{
-          "arbor.js":{length:20},
-          django:{length:20},
-          jquery:{length:10},
-          bootstrap:{length:10},
-          "foundation.zurb":{length:10},
+          "arbor.js":{length:12},
+          django:{length:12},
+          jquery:{length:6},
+          bootstrap:{length:6},
+          "foundation.zurb":{length:6},
         },
 
         "walterroman.com":{
           "what you see now":{length:30},
           "wordpress theme":{length:25},
-          "photo gallery":{length:20},
+          "image viewer":{length:20},
           languages:{length:10},
           algorithms:{length:10},
 
@@ -433,14 +433,14 @@
 
         "what you see now":{
           "wordpress theme":{length:15},
-          "photo gallery":{length:20},
+          "image viewer":{length:20},
 
           "frames & libs":{length:20},
           algorithms:{length:10},
         },
 
         "wordpress theme":{
-          "photo gallery":{length:15},
+          "image viewer":{length:15},
           algorithms:{length:15},
         },
 
@@ -466,7 +466,9 @@
 
           "frames & libs":{length:20},
           languages:{length:20},
-          bootstrap:{length:15}
+
+          bootstrap:{length:15},
+          html:{length:6}
         },
 
         django:{
@@ -483,10 +485,12 @@
           javascript:{length:20},
         },
 
-        "bootstrap":{
+        bootstrap:{
           css:{length:5},
           html:{length:10},
           javascript:{length:30},
+          "arbor.js":{length:10},
+          django:{length:15}
         },
 
         "what you see now":{
@@ -494,7 +498,7 @@
           html:{length:20},
           javascript:{length:20},
           jquery:{length:20},
-          "arbor.js":{length:10},
+          "arbor.js":{length:6},
 
           "frames & libs":{length:15},
           "wordpress theme":{length:15}
@@ -511,7 +515,7 @@
           languages:{length:30},
         },  
 
-        "photo gallery": {
+        "image viewer": {
           css:{length:10},
           html:{length:15},
           jquery:{length:30},
@@ -528,6 +532,8 @@
 
           languages:{length:15},
           "frames & libs":{length:40},
+
+          "foundation.zurb":{length:6}
         },
 
         javascript:{
@@ -536,7 +542,8 @@
           python:{length:10},
 
           portfolio:{length:20},
-          languages:{length:20}
+          languages:{length:20},
+
         },
 
         html:{

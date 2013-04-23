@@ -73,7 +73,7 @@ h1 a:after {
 h1 a:hover:after {
 	content: " / .com";
 
-	padding-right: 75px;
+	padding-right: 80px;
 }
 
 h2 {
