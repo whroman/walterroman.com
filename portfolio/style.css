@@ -49,10 +49,12 @@ h1 {
 	display: inline-block;
 	width: 1000px;	
 	text-align:  center;
-	font-weight: 800;
+	font-weight: 500;
 	font-size: 78px;
 	margin: 20px auto 30px auto;
 	clear: both;
+
+	letter-spacing: -2px;
 
 	z-index: 10;
 }
@@ -63,6 +65,7 @@ h1 a {
 
 h1 a:after {
 	font-weight: 100;
+	letter-spacing: 1px;
 
 	content: " / portfolio"
 }
@@ -70,7 +73,7 @@ h1 a:after {
 h1 a:hover:after {
 	content: " / .com";
 
-	padding-right: 76px;
+	padding-right: 75px;
 }
 
 h2 {

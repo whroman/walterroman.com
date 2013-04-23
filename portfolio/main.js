@@ -30,7 +30,7 @@
         // the new dimensions
         sys.screen({
           size:{width:dom.width(), height:dom.height()},
-          padding:[230,95,95,95],
+          padding:[230,95,100,95],
           step: 0.03
         }) // have the ‘camera’ zoom somewhat slowly as the graph unfolds 
 
@@ -254,7 +254,7 @@
               }
               else{
                  dom.removeClass('linkable')
-                  $("h2").html("I like to think of myself as a generalist")
+                  $("h2").html("i like to think of myself as a generalist")
 
                  window.status = ''
               }
@@ -364,11 +364,11 @@
 
         portfolio:{color:CLR.branch, shape:"dot", alpha:1}, 
           "walterroman.com":{color:CLR.doc, alpha:1, link:'http://www.walterroman.com'},
-          "what you see now":{color:CLR.doc, alpha:1, link:"#you're already here"},
+          "what you see now":{color:CLR.doc, alpha:1, link:"../portfolio/index.html"},
           "wordpress theme":{color:CLR.doc, alpha:1, link:'#coming soon'},
           "photo gallery":{color:CLR.doc, alpha:1, link:'../photoGallery/index.html'},
           "simple imdb":{color:CLR.doc, alpha:1, link:'#coming soon'},
-          algorithms:{color:CLR.doc, alpha:1, link:'#coming soon'},
+          algorithms:{color:CLR.doc, alpha:1, link:'../primeChains/index.html'},
 
         languages:{color:CLR.branch, shape:"dot", alpha:1},
           python:{color:CLR.code, alpha:1},
@@ -391,9 +391,9 @@
           languages:{length:70},
           "frames & libs":{length:70},
 
-          "simple imdb":{length: 6},
-          "walterroman.com":{length:6},
-          "what you see now":{length:6},
+          "simple imdb":{length: 10},
+          "walterroman.com":{length:10},
+          "what you see now":{length:10},
           "wordpress theme":{length:6},
           "photo gallery":{length:6},
           algorithms:{length:6},
@@ -403,7 +403,7 @@
           "frames & libs":{length:70},
 
           python:{length:5},
-          css:{length:20},
+          css:{length:15},
           html:{length:10},
           javascript:{length:10},
           php:{length:10},
@@ -434,6 +434,8 @@
         "what you see now":{
           "wordpress theme":{length:15},
           "photo gallery":{length:20},
+
+          "frames & libs":{length:20},
           algorithms:{length:10},
         },
 
@@ -464,10 +466,11 @@
 
           "frames & libs":{length:20},
           languages:{length:20},
+          bootstrap:{length:15}
         },
 
         django:{
-          portfolio:{length:50},
+          html:{length:15},
           "frames & libs":{length:20}
         },     
 
@@ -493,7 +496,8 @@
           jquery:{length:20},
           "arbor.js":{length:10},
 
-          "frames & libs":{length:15}
+          "frames & libs":{length:15},
+          "wordpress theme":{length:15}
         },     
 
 
@@ -539,7 +543,7 @@
           php:{length:15},
           python:{length:15},
 
-          "frames & libs":{length:15}
+          "frames & libs":{length:20}
         },
 
         python:{
