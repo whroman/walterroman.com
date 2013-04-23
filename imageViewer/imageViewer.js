@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).onload(function() {
 	defineID();
 	delay();
 });
