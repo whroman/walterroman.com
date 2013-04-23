@@ -1,7 +1,13 @@
-$(window).onload(function() {
+$(window).load(function() {
 	defineID();
 	delay();
 });
+
+
+// $(document).ready(function() {
+// 	defineID();
+// 	delay();
+// });
 
 var postArray = [],
 	imageArray = [],
