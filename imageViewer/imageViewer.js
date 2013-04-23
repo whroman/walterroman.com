@@ -30,7 +30,7 @@ var defineID = function() {
   // console.log(mainWrapper);
 }
 
-var print = function() {
+var setShadows = function() {
 	 for (i=0;i<postArray.length;i++) {
 
 	// Sets width of image's shadow to image
@@ -43,7 +43,7 @@ var print = function() {
 var delay = function() {
 	setTimeout(
 		function(){
-			print();
+			setShadows();
 		},10
 	)
 }	
