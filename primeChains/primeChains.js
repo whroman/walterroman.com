@@ -75,4 +75,6 @@ var awesome = function () {
 window.onload=function(){
 	awesome();
 	awesome();
+	awesome();
+	awesome();
 }

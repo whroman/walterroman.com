@@ -5,7 +5,7 @@
 	<script type = 'text/javascript' src='primeChains.js'></script>
 </header>
 <body>
-		<button class='button' type='button' onClick='awesome();'>Retrieve Next Clean Prime Chain</button>
+		<h1>Prime Chains</h1>
 
 		<div class="code" id="explain">
 			<div class="head">
@@ -13,13 +13,13 @@
 			</div> 
 			of length N. 
 			<br><br>
-			If the sum of the first N - 1 numbers is evenly divisible by the final number (or Nth number), we'll call the sequence a "Clean Chain of Length N" .
+			If the sum of all the numbers except the last is evenly divisible by that last number (or the Nth number), we'll call the sequence a "Clean Chain of Length N" .
 			<br><br>
 			<div class="head">
 			This algorithm finds "Clean Chains"
 			</div> consisting of only consecutive prime numbers. 
 			<br><br>
-			The first chain is simply an array consisting of {2}. Because N = 1 (the chain's length is one), N - 1 = 0. Two, the Nth number, is evenly divisble into zero, which leaves us with our first "Clean Chain".
+			The first chain is simply an array consisting of {2}. Because two is the only number in the list, it is also the last number in the list, or the Nth number. The sum of every digit in the list except for N is then zero. Two divided by zero leaves no remainder, which leaves us with our first "Clean Chain".
 			<br><br>
 			The second chain is {2, 3, 5} because (2 + 3) / 5 has no remainder
 			<br><br>
@@ -33,36 +33,39 @@
 
 		<div class="code">
 var primer = primeArray[primeArray.length - 1];<br>
-&nbsp	 var instanceGen = function() {<br>
+&nbsp	 var instanceGen = function()
+<span class="yellow">{</span><br>
 &nbsp&nbsp		var z = 0;<br>
 
-&nbsp&nbsp		do { <br><em>// Finds prime nums until primeSum % last prime == 0</em><br>
+&nbsp&nbsp		do { <br><em>// Find primes until (primeSum % last prime) == 0</em><br>
 &nbsp&nbsp&nbsp			primer += 1;<br>
 &nbsp&nbsp&nbsp			var notPrime = false;<br>
 &nbsp&nbsp&nbsp			var n = 0<br>
 
-&nbsp&nbsp&nbsp			do { 
-<br><em>// Closes when a prime number is found</em><br>
-&nbsp&nbsp&nbsp&nbsp				if (z == 0) { // For small chains<br>
+
+&nbsp&nbsp&nbsp			do <span class="yellow">{</span>
+<br><em>// Do/while loop closes when a prime is found</em><br>
+&nbsp&nbsp&nbsp&nbsp				if (z == 0) { <em>// For small chains</em><br>
 &nbsp&nbsp&nbsp&nbsp&nbsp					z++ ;<br>
 &nbsp&nbsp&nbsp&nbsp&nbsp					primer++;<br>
 &nbsp&nbsp&nbsp&nbsp		        } else if (primer % primeArray[n] == 0) { 
-<br><em>// If primer is evenly divisible by a number</em><br>
+<br><em>// If primer is evenly divisible by a number...</em><br>
 &nbsp&nbsp&nbsp&nbsp&nbsp		            notPrime = true;<br>
 &nbsp&nbsp&nbsp&nbsp	            } else { 
 <br><em>// When a prime number is found...</em><br>
 &nbsp&nbsp&nbsp&nbsp&nbsp	       		    n+=1;<br>
 
-&nbsp&nbsp&nbsp&nbsp		            if (primeArray[n] > Math.sqrt(primer)) {<br>
-&nbsp&nbsp&nbsp&nbsp&nbsp			            primeSum += primeArray[primeArray.length-1];<br>
-&nbsp&nbsp&nbsp&nbsp&nbsp			            primeArray.push(primer);<br>
-&nbsp&nbsp&nbsp&nbsp&nbsp						notPrime = true 
+&nbsp&nbsp&nbsp&nbsp&nbsp		            if (primeArray[n] > Math.sqrt(primer)) 
+																	<span class="yellow">{</span><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp		            primeSum += primeArray[primeArray.length-1];<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp			            primeArray.push(primer);
 <br><em>// Ensures do/while loop closes</em><br>
-&nbsp&nbsp&nbsp&nbsp					}<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp						notPrime = true 
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="yellow">}</span><br>
 &nbsp&nbsp&nbsp		        }<br>
-&nbsp&nbsp		    } while (notPrime == false)<br>
+&nbsp&nbsp	<span class="yellow">}</span> while (notPrime == false)<br>
 &nbsp		} while (primeSum % primeArray[primeArray.length - 1] != 0);<br>
-	}<br>
+<span class="yellow">}</span><br>
 		</div>
 		<div id='chain'></div>
 </body>

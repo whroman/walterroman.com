@@ -190,24 +190,6 @@ var iconClick = function(iconID) {
             ctx.strokeStyle = "rgba(0,0,0,0)"
           }
 
-        // // If not highlighted node
-        // if(edge.target.data.alpha != 1) {
-        //   if (edge.source.data.color == "#961800" && edge.target.data.color == "#002B60") {
-        //     ctx.strokeStyle = "rgba(0,0,100,0.8)"
-        //   } else if (edge.source.data.color == "#961800" && edge.target.data.color == "#BB6500") {
-        //     ctx.strokeStyle = "rgba(250,150,0,0.8)"
-        //   } else if (edge.source.data.color == "#002B60" && edge.target.data.color == "#BB6500") {
-        //     ctx.strokeStyle = "rgba(0,150,0,0.8)"
-        //   }        
-
-        // }
-
-        // if(edge.target.data.alpha > 0.8) {
-        //   if (edge.source.data.color != "#42412d") {
-        //     ctx.strokeStyle = "rgba(0,0,0,0.2)"
-        //   }
-        // }
-
           ctx.beginPath()
           ctx.moveTo(pt1.x, pt1.y)
           ctx.lineTo(pt2.x, pt2.y)
@@ -409,9 +391,9 @@ var iconClick = function(iconID) {
         portfolio:{color:CLR.branch, shape:"dot", alpha:1}, 
           "walterroman.com":{color:CLR.doc, alpha:1, link:'http://www.walterroman.com'},
           "what you see now":{color:CLR.doc, alpha:1, link:"../portfolio/index.html"},
-          "wordpress theme":{color:CLR.doc, alpha:1, link:'#coming soon'},
+          "wordpress theme":{color:CLR.doc, alpha:1, link:'#coming soon / ask for a .zip'},
           "image viewer":{color:CLR.doc, alpha:1, link:'../imageViewer/index.html'},
-          "simple imdb":{color:CLR.doc, alpha:1, link:'../simpleIMDB.zip'},
+          "simple imdb":{color:CLR.doc, alpha:1, link:'#coming soon / ask for a .zip'},
           algorithms:{color:CLR.doc, alpha:1, link:'../primeChains/index.html'},
 
         languages:{color:CLR.branch, shape:"dot", alpha:1},
