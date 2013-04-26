@@ -263,34 +263,6 @@ var iconClick = function(iconID) {
         // changes bottom vignette according to resize
         _vignette = null
       },
-
-      switchSection:function(newSection){
-        var parent = sys.getEdgesFrom(newSection)[0].source
-        var children = $.map(sys.getEdgesFrom(newSection), function(edge){
-          return edge.target
-        })
-        
-        sys.eachNode(function(node){
-          if (node.data.shape=='dot') return // skip all but leafnodes
-
-          var nowVisible = ($.inArray(node, children)>=0)
-          var newAlpha = (nowVisible) ? 1 : 1
-          var dt = (nowVisible) ? .5 : .5
-          sys.tweenNode(node, dt, {alpha:newAlpha})
-
-          // sys.tweenEdge(node, dt, {alpha:newAlpha, strokeStyle:"rgba(255,0,0,1)"})
-
-          if (newAlpha==1){
-          // This affects child nodes directly, thus parents through gravity
-            node.p.x += 3*(Math.random()-1)
-            node.p.y += 3*(Math.random()-1)
-            node.tempMass = .001
-          } 
-        })
-
-
-
-      },
       
       initMouseHandling:function(){
         // no-nonsense drag and drop (thanks springy.js)
@@ -347,23 +319,7 @@ var iconClick = function(iconID) {
 
                  window.status = ''
               }
-            }
-
-            // else 
-            //   // (nearest.node.data.link!=false && nearest.node.data.link!="#") 
-            // {
-            //   console.log(nearest.node.data.link)
-            // }
-
-            // if ($.inArray(nearest.node.name, ['languages','portfolio','frames & libs']) >=0 ){
-            //   if (nearest.node.name!=_section){
-            //     _section = nearest.node.name
-            //     that.switchSection(nearest.node.name)
-            //   }
-            //   dom.removeClass('linkable')
-            //   window.status = ''
-            // }
-            
+            }            
             return false
           },
 
@@ -376,9 +332,8 @@ var iconClick = function(iconID) {
             if (nearest && selected && nearest.node===selected.node){
               var link = selected.node.data.link
               if (link.match(/^#/)){
-                 $(that).trigger({type:"navigate", path:link.substr(1)})
               }else{
-                 window.open(link)
+                 window.open(link, "_self")
               }
               return false
             }
