@@ -25,6 +25,58 @@ body{
 	cursor: default;
 }
 
+#icon-center {
+	background-color: transparent;
+	position: absolute;
+	width: 100%;
+	min-width: 1000px;
+}
+
+#phone, #email  {
+	display: block;
+	position: relative;	
+	z-index: 10;
+
+	clear: both;
+}
+
+#phone {
+	margin-top: 10px;
+	margin-right: 3%;
+	float: right;
+}
+
+#email {
+	margin-top: 20px;
+	margin-right: 3%;
+	float: right;
+}
+
+#phone img, #email img {
+	background-color: rgba(0,0,0,0);
+	border-radius: 100px;
+	border: 2px solid transparent;
+	padding: 5px;
+	width: 36px;
+	height: 36px;
+
+	cursor: pointer;
+
+	filter:xray;
+}
+
+#phone:hover img, #email:hover img{
+	border: 2px solid black;
+}
+
+#phone:active img, #email:active img{
+	border: 2px solid rgba(0,0,0,0.5);
+}
+
+#phone.selected img, #email.selected img {
+	border: 2px solid black;
+}
+
 #viewport.linkable {
 	cursor: pointer;
 }
@@ -85,7 +137,6 @@ h2 {
 	margin: 0 auto 20px auto;
 	font-weight: 200;
 	font-size: 18px;
-	clear: both;
 	letter-spacing: 10px;
 
 	z-index: 10;

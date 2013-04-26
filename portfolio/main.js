@@ -1,11 +1,86 @@
-//
-//  main.js
-//
-//  A project template for using arbor.js
-//
+// Handles selection of icons. Pure JS
+// Bleeds over into arborJS's "moved" function since icons are set over canvas
+var iconHover = function(iconID) {
+    var phone = document.getElementById("phone"),
+    email = document.getElementById("email"),
+    htwo = document.getElementsByTagName('h2')[0];
+
+// toggle
+  if (phone.id != iconID){
+    other = phone
+    icon = email
+  } else if (email.id != iconID) {
+    other = email
+    icon = phone
+  }
+  // keeps not-hovered icon selected until current icon is clicked
+  if (other.className == "temp") {
+    other.className = "selected"
+  }
+  else if (other.className == "selected") {
+    other.className = "temp"
+  } 
+// end toggle
+
+  if (icon.className == "selected") return
+  else {
+// Mouse-in
+    if (icon.className == "") {
+      icon.className = "hover"
+      if (icon.id == "phone"){htwo.innerHTML = "909.921.4207"} 
+      else if (icon.id = "email") {htwo.innerHTML = "walterhumberto.roman@gmail.com"}
+    }
+// Mouse-out
+    else { 
+      icon.className = "";
+      $("h2").html("i like to think of myself as a generalist") ;
+    }
+  }
+};
+
+var iconClick = function(iconID) {
+  var phone = document.getElementById("phone"),
+  email = document.getElementById("email"),
+  htwo = document.getElementsByTagName('h2')[0],
+  icon, other;
+
+// toggle
+  if (phone.id != iconID){
+    other = phone
+    icon = email
+  } else if (email.id != iconID) {
+    other = email
+    icon = phone
+  }
+
+  // Deselects other icon if other icon is selected
+  if (other.className == "selected" || other.className == "temp") {
+    other.className = ""
+  }
+// end toggle
+
+  if (icon.className == "selected") {
+    // Deselects if already selected. Classname "hover" allows mouseout to function properly
+    icon.className = "hover"
+  } else {
+    icon.className = "selected"
+
+    if (icon.id == "phone"){
+      htwo.innerHTML = "909.921.4207"
+    } else if (icon.id = "email") {
+      htwo.innerHTML = "walterhumberto.roman@gmail.com"     
+    }
+  }
+};
+
+
+// ARBORJS
+
 (function($){
 
   var Renderer = function(canvas){
+    var phone = document.getElementById("phone")
+    var email = document.getElementById("email")
     var dom = $(canvas)
     var canvas = dom.get(0)
     var ctx = canvas.getContext("2d");
@@ -237,6 +312,7 @@
             selected = null;
             
             if (nearest.node) {
+
               if (nearest.distance < 50 && nearest.node.data.link) {
                 selected = nearest
               }
@@ -256,8 +332,18 @@
                   )   
               }
               else{
-                 dom.removeClass('linkable')
+                dom.removeClass('linkable')
+
+                console.log(phone.className)
+                if (phone.className == "selected") {
+                  $("h2").html("909.921.4207")                  
+                } 
+                else if (email.className == "selected") {
+                  $("h2").html("walterhumberto.roman@gmail.com")                  
+                }
+                else {
                   $("h2").html("i like to think of myself as a generalist")
+                }
 
                  window.status = ''
               }
