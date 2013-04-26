@@ -60,20 +60,20 @@ body{
 	width: 36px;
 	height: 36px;
 
+	opacity: 0.5;
+
 	cursor: pointer;
 
 	filter:xray;
 }
 
 #phone:hover img, #email:hover img{
-	border: 2px solid black;
-}
-
-#phone:active img, #email:active img{
-	border: 2px solid rgba(0,0,0,0.5);
+	opacity: 1;
 }
 
 #phone.selected img, #email.selected img {
+	opacity: 1;
+
 	border: 2px solid black;
 }
 
