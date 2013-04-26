@@ -6,7 +6,7 @@ var awesome = function () {
 		var z = 0;
 
 		do { // Finds prime numbers until primeSum % primeArray[primeArray.length-1] == 0
-			primer += 1;
+			primer++;
 			var notPrime = false;
 			var n = 0
 

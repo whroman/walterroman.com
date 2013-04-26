@@ -35,34 +35,37 @@
 var primer = primeArray[primeArray.length - 1];<br>
 &nbsp	 var instanceGen = function()
 <span class="yellow">{</span><br>
-&nbsp&nbsp		var z = 0;<br>
+&nbsp&nbsp		var z = 0 <em>// Ensures array expands past current length</em> 
+
+<br>
 
 &nbsp&nbsp		do { <br><em>// Find primes until (primeSum % last prime) == 0</em><br>
-&nbsp&nbsp&nbsp			primer += 1;<br>
+&nbsp&nbsp&nbsp			primer++;<br>
 &nbsp&nbsp&nbsp			var notPrime = false;<br>
-&nbsp&nbsp&nbsp			var n = 0<br>
+&nbsp&nbsp&nbsp			var n = 0 <em>// used to loop through primeArray</em>
+<br>
 
 
 &nbsp&nbsp&nbsp			do <span class="yellow">{</span>
 <br><em>// Do/while loop closes when a prime is found</em><br>
-&nbsp&nbsp&nbsp&nbsp				if (z == 0) { <em>// For small chains</em><br>
-&nbsp&nbsp&nbsp&nbsp&nbsp					z++ ;<br>
-&nbsp&nbsp&nbsp&nbsp&nbsp					primer++;<br>
+&nbsp&nbsp&nbsp&nbsp						if (z == 0) { <br>
+&nbsp&nbsp&nbsp&nbsp&nbsp				z++ ;<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp				primer++;<br>
 &nbsp&nbsp&nbsp&nbsp		        } else if (primer % primeArray[n] == 0) { 
-<br><em>// If primer is evenly divisible by a number...</em><br>
-&nbsp&nbsp&nbsp&nbsp&nbsp		            notPrime = true;<br>
-&nbsp&nbsp&nbsp&nbsp	            } else { 
+<br><em>// Closes do/while if primer is not prime</em><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp		    notPrime = true;<br>
+&nbsp&nbsp&nbsp&nbsp	          } else { 
 <br><em>// When a prime number is found...</em><br>
-&nbsp&nbsp&nbsp&nbsp&nbsp	       		    n+=1;<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp	      n+=1;<br>
 
-&nbsp&nbsp&nbsp&nbsp&nbsp		            if (primeArray[n] > Math.sqrt(primer)) 
-																	<span class="yellow">{</span><br>
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp		            primeSum += primeArray[primeArray.length-1];<br>
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp			            primeArray.push(primer);
-<br><em>// Ensures do/while loop closes</em><br>
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp						notPrime = true 
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span class="yellow">}</span><br>
-&nbsp&nbsp&nbsp		        }<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp		    if (primeArray[n] > Math.sqrt(primer)) 
+<span class="yellow">{</span><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	primeSum += primeArray[primeArray.length-1];<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	primeArray.push(primer);
+<br><em>// Closes do/while loop if primer is prime</em><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	notPrime = true <br>
+&nbsp&nbsp&nbsp&nbsp&nbsp <span class="yellow">}</span><br>
+&nbsp&nbsp&nbsp		        			}<br>
 &nbsp&nbsp	<span class="yellow">}</span> while (notPrime == false)<br>
 &nbsp		} while (primeSum % primeArray[primeArray.length - 1] != 0);<br>
 <span class="yellow">}</span><br>
