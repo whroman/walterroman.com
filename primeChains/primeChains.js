@@ -15,18 +15,18 @@ var awesome = function () {
 					z++ ;
 					primer++;
 				}
-		        else if (primer % primeArray[n] == 0) { // If primer is divided by a number
-		            notPrime = true;
-	            } else { // When a prime number is found...
-	       		    n+=1;
+		    else if (primer % primeArray[n] == 0) { // If primer is divided by a number
+		      notPrime = true;
+	      } else { // When a prime number is found...
+	       	n+=1;
 
-		            if (primeArray[n] > Math.sqrt(primer)) { // Only check primer against ints <= primer's sqrt
-			            primeSum += primeArray[primeArray.length-1];
-			            primeArray.push(primer);
+		      if (primeArray[n] > Math.sqrt(primer)) { // Only check primer against ints <= primer's sqrt
+			      primeSum += primeArray[primeArray.length-1];
+			      primeArray.push(primer);
 						notPrime = true // Ensures do/while loop closes
 					}
-		        }
-		    } while (notPrime == false)
+		    }
+		  } while (notPrime == false)
 		} while (primeSum % primeArray[primeArray.length - 1] != 0);
 	}		
 
