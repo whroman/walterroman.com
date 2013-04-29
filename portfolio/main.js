@@ -391,7 +391,7 @@ var iconClick = function(iconID) {
         portfolio:{color:CLR.branch, shape:"dot", alpha:1}, 
           "walterroman.com":{color:CLR.doc, alpha:1, link:'http://www.walterroman.com'},
           "what you see now":{color:CLR.doc, alpha:1, link:"../portfolio/index.html"},
-          "wordpress theme":{color:CLR.doc, alpha:1, link:'#coming soon / ask for a .zip'},
+          "wordpress theme":{color:CLR.doc, alpha:1, link:'http://walterrom.in/wp/'},
           "image viewer":{color:CLR.doc, alpha:1, link:'../imageViewer/index.html'},
           "simple imdb":{color:CLR.doc, alpha:1, link:'#coming soon / ask for a .zip'},
           algorithms:{color:CLR.doc, alpha:1, link:'../primeChains/index.html'},
