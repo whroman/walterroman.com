@@ -1,4 +1,5 @@
 walterroman.com
 ===============
 
-Personal Site
+My first website. A personal page.
+
