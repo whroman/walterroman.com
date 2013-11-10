@@ -1,4 +1,5 @@
 walterroman.com
 ===============
 
-Personal Site
+Personal Page
+Used as a sandbox for learning HTML, CSS and vanilla Javascript.
